@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="/lexstart/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/lexstart/css/gettemplate.css"> 
+      <link rel="stylesheet" href="/lexstart/css/global.css"> 
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,800,900" rel="stylesheet">  
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="icon" href="/lexstart/images/Lex_logo.png" type="image/gif">
+  </head>
+
+<body>
+        <div class="header default-container">
+            <a class="logo" href="/lexstart/homepage.html"><img src="/lexstart/images/Home_Page_Icons/Lex_logo_blue.svg" alt=""></a>
+        </div>
+<form id="templateForm" name="templateForm">
+<!-- <form id="regForm" action="/action_page.php"> -->
+  <div class="group">
+      <p class="title">Get Template</p>
+  </div>
+  <!-- One "tab" for each step in the form: -->
+  
+   <div class="org_details">
+    <label class="first_name">Name</label> <p class="name-input"><input type="text"  placeholder="Enter First Name" oninput="this.className = ''" name="first_name" id="f_name" class="input-box"></p>
+    
+    <label class="email">E-mail</label> <p  class="email-input"><input type="email" placeholder="Enter E-mail Address" oninput="this.className = ''" name="email" id="email" class="input-box"></p>    
+    <p id="error">Enter valid Email-Id</p>
+   </div> 
+
+   <div>
+        <div class="buttons">
+          <button type="submit" id="submitBtn">Submit</button>
+        </div>
+      </div>
+</form>
+
+      <!-- Modal mail-check-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Entered Email-Id already registerd with us please login to access your LexStart account or use another Email-Id to get Template.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="ok" data-dismiss="modal">Ok</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Org_Modal start -->
+
+      <div class="modal fade" id="Org_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Success</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        You have successfully registerd with LexStart. Your credentials to login to app is mailed to you.
+                </div>
+                <div class="modal-footer">
+                  <a type="button" class="login" href="https://app.lexstart.com/#/login">Login</a>
+                  <a type="button" class="ok" href="https://lexstart.com">Go home</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<script type="text/javascript" src="/lexstart/js/bootstrap.min.js"></Script>
+<script type="text/javascript" src="/lexstart/js/homepageJS/template.js"></script>
+</body>
+</html>

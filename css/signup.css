@@ -1,0 +1,104 @@
+.default-container { max-width: 1366px; margin: 0 auto; }
+
+.clearfix::after { content: ""; clear: both; display: table; }
+
+html, body { margin: 0%; padding: 0; font-family: Lato; position: relative; overflow-x: hidden; background-color: #fff; }
+
+div { margin: 0%; }
+
+/*------------------------signup-----------------------*/
+.header { margin: 17px 0 7px 60px; width: 115px; }
+
+.logo { margin: 0%; width: 111px; height: 36px; font-family: Lato; font-size: 30px; font-weight: bold; text-align: center; color: #000000; text-decoration: none; }
+
+.signup-page h1 { margin: 7px 459px 60px 459px; width: 500px; height: 48px; font-family: Lato; font-size: 40px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; color: #000000; }
+
+.signup { margin: 0 338px 60px 338px; width: 690px; height: 635px; border-radius: 6px; background-color: #ffffff; box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.16); }
+
+.signup .form { font-family: Lato; font-size: 16px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; }
+
+.group { height: 290px; }
+
+.signup .form .form-group1 { padding-top: 50px; text-align: left; }
+
+.signup .form .form-group2 { text-align: left; }
+
+.form .form-group1 .col1 { margin: 0 31px 0 85px; float: left; text-align: left; }
+
+.form .form-group1 .col2 { margin: 0%; float: left; padding: 0%; text-align: left; }
+
+.form .form-group2 .col1 { margin: 0 31px 0 85px; float: left; text-align: left; }
+
+.form .form-group2 .col2 { margin: 0%; float: left; padding: 0%; text-align: left; }
+
+.signup .form .form-control { margin: 10px 0 40px 0; width: 240px; height: 50px; border-radius: 2px; background-color: #ffffff; border: solid 1px #dedede; padding: 16px 0 15px 15px; }
+
+input[type=text]::placeholder { font-family: Lato; font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #aaaaaa; }
+
+input[type=email]::placeholder { font-family: Lato; font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #aaaaaa; }
+
+.list { height: 205px; }
+
+.signup .form .list .choose { margin: 0 478px 22px 85px; width: 127px; height: 17px; font-family: Lato; font-size: 14px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; color: #151515; }
+
+.list .select ul { padding-left: 85px; padding-right: 104px; width: 600px; height: 165px; margin: 0%; }
+
+.list .select ul li { /* margin-top: 12px; */ list-style-type: none; float: left; }
+
+.annual { float: left; margin: 0 14px 20px 0; width: 156px; height: 40px; border-radius: 20px; background-color: #ffffff; border: solid 1px #4e4f50; cursor: pointer; }
+
+.annual:hover { background-color: #010101; }
+
+.returns:hover { color: #ffffff; }
+
+.returns { border-radius: 20px; padding-top: 12px; height: 28px; width: 156px; font-family: Lato; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.dir { float: left; margin: 0 14px 20px 0; width: 134px; height: 40px; border-radius: 20px; background-color: #ffffff; border: solid 1px #4e4f50; cursor: pointer; }
+
+.dir:hover { background-color: #010101; }
+
+.kyc:hover { color: #ffffff; }
+
+.kyc { padding-top: 12px; height: 40px; width: 134px; font-family: Lato; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.corp { float: left; margin: 0 14px 20px 0; width: 181px; height: 40px; border-radius: 20px; background-color: #ffffff; border: solid 1px #4e4f50; cursor: pointer; }
+
+.corp:hover { background-color: #010101; }
+
+.comp:hover { color: #ffffff; }
+
+.comp { padding-top: 12px; height: 40px; width: 181px; font-family: Lato; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.esops { float: left; margin: 0 14px 20px 0; width: 85px; height: 40px; border-radius: 20px; background-color: #ffffff; border: solid 1px #4e4f50; cursor: pointer; }
+
+.esops:hover { background-color: #010101; }
+
+.esop:hover { color: #ffffff; }
+
+.esop { /* margin: 12px 20px; */ padding-top: 12px; height: 40px; width: 85px; font-family: Lato; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.fund { float: left; margin: 0 14px 20px 0; width: 202px; height: 40px; border-radius: 20px; background-color: #ffffff; border: solid 1px #4e4f50; cursor: pointer; }
+
+.fund:hover { background-color: #010101; }
+
+.doc:hover { color: #ffffff; }
+
+.doc { width: 202px; padding-top: 12px; height: 40px; font-family: Lato; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.trademark { float: left; margin: 0 14px 20px 0; width: 181px; height: 40px; border-radius: 20px; background-color: #ffffff; border: solid 1px #4e4f50; cursor: pointer; }
+
+.trademark:hover { background-color: #010101; }
+
+.trade:hover { color: #ffffff; }
+
+.trade { width: 181px; padding-top: 12px; height: 40px; font-family: Lato; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.other { float: left; margin: 0 14px 0 0; width: 78px; height: 40px; border-radius: 20px; background-color: #ffffff; border: solid 1px #4e4f50; cursor: pointer; }
+
+.other:hover { background-color: #010101; }
+
+.othr:hover { color: #ffffff; }
+
+.othr { padding-top: 12px; height: 40px; width: 78px; font-family: Lato; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.row-btn .col-btn1 .submit-btn { margin: 50px 255px 40px 255px; width: 180px; height: 50px; border-radius: 2px; background-color: #2f76f0; font-family: Lato; font-size: 16px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; color: #ffffff; border: none; }

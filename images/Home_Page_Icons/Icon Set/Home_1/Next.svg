@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Next</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lexstart_homepage_UI_Drdn_v4" transform="translate(-1041.000000, -2761.000000)">
+            <g id="Group-13" transform="translate(283.000000, 2513.000000)">
+                <g id="Next" transform="translate(758.000000, 248.000000)">
+                    <g>
+                        <circle id="Oval-2" fill="#A8C8FF" cx="21" cy="21" r="21"></circle>
+                        <circle id="Oval-2" fill="#77A8FB" cx="21" cy="21" r="18"></circle>
+                        <circle id="Oval-2" fill="#538EF2" cx="21" cy="21" r="15"></circle>
+                        <circle id="Oval-2" fill="#2F76F0" cx="21" cy="21" r="12"></circle>
+                        <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" transform="translate(20.705000, 21.000000) scale(-1, 1) translate(-20.705000, -21.000000) " points="24.41 25.59 19.83 21 24.41 16.41 23 15 17 21 23 27"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

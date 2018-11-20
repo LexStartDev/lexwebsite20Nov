@@ -1,0 +1,185 @@
+.archive {
+	.tax-page-header {
+	    padding: 30px;
+		border-radius: 2px;
+		background-color: #ffffff;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+
+		.tax-page-title {
+			margin-top: 0;
+			font-family: 'Playfair Display', serif;
+		    font-size: 28px;
+		    font-weight: bold;
+		    line-height: normal;
+		    color: #36cac2;
+		}
+
+		.sharedaddy {
+			display: none;
+		}
+
+		.tags_container {
+			margin: 20px 0 18px;
+		}
+
+		.tax_tags {
+			display: inline-block;
+			margin: 5px 13px 5px 0;
+			padding: 3px 7px;
+			font-size: 14px;
+			color: #666666;
+			border-radius: 2px;
+			border: solid 1px #999999;
+			line-height: normal;
+			letter-spacing: -0.6px;
+		}
+	}
+
+	.tax-page-meta {
+	    // display: flex;
+	    // align-items: flex-start;
+		font-size: 14px;
+		line-height: 1.29;
+		letter-spacing: 0.2px;
+		/* text-align: justify; */
+		color: #523d3d;
+
+	    iframe {
+		    // width: 100%;
+	     //    margin-left: 5px;
+		}
+	}
+
+	.related_cpt_container {
+	    margin-top: 30px;
+
+	    .title-container {
+	    	display: none;
+	    	width: 100%;
+
+	    	&:nth-child(1) {
+	    		display: block;
+	    	}
+	    }
+
+	    .offerings_title {
+    	    margin: 0 auto 41px;
+		    padding: 10px 65px 14px;
+		    font-size: 20px;
+		    text-align: center;
+		    border-radius: 2px;
+	        line-height: 1.55;
+		    color: #fff;
+		    background-color: #36cac2;
+		    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+		    text-transform: uppercase;
+	    }
+
+		.related_post {
+		    padding: 22px 15px;
+		    border-radius: 2px;
+		    background-color: #ffffff;
+		    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+		    width: 47%;
+		    margin: 8px;
+
+		    h2 {
+			    text-align: center;
+			}
+		}
+
+		.post_listing {
+			padding: 0;
+			list-style-type: none;
+
+			a {
+			    display: block;
+			    padding: 5px 0;
+			    text-decoration: underline;
+			}
+		}
+
+		.post_title {
+			height: auto;
+		}
+
+		.no-content-message {
+			display: none;
+		}
+	}
+
+	// .related_article_container {
+	// 	.related_post {
+	// 	    // width: auto;
+	//         border-top: 0.3px solid #dbdbdb;
+	//         border-radius: 0;
+	// 	}
+
+	// 	.post_listing {
+	// 	    // justify-content: center;
+
+	// 	    li {
+	// 	    	width: 31%;
+	// 		    margin: 10px;
+
+	// 		    &:nth-child(3n) {
+	// 		    	margin-right: 0;
+	// 		    }
+	// 	    }
+
+	// 	    a {
+	// 			text-decoration: none;
+	// 		}
+	// 	}
+
+	// 	.post_category a {
+	// 		display: inline-block;
+	// 	    padding: 4px 7px 6px;
+	// 	}
+	// }
+}
+
+body.tax-stages, body.tax-subject, body.tax-nature-of-business, body.tax-lex_article_tag {
+	#primary {
+		display: inline-block;
+	    width: 88%;
+	}
+}
+
+/*=============================*\
+## Media Queries
+\*=============================*/
+@media (max-width: 1024px) {
+	.archive {
+		// .related_article_container {
+		// 	.post_listing {
+		// 		li {
+		// 		    width: 47%;
+
+		// 		    &:nth-child(2n) {
+		// 		    	margin-right: 0;
+		// 		    }
+		// 		}
+		// 	}
+		// }
+	}
+}
+
+@media (max-width: 980px) {
+	body.tax-stages, body.tax-subject, body.tax-nature-of-business, body.tax-lex_article_tag {
+		.lexstart-share-icons {
+		    display: none;
+		}
+	}
+}
+
+@media (max-width: 620px) {
+	.archive {
+		.related_cpt_container {
+			.related_post {
+			    width: 100%;
+			    margin: 10px 0;
+			}
+		}
+	}
+}

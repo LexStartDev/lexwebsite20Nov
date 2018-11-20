@@ -1,0 +1,539 @@
+
+.default-container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html, body {
+    margin: 0%; padding: 0;
+    font-family: Lato;
+    position: relative;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+div {
+    margin: 0%;
+}
+
+/*----------------------contactus-----------------------*/
+
+.header {    
+    background-color: #fff;
+    // width: 1348px;
+    // height: 70px; 
+    z-index: 200;      
+}
+
+.header .col1 {
+    float: left;
+    margin: 11px 0 11px 60px;
+}
+
+.header .col2 {
+    padding: 25px 279px 28px 0;
+    // margin: 17px 0 17px 0;
+    float: left;
+    a {
+        font-size: 14px;
+        font-weight: bold;
+        color: #000000;
+        padding-left: 40px;
+    }
+}
+
+.search {
+    background-color: #fafafa;
+    border: solid 1px #e8e5e5;
+    width: 350px;
+    height: 45px;
+    padding: 15px 0 13px 0;
+    margin: 13px 0 12px 40px;
+    border-radius: 22px;
+    p {
+        margin: 0%;
+        padding-left: 21px;
+        color: #7c7c7c;
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+.header .col3 {
+    float: left;
+}
+
+.header .col4 {
+    padding: 25px 0 28px 279px;
+    float: left;
+    // .nav {
+    //     padding-left: 90px;
+    // }
+    a {
+        font-size: 14px;
+        font-weight: bold;
+        color: #000000;
+        padding-left: 40px;
+    }
+}
+.col5 {
+    float: left;
+    .signup {
+        width: 140px;
+        height: 45px;
+        border-radius: 3px;
+        border: none;
+        background-color: #2f76f0;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: lato;
+        padding: 15px 0 13px;
+        margin: 10px 0 0 40px;
+        float: left;
+        color: #fff; 
+        border: none;
+        // margin: -15px;
+    }
+}
+
+.logo {
+    width: 111px;
+    height: 36px;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*-------------------contact-us--------------------*/
+
+.contactus {
+    padding: 60px 0 60px 0;
+}
+
+.contactus h1 {
+    padding: 0 0 10px;
+    margin: 0%;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  color: #000000;
+}
+
+.contactus p {
+    margin: 0%;;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #636363;
+}
+
+.contactus .form {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 50px 0 0 427px;
+  margin: 0%;
+}
+
+.contactus .form .form-group1{
+    margin: 0 0 0 0;
+}
+.contactus .form .form-group2{
+    padding: 50px 0 0 0;
+}
+.contactus .form .form-group3 {
+    padding: 50px 0 0 0;
+}
+
+
+.form .form-group1 .col1 {
+    margin: 0 31px 0 0;
+    float: left;
+    text-align: left;
+}
+
+.form .form-group1 .col2 {
+    margin: 0%;
+    float: left;
+    padding: 0%;
+    text-align: left;
+}
+
+.form .form-group2 .col1 {
+    margin: 0 31px 0 0;
+    float: left;
+    text-align: left;
+}
+
+.form .form-group2 .col2 {
+    margin: 0%;
+    float: left;
+    padding: 0%;
+    text-align: left;
+}
+
+.form .form-group3 .col1 {
+    margin: 0%;
+    float: left;
+    text-align: left;
+}
+
+
+.form .form-control {
+    margin: 10px 0 0 0;
+    width: 240px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #dedede;
+  padding: 16px 0 15px 15px;
+}
+
+
+.form .textarea-input {
+    margin: 10px 0 0 0;
+    width: 510px;
+  height: 120px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #dedede;
+}
+
+input[type=text]::placeholder, select { 
+    font-family: Lato;
+  font-size: 16px;
+  color: #aaaaaa;   
+}
+
+input[type=email]::placeholder {
+    font-family: Lato;
+    font-size: 16px;
+    color: #aaaaaa;   
+}
+
+.row-btn {
+    padding: 40px 0 0 115px;
+}
+
+.row-btn .call{
+    float: left;
+    margin: 0 20px 0 0;
+    width: 190px;
+  height: 51px;
+  border-radius: 2px;
+  background-color: #f85f13;
+color: #fff;
+border: none;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.row-btn .email {
+    float: left;
+    width: 190px;
+    height: 51px;
+    border-radius: 2px;
+    background-color: #3675e0;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+}
+
+.contact-block {
+    margin: 0%;
+    height: 100px;
+    background-color: #e7e7e7;
+    .contact-info {
+        text-align: center;
+        max-width: 599px;
+        margin: 0 auto;
+    }
+}
+
+.contact-block .col1 {
+    margin: 0 auto;
+    height: 100px;
+    width: 298px;
+    float: left;
+    font-family: Lato;
+  font-size: 20px;
+  font-weight: bold;
+  color: #202020;
+}
+
+.contact-block .col2 {
+    width: 298px;
+    padding: 0%;
+    margin: 0%;
+    height: 100px;
+    float: left;
+}
+
+.contact-block .col1 .icon,
+.contact-block .col2 .icon {
+    margin: 26px 0;
+    float: left;
+    width: 48px;
+    height: 48px;
+    border: solid 1px #e6e5e5;
+    border-radius: 50%;
+    img {
+        padding: 9px 6px;
+    }
+}
+
+.contact-block .col1 .phno {
+    // padding: 38px 0 38px 20px;
+    float: left;
+    margin: 0%;
+    p {
+        float: left;
+        padding: 38px 0 38px 20px;
+        margin: 0%;
+    }
+}
+
+.contact-block .col2 .mailid {    
+    margin: 0%;
+}
+
+.contact-block .col2 .mailid a{
+    float: left;
+    padding: 38px 0 38px 20px;
+    margin: 0%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #202020;
+}
+
+.location {
+    padding: 80px 0 70px;
+}
+
+.location .col1 {
+    width: 628px;
+    float: left;
+    margin: 0%;
+    padding: 0%;
+}
+
+.location .col2 {
+    float: left;
+    margin: 0%;
+    padding: 0%;
+}
+
+.location h1 {
+    margin: 0%;
+    padding: 0 0 61px 0;
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    color: #000000;
+}
+
+.location .col1 .row1 {
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.location .col1 .row2 {
+    height: 160px;
+}
+
+.location .col1 .img {
+    float: left;
+    margin: 0 34px 2px 108px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.location .col2 svg {
+    margin: 0%;
+    width: 630px;
+    height: 393px;
+    background-color: #d8d8d8;
+    border: solid 1px #979797;
+}
+
+.location .col1 h2,
+.location .col2 h2 {
+    margin: 8px 0 10px 0;
+    float: left;
+    width: 125px;
+    height: 22px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: bold;
+  color: #202020;
+}
+
+.location .col1 .add,
+.location .col2 .add {
+    float: left;
+    margin: 0 60px 20px 177px;
+    text-align: left;
+    width: 391px;
+    height: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #838383;
+}
+
+.location .col1 .phno,
+.location .col2 .phno {
+    margin: 0 0 0 177px;
+    float: left;
+    width: auto;
+  height: 19px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #424242;
+}
+
+.location .col1 .num,
+.location .col2 .num {
+    float: left;
+    margin: 0 194px 0 0;
+    width: auto;
+  height: 19px;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #424242;
+}
+
+.footer {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2f76f0; 
+    .row-footer1 {
+        margin: 0%;
+        padding: 60px 98px 50px;
+        max-width: 1366px;
+        text-align: center;
+        .col-footer {
+            margin: 0%;
+            padding: 0%;
+            float: left;
+            width: 25%;
+            // padding-left: 98px;
+            > p {
+                text-align: left;
+                margin: 0%;
+                padding: 64px 0 30px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+            ul {
+                list-style: none;
+                padding: 0%;
+                margin: 0%;
+                text-align: left;
+            a {
+                // float: left;
+                margin: 0%;
+                padding: 0 0 20px;
+                font-size: 16px;
+                font-weight: bold;
+                color: #ffffff; 
+                display: inline-block;
+            }
+            }
+            .address {                
+                padding: 0 0 36px;
+                text-transform: capitalize;
+                line-height: 1.63;
+            }
+            .phone {
+                padding: 0 0 38px;
+                .ph {
+                    float: left;
+                    padding-right: 16px;
+                }
+                a p {
+                    float: left;
+                    margin: 0%;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                    color: #fff;
+                }
+            }
+            .email {
+                padding: 0 0 5px;
+                .emailimg {
+                    float: left;
+                    padding-right: 16px;
+                }
+                a p {
+                    float: left;
+                    margin: 0%;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: left;
+                    color: #fff;
+                }
+            }
+            
+            .lexlogo {
+                height: 68px;
+                width: 79px;
+                padding: 70px 0 50px;         
+            }
+            .social-net-logo {
+                // max-width: 217px;               
+                .social {
+                    padding:0 30px 0 0;
+                }
+                .last {
+                    padding: 0%;
+                }
+            }     
+        }
+        .col2 {
+            width: 17%;
+        }
+        .col3 {
+            width: 35%;
+        }
+        .col4 {
+            // padding-left: 53px;
+            max-width: 217px;
+            float: right;
+        }
+    }
+    .row-footer2 {
+        text-align: center;
+        font-size: 14px;
+        padding: 0 0 70px;
+        p {
+            margin: 0%;
+        }
+    }
+}

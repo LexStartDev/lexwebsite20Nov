@@ -1,0 +1,223 @@
+@charset "UTF-8";
+body { margin: 0%; display: block; width: 100%; overflow-x: hidden; /* height: 4496px; */ }
+
+div { margin: 0%; }
+
+.header .row { background-color: #fff; height: 70px; z-index: 200; }
+
+.col1 { float: left; margin: 17px 0 17px 50px; }
+
+.col2 { padding: 11px 0 8px 0; margin: 17px 0 17px 0; /* padding: 28px 0 25px 0;  */ float: left; }
+
+.col3 { float: left; }
+
+.col4 { padding: 11px 0 8px 0; margin: 17px 0 17px 0; /* padding: 28px 0 25px 0;  */ float: left; }
+
+/* .logo-and-menu { max-width: 2000px; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 15px; } */
+.logo { width: 111px; height: 36px; font-family: Lato; font-size: 30px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; color: #000000; text-decoration: none; }
+
+.nav { /* padding: 11px 0 8px 0; */ margin: 0; float: left; display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr 1fr; list-style: none; }
+
+.col2 .nav li { margin-right: 40px; }
+
+.nav li a { /* margin: 28px 0 25px 0; */ /* margin-right: 41px; */ width: 70px; height: 17px; font-family: Lato; font-size: 14px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; text-decoration: none; text-align: center; }
+
+.search { background-color: #f7f7f7; border: solid 1px #c4c4c4; width: 350px; height: 45px; padding: 15px 0 13px 0; margin: 13px 0 12px 0; border-radius: 22px; }
+
+.signup { width: 140px; height: 45px; border-radius: 3px; background-color: #2f76f0; font-size: 14px; font-weight: bold; font-family: lato; padding: 15px 42px 13px 42px; margin: 13px 20px 12px 20px; float: left; color: #fff; border: none; margin: -15px; }
+
+.second { width: 100%; height: 4080px; background-color: #f9f9f9; }
+
+.second .path { margin: 0 1100px 20px 70px; padding-top: 20px; width: 196px; height: 17px; font-family: Lato; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #0e0e0e; }
+
+.second .details { float: left; display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr; }
+
+.second .details .col1 { margin-left: 70px; float: left; padding: 0%; margin: 0%; }
+
+.second .details .col2 { float: left; padding: 0%; margin: 0%; }
+
+.second .details .col1 .row1 { margin: 0 46px 40px 70px; width: 780px; height: 3575px; background-color: #ffffff; box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.04); }
+
+.second .details .col1 h1 { padding-top: 34px; margin: 0 206px 15px 31px; width: 549px; height: 29px; font-family: Lato; font-size: 24px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .keywords { margin-bottom: 17px; width: 100%; height: 25px; }
+
+.second .details .col1 .row1 .keywords ul li { list-style-type: none; float: left; }
+
+.second .details .col1 .row1 .keywords .productivity { float: left; margin: 0 10px 0 0; width: 95px; height: 25px; border-radius: 15px; background-color: #ffffff; border: solid 1px #979797; }
+
+.second .details .col1 .row1 .keywords .prod { margin: 5px 15px; font-family: Lato; font-size: 12px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; text-align: center; }
+
+.second .details .col1 .row1 .keywords .trademark { float: left; margin: 0 10px 0 0; width: 80px; height: 25px; border-radius: 15px; background-color: #ffffff; border: solid 1px #979797; }
+
+.second .details .col1 .row1 .keywords .trade { margin: 5px 15px; font-family: Lato; font-size: 12px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .keywords .howto { float: left; margin: 0 10px 0 0; width: 125px; height: 25px; border-radius: 15px; background-color: #ffffff; border: solid 1px #979797; }
+
+.second .details .col1 .row1 .keywords .how { margin: 5px 15px; font-family: Lato; font-size: 12px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .keywords .goal { float: left; width: 55px; height: 25px; border-radius: 15px; background-color: #ffffff; border: solid 1px #979797; }
+
+.second .details .col1 .row1 .keywords .gol { margin: 5px 15px; font-family: Lato; font-size: 12px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .mod { margin: 0 0 31px 36px; width: 100%; height: 17px; }
+
+.second .details .col1 .row1 .mod-date { margin: 0%; float: left; width: 100px; height: 17px; font-family: Lato; font-size: 14px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #171717; }
+
+.second .details .col1 .row1 .date { float: left; font-weight: normal; color: #565656; }
+
+.second .details .col1 .row1 .date { margin: 0 15px 0 0; width: 100px; height: 17px; font-family: Lato; font-size: 14px; font-weight: 500; font-style: italic; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #565656; }
+
+.second .details .col1 .row1 .vbar { float: left; margin: 0 15px 0 0; width: 1px; height: 20px; }
+
+.second .details .col1 .row1 .mod .read { float: left; margin: 0%; width: 100px; height: 17px; font-family: Lato; font-size: 14px; font-weight: 500; font-style: italic; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #565656; }
+
+.second .details .col1 .row1 .writer { height: 45px; width: 100%; }
+
+.second .details .col1 .row1 .writer .img { margin-left: 30px; float: left; width: 45px; height: 45px; background-color: #d8d8d8; border: solid 1px #979797; border-radius: 50%; }
+
+.second .details .col1 .row1 .writer .name { margin: 0 0 5px 15px; float: left; width: 116px; height: 19px; font-family: Lato; font-size: 16px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .writer .role { position: relative; right: 115px; top: 5px; margin: 0%; float: left; width: 101px; height: 17px; font-family: Lato; font-size: 14px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #565656; }
+
+.second .details .col1 .row1 .article svg { margin: 20px 30px 19px 30px; width: 720px; height: 260px; background-color: #f1f1f1; border: solid 1px #c1c1c1; }
+
+.second .details .col1 .row1 .article .para1 { margin: 0 30px 30px 30px; width: 720px; height: 130px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #040404; }
+
+.second .details .col1 .row1 .article .para2 { margin: 0 30px 30px 30px; width: 720px; height: 180px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #040404; }
+
+.second .details .col1 .row1 .article .para3 { margin: 0 30px 40px 30px; width: 720px; height: 180px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #040404; }
+
+.second .details .col1 .row1 .article .conditions ul { padding: 0%; margin: 30px 30px 30px 45px; height: 111px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .conditions ul li { width: 690px; margin: 0 0 22px 0; /* list-style-type: disc; */ list-style: none; }
+
+.second .details .col1 .row1 .article .conditions ul li:before { margin: 0 18px 0 0; content: "┬╖"; font-size: 70px; vertical-align: top; line-height: 10px; }
+
+.second .details .col1 .row1 .article .test { margin: 30px; width: 642px; height: 26px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .ans { margin: 0 30px 30px 30px; width: 720px; height: 52px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .ans-img { margin: 0 30px 39px 30px; width: 720px; height: 260px; background-color: #f1f1f1; border: solid 1px #c1c1c1; }
+
+.second .details .col1 .row1 .article .vc { margin: 0 30px 30px 30px; width: 720px; height: 52px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .para4 { margin: 0 30px 30px 30px; width: 720px; height: 130px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .para5 { margin: 0 30px 30px 30px; width: 720px; height: 180px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .para6 { margin: 0 30px 30px 30px; width: 720px; height: 79px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .para7 { margin: 0 30px 30px 30px; width: 720px; height: 130px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .para8 { margin: 0 30px 30px 30px; width: 720px; height: 280px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .sense { margin: 0 30px 30px 30px; width: 522px; height: 26px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .when { padding: 0%; margin-left: 45px; margin-bottom: 31px; height: 171px; width: 709px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .when li { width: 700px; margin: 0 0 22px 0; /* list-style-type: disc; */ list-style: none; }
+
+.second .details .col1 .row1 .article .when li:before { margin: 0 18px 0 0; content: "┬╖"; font-size: 70px; vertical-align: top; line-height: 10px; }
+
+.second .details .col1 .row1 .article .para9 { margin: 0 30px 30px 30px; width: 720px; height: 323px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.41; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .para10 { margin: 0 30px 30px 30px; width: 720px; height: 149px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row1 .article .para11 { margin: 0 30px 18px 30px; width: 720px; height: 52px; font-family: Lato; font-size: 17px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.53; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row2 { float: left; margin-left: 70px; }
+
+.second .details .col1 .row2 .previous { float: left; margin-right: 140px; width: 323px; height: 400px; }
+
+.second .details .col1 .row2 .next { float: left; width: 323px; height: 400px; }
+
+.second .details .col1 .row2 .previous .prev { margin: 0 659px 10px 0; width: 42px; height: 19px; font-family: Lato; font-size: 16px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #c1c1c1; }
+
+.second .details .col1 .row2 .previous .prev-img { margin: 0 140px 20px 0; width: 320px; height: 190px; background-color: #ffffff; border: solid 1px #d7d7d7; }
+
+.second .details .col1 .row2 .next .nxt { margin: 0 659px 10px 280px; width: 42px; height: 19px; font-family: Lato; font-size: 16px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #c1c1c1; }
+
+.second .details .col1 .row2 .next .next-img { margin: 0 0 20px 0; width: 320px; height: 190px; background-color: #ffffff; border: solid 1px #d7d7d7; }
+
+.second .details .col1 .row2 .previous h1 { padding: 0%; margin: 0%; width: 320px; height: 22px; font-family: Lato; font-size: 18px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row2 .previous .prev-p { margin-top: 10px; width: 320px; height: 59px; font-family: Lato; font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #848484; }
+
+.second .details .col1 .row2 .next h1 { margin: 0%; padding: 0%; width: 320px; height: 44px; font-family: Lato; font-size: 18px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col1 .row2 .next .next-p { margin-top: 10px; width: 320px; height: 59px; font-family: Lato; font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #848484; }
+
+.second .details .col2 .row1 { margin: 0 60px 0 0; width: 400px; height: 530px; background-color: #ffffff; box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.04); }
+
+.second .details .col2 h1 { margin: 0 325px 30px 0; width: 150px; height: 22px; font-family: Lato; font-size: 18px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #060606; }
+
+.second .details .col2 .row1 .h1 { margin: 0 0 30px 0; padding: 35px 79px 0 64px; width: 270px; height: 24px; font-family: Lato; font-size: 20px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-align: center; color: #111111; }
+
+.second .details .col2 .row1 .cnagree { padding-left: 50px; }
+
+.second .details .col2 .row1 .cnagree li { padding: 0%; margin: 0 0 20px 0; width: 320px; height: 48px; font-family: Lato; font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.5; letter-spacing: normal; color: #434343; }
+
+.second .details .col2 .row1 .cnagree .sub, .second .details .col2 .row1 .cnagree .arf, .second .details .col2 .row1 .cnagree .issue { padding: 0%; margin: 0 0 20px 0; width: 320px; height: 24px; font-family: Lato; font-size: 16px; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.5; letter-spacing: normal; color: #434343; }
+
+.second .details .col2 .row1 .price { margin: 14px 81px 24px 32px; float: left; width: 132px; height: 32px; font-family: Lato; font-size: 26px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.second .details .col2 .row1 .signup { /* margin: 30px 35px 24px 0; */ margin-top: 10px; float: left; width: 140px; height: 45px; border-radius: 3px; background-color: #3b3b3b; font-size: 14px; font-weight: bold; font-family: lato; float: left; color: #fff; border: none; }
+
+.second .details .col2 .row1 .terms { margin: 0 140px 20px 132px; padding: 0%; width: 138px; height: 15px; font-family: Lato; font-size: 12px; font-weight: normal; font-style: italic; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #c3bfbf; }
+
+.footer { position: relative; top: -30px; }
+
+.footer .content { width: 100%; height: 390px; font-family: Lato; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #ffffff; background-color: #2f76f0; display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr; }
+
+.footer .content .row-footer2 { float: left; }
+
+.footer .content .row-footer1 { float: left; display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr 1fr 1fr; font-size: 16px; }
+
+.col-offerings { float: left; }
+
+.col-company { float: left; }
+
+.col-support { float: left; }
+
+.row-footer1 a { color: #fff; text-decoration: none; }
+
+.footer .content .col-offerings p { margin: 64px 172px 30px 98px; width: 88px; height: 19px; }
+
+.footer .content .col-company p { margin: 64px 147px 30px 0; width: 83px; height: 19px; }
+
+.footer .content .col-support p { margin: 64px 432px 30px 0; width: 74px; height: 19px; }
+
+.footer .content .col-offerings .fundraising { margin: 0 82px 20px 98px; display: block; width: 178px; height: 19px; }
+
+.footer .content .col-offerings .esop { margin: 0 121px 20px 98px; display: block; width: 139px; height: 19px; }
+
+.footer .content .col-offerings .contract { margin: 0 90px 20px 98px; display: block; width: 170px; height: 19px; }
+
+.footer .content .col-offerings .other { margin: 0 167px 84px 98px; display: block; width: 103px; height: 19px; }
+
+.footer .content .col-company .about { margin: 30px 167px 20px 0; display: block; width: 65px; height: 19px; }
+
+.footer .content .col-company .contact { margin: 0 153px 20px 0; display: block; width: 77px; height: 19px; }
+
+.col-company .career { margin: 0 182px 20px 0; display: block; width: 48px; height: 19px; }
+
+.footer .content .col-company .terms { margin: 0 90px 20px 0; display: block; width: 140px; height: 19px; }
+
+.footer .content .col-company .policy { margin: 0 121px 47px 0; display: block; width: 110px; height: 19px; }
+
+.footer .content .phone { float: left; }
+
+.footer .content .email { float: left; }
+
+.footer .content .ph { margin: 0 0 30px 0; float: left; width: 24px; height: 24px; opacity: 0.14; background-color: #919191; border-radius: 50%; }
+
+.footer .content .emailimg { margin: 0 0 146px 0; float: left; width: 24px; height: 24px; opacity: 0.14; background-color: #919191; border-radius: 50%; }
+
+.footer .content .phone p { float: left; margin: 0 0 0 20px; width: 138px; height: 19px; }
+
+.footer .content .email p { margin: 0 278px 0 40px; width: 140px; height: 19px; }
+
+.footer .content .row-footer2 p { margin: 129px 146px 24px 0; width: 126px; height: 41px; font-family: Lato; font-size: 34px; }
+
+.footer .content .copyright { margin: 0 125px 30px 462px; text-align: center; width: 463px; height: 17px; font-size: 14px; }

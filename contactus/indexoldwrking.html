@@ -1,0 +1,1538 @@
+<!doctype html>
+<html>
+
+<head>
+	<style type="text/css">
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/custom-script.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+	<link href="css/vendors/slick/slick.css" type="text/css" rel="stylesheet">
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+	<link href="css/vendors/slick/slick-theme.css" type="text/css" rel="stylesheet">
+	<link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<div id="page" class="site">
+		<div class="main-section">
+			<div class="landing-modal modal fade " tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<!-- <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div> -->
+						<div class="modal-body">
+							<p>
+								"As you may be aware, the General Data Protection Regulation has become effective from May 25th, 2018. This website is not
+								intended for users located in the European Union. If you are residing in the European Union, please do not proceed
+								further on this website. Please note that any continued use of this website shall constitute a waiver of your rights
+								under the General Data Protection Regulation."
+							</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary button" data-dismiss="modal">Continue</button>
+							<button type="button" class="btn btn-default button btn-close-modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<div class="section-one">
+				<header>
+					<div class="logo-and-menu">
+						<div class="logo">
+							<a href=#>
+								<img src="images/logo.png" alt="LEXStart">
+							</a>
+						</div>
+						<nav id="site-navigation" class="main-navigation">
+							<div class="ham-close ham-button">
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div>
+							<ul id="primary-menu" class="menu nav">
+								<li>
+									<a href="#top-slider-section" class="active">Why LexStart?</a>
+								</li>
+								<li>
+									<a href="#advantage-section">LexStart Advantage</a>
+								</li>
+								<li>
+									<a href="#details-section">Why ESOPs?</a>
+								</li>
+								<li>
+									<a href="#package-section">ESOP Package</a>
+								</li>
+								<li>
+									<a href="#overview-section">How it Works?</a>
+								</li>
+								<li>
+									<a href="#blog-section">Blog</a>
+								</li>
+								<li>
+									<a href="#faq-section">FAQs</a>
+								</li>
+								<li>
+									<a href="#testimonial-section">Testimonials</a>
+								</li>
+								<li>
+									<a href="#team-section">Team</a>
+								</li>
+								<li>
+									<a href="#contact-section">Contact Us</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- #site-navigation -->
+						<div class="ham-open ham-button">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</div>
+					</div>
+
+					<div class="scrollTop">
+						<i class="fa fa-chevron-up" aria-hidden="true"></i>
+					</div>
+
+				</header>
+				<!-- #masthead -->
+				<div id="top-slider-section" class="slider-container">
+					<div class="slides">
+						<div class="slide-one">
+							<div class="modal fade signup_modal" id="myModal" tabindex="-1" ole="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+										<div class="modal-header" style="margin-left:25px;">
+											<div class="row heading">
+												<div class="col-md-12">
+													<h3 class="section-header" style="text-align: center; color: #45afde;">Get started with LexStart</h3>
+													<hr/>
+													<p>Fill the form below to get started with your ESOP request</p>
+												</div>
+											</div>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<div class="loader" id="loader"></div>
+											<form class="registrationForm" id="registrationForm" name="registrationForm">
+												<fieldset>
+													<div class="row">
+														<div class="col-md-12">
+															<div class="group">
+																<input class="form-control inputMaterial" id="companyName" name="companyName" type="text" placeholder="Enter company name"
+																 autocomplete="off" style="width:90%;" required>
+																<a class="btn btn-primary goBtn" data-ng-click="login.searchOrganization()">Go</a>
+																<!-- <ul style="z-index:2; position:absolute;left:10px;right:15px; max-height:200px; overflow:auto;background-color: white;border-top:none; border-radius:0 0 5px 5px;">
+																	<li class="selectCompany" ng-repeat="org in organizations" data-ng-click="login.selectCompany(org)" style="cursor:pointer;list-style-type:none;">{{org.companyName}}</li>
+																</ul> -->
+																<p id="companyNameErr" class="error"></p>
+															</div>
+														</div>
+													</div>
+													<div class="group" style="margin-top:30px;float:right;">
+														<button type="button" class="btn btn-primary" id="next">Next</button>
+													</div>
+												</fieldset>
+												<fieldset>
+													<div class="group">
+														<input class="form-control inputMaterial" name="companyName" type="text" id="companyName2" autocomplete="off" disabled>
+													</div>
+													<div class="group">
+														<input class="form-control inputMaterial" name="fullName" type="text" placeholder="Enter full name" autocomplete="off" required>
+													</div>
+													<div class="group">
+														<input class="form-control inputMaterial" pattern="emailReg" type="text" name="email" placeholder="Enter valid email" autocomplete="off"
+														 required>
+
+													</div>
+													<div class="group">
+														<input class="form-control inputMaterial" type="password" id="password" name="password" placeholder="Enter your password"
+														 autocomplete="off" required>
+													</div>
+													<div class="group">
+														<input class="form-control inputMaterial" type="password" id="confirm_password" name="confirmPassword" placeholder="Confirm password"
+														 autocomplete="off" required>
+														<p id="message"></p>
+													</div>
+													<div class="group">
+														<input class="form-control inputMaterial" type="tel" name="phoneNumber" pattern="phoneReg" placeholder="Enter mobile number"
+														 autocomplete="off" required>
+													</div>
+													<div class="group">
+														<input class="form-control inputMaterial" type="text" pattern="/^([0-9]){2}([a-zA-Z]){5}([0-9]){4}([a-zA-Z]){1}([0-9]){1}([a-zA-Z1-9]){1}([a-zA-Z0-9]){1}$/"
+														 name="gstin" placeholder="Enter GSTIN">
+													</div>
+													<div class="group" style="margin-top:30px;float:right;">
+														<button type="button" class="btn btn-primary btn-previous">Previous</button>
+														<button type="submit" class="btn btn-primary" id="saveAndContinue">Save & Continue</button>
+													</div>
+												</fieldset>
+											</form>
+										</div>
+										<!-- <div class="modal-footer">												
+										</div> -->
+									</div>
+								</div>
+							</div>
+							<p class="slide-title center">LexStart makes
+								<span>MANAGING</span>
+								<br>your ESOP pool a breeze</p>
+							<div class="customer-form">
+								<!-- <form>
+								<input type="text" class="company" placeholder="Enter you Company Name">
+								<div class="cust-details flex">
+									<div><input type="text" class="name" placeholder="Enter you Full Name"></div>
+									<div class="country-code">+91 <input type="tel" class="number" placeholder="Mobile Number"></div>
+									<div><input type="email" placeholder="Email Address"></div>
+								</div>
+								<input type="submit" class="button bold" value="BOOK A FREE CONSULTATION">
+							</form> -->
+								<p class="center no-margin">
+									<a href="http://lexstart.in/lexappointment/" target="_blank" class="button consult_btn upper-case bold">BOOK A FREE CONSULTATION</a>
+								</p>
+							</div>
+							<div class="image-container">
+								<div class="sliding-img">
+									<img src="images/macbook.png" alt="">
+								</div>
+								<section class="lazy slider">
+									<div>
+										<img src="images/mac-slide1.jpg">
+									</div>
+									<div>
+										<img src="images/mac-slide2.jpg">
+									</div>
+									<div>
+										<img src="images/mac-slide2.jpg">
+									</div>
+								</section>
+							</div>
+						</div>
+						<div class="slide-two"></div>
+					</div>
+				</div>
+				<div class="why-section">
+					<div class="why-container">
+						<p class="center title">Why LexStart
+							<span>?</span>
+						</p>
+					</div>
+					<div class="reasons-container">
+						<div class="container width-setter">
+							<div class="details flex center">
+								<div class="individual-container">
+									<div class="img-border">
+										<img src="images/why-icon1.png" alt="">
+									</div>
+									<p class="bold">Handholding through ESOP implementation process</p>
+									<p class="">Our team of experts will guide you through the entire process, from creating to managing your ESOP options</p>
+								</div>
+								<div class="individual-container">
+									<div class="img-border">
+										<img src="images/why-icon2.png" alt="">
+									</div>
+									<p class="bold">Unique online portal to manage ESOP options & increase transparency</p>
+									<p class="">Create and manage ESOP options easily, using our online portal. Increase transparency by giving your employees access
+										to status of their option, using separate logins</p>
+								</div>
+								<div class="individual-container">
+									<div class="img-border">
+										<img src="images/why-icon3.png" alt="">
+									</div>
+									<p class="bold">100+ Start-ups benefitted through LexStart services</p>
+									<p class="">We guide you through the maze of legal compliances, but also take care of them, without burning a hole in your pocket.
+										Simply put, we act as your start up's in-house counsel and compliance manager</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="advantage-section" class="advantage-section">
+				<div class="container width-setter">
+					<div class="package-offer">
+						<div class="individual-container flex">
+							<div class="image center">
+								<img src="images/adv-icon1.png" alt="">
+								<p class="bold img-title">STRUCTURING</p>
+							</div>
+							<div class="description">
+								<p>Provide options forstructuring incentive plans, Pros and Cons ofeach, give insight on industry practice and design
+									your preferred incentive plan</p>
+							</div>
+						</div>
+						<div class="individual-container flex">
+							<div class="image center">
+								<img src="images/adv-icon2.png" alt="">
+								<p class="bold img-title">CREATING</p>
+							</div>
+							<div class="description">
+								<p>Once you know what you want, we will draft all the requisite documentation, including the plan, grant letters, exercise
+									notice corporate resolutions, et al</p>
+							</div>
+						</div>
+						<div class="individual-container flex">
+							<div class="image center">
+								<img src="images/adv-icon3.png" alt="">
+								<p class="bold img-title">IMPLEMENTING</p>
+							</div>
+							<div class="description">
+								<p>Handhold you through the process of getting the requisite corporate approvals and make all statutory filings that
+									would be required</p>
+							</div>
+						</div>
+						<div class="individual-container flex">
+							<div class="image center">
+								<img src="images/adv-icon4.png" alt="">
+								<p class="bold img-title">MANAGING</p>
+							</div>
+							<div class="description">
+								<p>Assist with granting incentives. Intimating employees upon vesting. Assisting with all corporate formalities upon
+									exercise of plan or cessation of employment</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="details-section" class="details-section">
+				<div class="container width-setter">
+					<p class="center title">Why ESOPs
+						<span>?</span>
+					</p>
+					<div class="video-accordion-container flex">
+						<div class="video">
+							<!-- <img src="images/video.jpg" alt=""> -->
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/uJh8mQdI2K0?rel=0" frameborder="0" allow="autoplay; encrypted-media"
+							 allowfullscreen></iframe>
+
+						</div>
+						<div class="accordion">
+							<div class="individual-container">
+								<p class="title plus">Attract and retain talent</p>
+								<p class="description">In its early stages, a company is usually bootstrapping and may not have the resources to pay attractive compensation
+									packages to employees. However, they can use employee incentive plans to attract and retain good employees as there
+									is no cash outlay involved in the company in such cases.</p>
+							</div>
+							<div class="individual-container">
+								<p class="title plus">Incentivize employees by allowing them to participate in growth of Company</p>
+								<p class="description">In its early stages, a company is usually bootstrapping and may not have the resources to pay attractive compensation
+									packages to employees. However, they can use employee incentive plans to attract and retain good employees as there
+									is no cash outlay involved in the company in such cases.</p>
+							</div>
+							<div class="individual-container">
+								<p class="title plus">Give a sense of ownership to employees</p>
+								<p class="description">In its early stages, a company is usually bootstrapping and may not have the resources to pay attractive compensation
+									packages to employees. However, they can use employee incentive plans to attract and retain good employees as there
+									is no cash outlay involved in the company in such cases.</p>
+							</div>
+						</div>
+					</div>
+					<p class="center title">Who can you give ESOPs to
+						<span>?</span>
+					</p>
+					<div class="employee flex center">
+						<div class="individual-widget">
+							<img src="images/who-icon1.png" alt="">
+							<p class="center icon-title bold">Permanent employee of the company,</p>
+							<p class="center">who has been working in India or outside India</p>
+						</div>
+						<div class="individual-widget">
+							<img src="images/who-icon2.png" alt="">
+							<p class="center icon-title bold">Director of the company,</p>
+							<p class="center">as long as such director is not (a) an independent director, or (b) holding more than 10% of the company, directly
+								or indirectly</p>
+						</div>
+						<div class="individual-widget">
+							<img src="images/who-icon3.png" alt="">
+							<p class="center icon-title bold">An employee of a subsidiary,</p>
+							<p class="center">in India or outside India, or of a holding company. </p>
+						</div>
+						<div class="individual-widget">
+							<img src="images/who-icon4.png" alt="">
+							<p class="center icon-title bold">Promoters of a company,</p>
+							<p class="center">where the company has a Startup Recognition Certificate</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="package-section" class="package">
+				<div class="container width-setter">
+					<p class="center package-title">LexStart ESOP Package</p>
+					<hr>
+					<p class="center">The package has been designed to handhold a start up from the point it starts thinking about an incentive plan to designing,
+						creating, implementing and managing it on our unique web based platform. Our automated process will keep you and your
+						employees informed about the status of options.</p>
+					<p class="center components">The complete package consists of the following two components:</p>
+					<div class="checkbox-container flex">
+						<div class="initiation">
+							<div class="checkbox-heading init-heading center">
+								<img src="images/initiation-icon.png" alt="">
+								<p>ESOP INITIATION</p>
+							</div>
+							<div class="checkboxes">
+								<p class="checked">Structuring the ESOP offering</p>
+								<p class="checked">Drafting the Employee Stock Option Policy</p>
+								<p class="checked">All corporate resolutions</p>
+								<p class="checked">Statutory filings under Companies Act 2013</p>
+								<p class="price">&#8377; 25,000/-
+									<span>(exclusive of GST)</span>
+								</p>
+							</div>
+						</div>
+						<div class="management">
+							<div class="checkbox-heading manage-heading center">
+								<img src="images/management-icon.png" alt="">
+								<p>ESOP MANAGEMENT</p>
+							</div>
+							<div class="checkboxes">
+								<p class="checked">Dynamic dashboard</p>
+								<p class="checked">Assisting with granting of options</p>
+								<p class="checked">Intimation of vesting to employees</p>
+								<p class="checked">Assisting with exercise of options</p>
+								<p class="checked">Assisting with appropriate steps upon cessation of employment</p>
+								<p class="checked">All resolutions and statutory filings under the Companies Act</p>
+								<p class="price">&#8377; 18,000/- p.a
+									<span>(for upto 10 employees) (exclusive of GST)</span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">SignUp</button> -->
+					<p class="center btn_container">
+						<button type="button" class="button proposal_btn upper-case bold" data-toggle="modal" data-target="#myModal" style="cursor:pointer;">Let's get started!</button>
+					</p>
+				</div>
+			</div>
+			<div id="overview-section" class="overview">
+				<div class="overview-image-container">
+					<div class="container width-setter">
+						<p class="center overview-title">How does it work
+							<span>?</span>
+						</p>
+						<p class="center">Our automated process will keep the startup and its employees informed about the status of options.</p>
+						<div class="overview-steps flex">
+							<div class="individual-widget">
+								<img src="images/how-icon1.png" alt="">
+								<p class="center icon-title">Understand how ESOPs work</p>
+								<p class="center clock">1 hr</p>
+							</div>
+							<div class="individual-widget">
+								<img src="images/how-icon2.png" alt="">
+								<p class="center icon-title">Create the ESOP Policy</p>
+								<p class="center clock">1 hr</p>
+							</div>
+							<div class="individual-widget">
+								<img src="images/how-icon3.png" alt="">
+								<p class="center icon-title">Get Board members & Shareholder approval</p>
+								<p class="center clock">5 min</p>
+							</div>
+							<div class="individual-widget">
+								<img src="images/how-icon4.png" alt="">
+								<p class="center icon-title">Create the ESOP Policy</p>
+								<p class="center clock">1 min</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container width-setter">
+					<div class="tabs">
+						<p class="center bold">Our online portal helps you manage your company’s ESOPs, covering a wide range of functional requirements. The ESOP
+							module consists of the following sections: </p>
+						<ul class="tab-links flex">
+							<li class="active">
+								<a href="#esopForm">1. ESOP Form - Draft Policies</a>
+							</li>
+							<li>
+								<a href="#esopPools">2. ESOP Pools and Grants</a>
+							</li>
+							<li>
+								<a href="#grantVestopt">3. Initiate Grant and Vest Options</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div id="esopForm" class="tab active">
+								<p class="center">
+									<span>1.</span> ESOP Form - Draft Policies</p>
+								<div class="tab1-content flex">
+									<div class="individual-widget">
+										<img src="images/how-screen1.jpg" alt="">
+										<p>1. Create a new Draft policy and fill the form, once the form has been submitted, the draft can be exported into
+											a word document which goes into the hands of a lawyer for futher review.</p>
+									</div>
+									<div class="individual-widget">
+										<img src="images/how-screen2.jpg" alt="">
+										<p>2. The ESOP form captures most of the information required to draft a new policy. The form is divided into sections
+											for easier understanding.</p>
+									</div>
+									<div class="individual-widget">
+										<img src="images/how-screen3.jpg" alt="">
+										<p>3. LexGyaan, i.e. the right section of the page containing the form, explains different aspects of the ESOP policy
+											in a suggestive manner, so that the user can make informed decisions.</p>
+									</div>
+									<div class="individual-widget">
+										<img src="images/how-screen4.jpg" alt="">
+										<p>4. Once the form has been filled, pass it on to LexStart, just click on the submit button. LexStart will create
+											a draft, review and help you execute the policy.</p>
+									</div>
+								</div>
+							</div>
+
+							<div id="esopPools" class="tab">
+								<p></p>
+								<p></p>
+							</div>
+
+							<div id="grantVestopt" class="tab">
+								<p></p>
+								<p></p>
+							</div>
+						</div>
+						<p class="center question">Are you interested in availing this ESOP module? </p>
+					</div>
+				</div>
+			</div>
+			<div id="blog-section" class="blog">
+				<p class="center no-margin">
+					<a href="http://lexstart.in/lexappointment/" target="_blank" class="button consult_btn upper-case bold">BOOK A FREE CONSULTATION</a>
+				</p>
+				<div class="container width-setter">
+					<p class="center title">LexStart Blog</p>
+					<hr>
+					<section class="regular slider blog-container">
+						<div class="individual-container flex">
+							<div class="image">
+								<img src="images/blog-thumbnail1.jpg" alt="">
+								<p class="date center no-margin">August 18, 2015</p>
+								<p class="bold center writer">By Karthik Chandrasekar</p>
+							</div>
+							<div class="text">
+								<p class="blog-title">The role of ESOP in Start ups</p>
+								<p class="blog-description">In a roller coaster ride of a start up, employee retention through thick and thin is extremely critical – especially
+									in today’s market where the focus is on growing fast.</p>
+								<a href="http://lexstart.in/blog/?p=92" class="upper-case continue">Read More
+									<img src="images/readmore-arrow.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="individual-container flex">
+							<div class="image">
+								<img src="images/blog-thumbnail2.jpg" alt="">
+								<p class="date center no-margin">June 7, 2016</p>
+								<p class="bold center writer">By Anisha Patnaik</p>
+							</div>
+							<div class="text">
+								<p class="blog-title">Did you know that there is a mandatory 1 year cliff on ESOPs?</p>
+								<p class="blog-description">A cliff is the time period between grant of ESOPs to an employee and vesting of the ESOPs. Under the Indian Companies
+									Act, 2013, there has to be...</p>
+								<a href="http://lexstart.in/blog/?p=148" class="upper-case continue">Read More
+									<img src="images/readmore-arrow.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="individual-container flex">
+							<div class="image">
+								<img src="images/blog-thumbnail1.jpg" alt="">
+								<p class="date center no-margin">August 18, 2015</p>
+								<p class="bold center writer">By Karthik Chandrasekar</p>
+							</div>
+							<div class="text">
+								<p class="blog-title">The role of ESOP in Start ups</p>
+								<p class="blog-description">In a roller coaster ride of a start up, employee retention through thick and thin is extremely critical – especially
+									in today’s market where the focus is on growing fast.</p>
+								<a href="http://lexstart.in/blog/?p=92" class="upper-case continue">Read More
+									<img src="images/readmore-arrow.png" alt="">
+								</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div id="faq-section" class="faq">
+				<div class="container width-setter">
+					<p class="center comments">Frequently Asked Questions</p>
+					<div class="tabs">
+						<ul class="tab-links flex">
+							<li class="active">
+								<a href="#overview">Overview</a>
+							</li>
+							<li>
+								<a href="#eligibility">Eligibility & others</a>
+							</li>
+							<li>
+								<a href="#grant">Granting</a>
+							</li>
+							<li>
+								<a href="#vest">Vesting</a>
+							</li>
+							<li>
+								<a href="#exercise">Exercising</a>
+							</li>
+							<li>
+								<a href="#cessation">Cessation of Employment Events</a>
+							</li>
+							<li>
+								<a href="#tax">Tax Implications</a>
+							</li>
+						</ul>
+
+						<div class="tab-content">
+							<div id="overview" class="tab active accordion">
+								<div class="individual-container">
+									<p class="question plus title">Q: Are employee incentive plans mandatory under the Indian laws?</p>
+									<p class="answer description">Employee Stock Incentive Plan in this case refers to ESOPs, ESPPs, RSUs, RSAs, SARs and any other innovative employee
+										incentive plan that a company/ start-up may come up with. It is not mandatory under Indian laws to grant stock
+										incentives including ESOPs, to employees in a private limited company/ start-up.
+										<br>
+										<br> Having said that, if a private limited company/ start-up decides to grant ESOPs to its employees, it will have
+										to follow the provisions of the Companies Act, 2013.
+										<br> Most Popular Stock Incentive Plan ESOPs are the most common form of employee incentive plans in India. The same
+										could also be because of the universal acceptance of the concept of stock options/ ESOPs thus giving clarity to
+										how ESOPs work and taxation of the same.
+										<br> Also from the employee’s perspective, there is more familiarity with stock options/ ESOPs than any other stock
+										incentive plan.
+										<br> Should you Implement a Stock Incentive Plan?
+										<br> Although, it is not mandatory under the Indian laws to implement a stock incentive plan, most startups implement
+										a stock option/ ESOP plan. The reason being that, when starting up, attracting and retaining talent is one of the
+										biggest challenges for any startup. In such situations it becomes imperative for a startup to structure and implement
+										a stock incentive/ ESOP plan. Granting stock options/ESOPs to employees gives them an opportunity to have a share
+										in the company, the start-up that they are working so hard to build acts as a great motivator.
+										<br> Where ESOPs are a great tool to motivate employees, if not implemented on time, they can actually become a cause
+										of disconcert amongst the employees. Imagine a situation where you brought on an employee with the promise of ESOPs
+										and two years down the line, he still hasn’t seen or received any ESOPs. It is therefore important to implement
+										ESOPs as soon as possible. </p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: Why should a company have employee incentive plans?</p>
+									<p class="answer description">Most startups face the challenge of attracting talent due to their limitations to pay market-level salaries. ESOPs
+										serve as a good way of supplementing compensation in order to attract talent. ESOPs also allow employees to participate
+										in the growth story of the company/startup, thus incentivizing them further. The benefits of ESOPs or employee
+										incentives are plenty.
+										<br> But the most important benefits are as follows:
+										<br>
+										<br> (a) Attracting and retaining talent: ESOPs are useful to startups in attracting talent. In its early stages, a
+										company is usually bootstrapping and may not have the resources to pay attractive compensation packages to employees.
+										However, they can use ESOPs or other employee incentive plans to attract and retain good employees as there is
+										no cash outlay involved in the company in such cases.
+										<br>
+										<br> (b) Sense of ownership for the employees: When employees are given ESOPs which eventually convert in to shares
+										of a company in which they are working, it gives them a sense of ownership, thus incentivizing them further.
+										<br>
+										<br> Where ESOPs are a great tool to motivate employees, if not implemented on time, they can actually become a cause
+										of disconcert amongst the employees. Imagine a situation where you brought on an employee with the promise of ESOPs
+										and two years down the line, he still hasn’t seen or received any ESOPs. It is therefore important to implement
+										ESOPs as soon as possible.
+										<br>
+										<br> Most Popular Stock Incentive Plan
+										<br>
+										<br> ESOPs are the most common form of employee incentive plans in India. The same could also be because of the universal
+										acceptance of the concept of stock options/ ESOPs thus giving clarity to how ESOPs work and taxation of the same.
+										Also from the employee’s perspective, there is more familiarity with stock options/ ESOPs than any other stock
+										incentive plan.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: What are the different types of employee incentive plans?</p>
+									<p class="answer description">The different types of employee incentive plans are as follows:
+										<br> Employee Stock Option Plan (ESOPs)
+										<br> Employee Stock Purchase Plan (ESPP)
+										<br> Stock Appreciation Right/Phantom Equity Plan
+										<br> Restricted Stock Award
+										<br> Restricted Stock Unit
+										<br> Any Other?
+										<br>
+										<br>
+										<br> Please do write to us if you have come across any other innovative incentive plan that you would like to use to
+										attract talent and incentivize employees
+										<br>
+										<br> ESOPs: Employee Stock Option Plan or ESOPs are options granted to an employee to buy shares of the company (also
+										referred to as exercise of ESOPs) at a predetermined price (also referred to as exercise price of ESOPs), subject
+										to certain conditions, such as active employment with the company over a vesting period and meeting individual
+										or team level performance based milestones.
+										<br>
+										<br> ESPP: An Employee Stock Purchase Plan allows an employee to acquire shares of the company on a future date, at
+										a price lower than the prevailing market price. In case of a Employee Stock Purcase Plan, the employer deducts
+										a certain amount from the employee’s salary on a regular basis, and after a certain period of time, the employee
+										is granted shares in the company in consideration for the amount retained from their salary.
+										<br>
+										<br> Stock Appreciation Right Plan or Phantom Equity Plan: A Stock Appreciation Right Plan or Phantom Equity Plan refers
+										to notional shares allotted to employees. Both Stock Appreciation Right Plan or Phantom Equity Plan are very similar
+										plans and are essentially cash bonus plans, although some plans pay out the benefits in the form of shares.
+										<br>
+										<br> Restricted Stock Unit: Under a Restricted Stock Unit Plan or a RSU, the employee is entitled to receive stock
+										at some speciﬁed date in the future, subject to certain conditions at a fair market value assigned to the Restricted
+										Stock Unit at the time of vesting. The difference between ESOP and a Restricted Stock Unit is that while in case
+										of a ESOP, the employee has an option to purchase shares of the company, in case of a RSU or a Restricted Stock
+										Unit, the employee is allotted shares upon the occurance of the vesting event.
+										<br>
+										<br> Restricted Stock Award: Under a Restricted Stock Award plan or RSA, the employee receives the shares upfront when
+										the Restricted Stock Award is granted.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: What is an Employee Stock Option Plan (“ESOP”)?</p>
+									<p class="answer description">Employee Stock Option Plan or ESOPs are options granted to an employee to buy shares of the company (also referred
+										to as exercise of ESOPs) at a predetermined price (also referred to as exercise price of ESOPs), subject to certain
+										conditions, such as active employment with the company over a vesting period and meeting individual or team level
+										performance based milestones.
+										<br>
+										<br> The Exercise Price of ESOPs, i.e., price at which the employee can buy shares is ﬁxed at the time of granting
+										the ESOPs. Usually, this price is par value of the shares or market value of the shares at the time of grant. As
+										a result, the employee gets the beneﬁt of buying shares of the company at a discount to the market price of the
+										shares of the company (assuming the company has done well).
+										<br>
+										<br> An employee who has been granted ESOPs can exercise his right to acquire shares, upon the ESOPs vesting on him.
+										This right of an employee to buy the shares is not in perpetuity and is usually subject to certain restrictions,
+										including an Exercise Period and sometimes a lock-in-period.
+										<br>
+										<br> Illustration: ABC Pvt. Ltd. (“ABC”) offers ESOPs to Mr. X, under the terms of which Mr. X is entitled to 200 equity
+										shares of ABC, amounting to 2% of the paid-up share capital of ABC at the time of grant of the ESOPs, at par value
+										of the shares. The ESOPs granted to Mr. X are exercisable as per the schedule set out below:
+										<br>
+										<br> 25% of the ESOPs shall be exercisable upon completion of 2 years by Mr. X with ABC
+										<br> 25% of the ESOPs shall be exercisable upon completion of 3 years by Mr. X with ABC
+										<br> 25% of the ESOPs shall be exercisable upon completion of 4 years by Mr. X with ABC
+										<br> 25% of the ESOPs shall be exercisable upon completion of 5 years by Mr. X with ABC
+										<br>
+										<br>
+										<br> This means that once Mr. X has completed 2 years with ABC, he will be entitled to buy 50 equity shares of ABC
+										at Rs. 10/share. Please understand that it is not mandatory for Mr. X to buy these shares once he is entitled to
+										them. It is his option to buy the shares if he wants to. The policy will state the time period till when Mr. X
+										can exercise this option. Such period is referred to as the “Exercise Period”. However, if not exercised, the option
+										to buy the shares will lapse after the Exercise Period.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: How is an ESPP different from ESOP?</p>
+									<p class="answer description">ESOP is an option given to an employee to buy shares of the company at a later date. Since ESOP is an option, an
+										employee does not have to mandatorily buy shares of the company. On the other hand, a ESPP is a purchase plan implemented
+										by a company, where the company withholds certain part of the employee’s salary to ESPP every month for a predetermined
+										term. Upon completion of the term, the ESPP holding employee is issued shares of the company. Unlike an ESOP, in
+										case of ESPP the employee doesn’t have an option to buy shares. He has to mandatorily buy shares of the company.
+										<br>
+										<br> Illustration: ABC Pvt. Ltd. (“ABC”) offers an ESPP to Mr. X, under the terms of which Mr. X can contribute 5%
+										of his salary every month for a year, at the end of which he can buy shares of ABC at a 10% discount to the price
+										of the shares on the date of grant of the ESPP, using the money contributed from his salary. Therefore, if the
+										price on the date of issue of ESPP is Rs. 100, Mr. X can exercise the right to buy the shares a year later at Rs.
+										90/share, i.e., 10% discount to Rs. 100.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: What is a Stock Appreciation Right (“SAR”) / Phantom Equity Plan (“PEP”)?</p>
+									<p class="answer description">Under a Stock Appreciation Right Plan or Phantom Equity Plan, employees of companies/startup are given the right
+										tot he appreciating value of certain no. Of shares in such Company/Startup. In other words, they are granted notional
+										shares and not actual shares in the company/startup. Both Stock Appreciation Right Plan or Phantom Equity Plan
+										are very similar plans and are essentially cash bonus plans.
+										<br>
+										<br> Stock Appreciation Right Plan/Phantom Equity Plan typically provide the employee with a cash payment based on
+										the increase in the value of the employer’s shares over a specified period of time. In case of both Stock Appreciation
+										Right Plan or Phantom Equity Plan, employees typically never become shareholders of the company.
+										<br>
+										<br> How do Stock Appreciation Right Plan/Phantom Equity Plan work?
+										<br> The following illustration should clarify your doubts: ABC Pvt. Ltd. (“ABC”) issues 1000 phantom shares to Mr.
+										X to be vested upon completion of 2 years in the company, at the value of the shares on the exercise date. At the
+										end of completion of 2 years, if the fair market value of the equity shares of ABC is Rs. 100, then Mr. X will
+										be paid Rs. 100,000 after deducting TDS at applicable tax rate.
+										<br> Stock Appreciation Right Plan/Phantom Equity Plan Vs. Other Stock Incentive Plans The most important difference
+										between a Stock Appreciation Right or a Phantom Equity and all other forms of employee incentive plans is that
+										while in all other cases, the employee of a company/startup, at some point owns shares in such company/startup
+										and hence becomes a shareholder in such company/startup. In teh case of Stock Appreciation or Phantom Equity, as
+										the name suggests there are no shars, they are just "phantom" or non existant shares.
+										<br>
+										<br> Benefits of Stock Appreciation Right Plan/Phantom Equity Plan for the Company/Startup/Employer The Stock Appreciation
+										Right Plan or Phantom Equity Plan allow the employee to partake in the benefits of increasing value of the company
+										without having to go through the process of allotment of shares of bringing the employees on the cap table. Therefore,
+										from a company/startup/employer perspective, it is a great structure as it has minimum paper work and the company/startup
+										doesnt have to go through the paperwork of allotting shares each time an employee exercises stock incentives, like
+										in the case of ESOPs, ESPPs, RSUs and RSAs.
+										<br>
+										<br> Benefits of Stock Appreciation Right Plan/Phantom Equity Plan for the Employee
+										<br> From the employee’s perspective, Stock Appreciation Right/Phantom Equity Plan allows the employee to enjoy the
+										benefits of increasing value of the shares, without worrying about the various tax implications that arise in case
+										of other stock incentive plans, especially ESOPs. Moreover, in case of all other stock incentive plans including
+										ESOPs, the employee gets to enjoy the benefits of being a shareholder only when he is able to sell his shares.
+										However, in case of Stock Appreciation Right Plan/Phantom Equity Plan, the employee doesn’t have to worry about
+										liquidity for his shares.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: What is a Restricted Stock Unit (“RSU”)?</p>
+									<p class="answer description">Under a Restricted Stock Unit Plan or a RSU, the employee is entitled to receive shares of the company/startup at
+										a speciﬁed date in the future, subject to certain conditions. The shares are typically issued at the fair market
+										value of the company/startup, at the time of vesting of such right.
+										<br>
+										<br> How do RSUs work?
+										<br>
+										<br> The following illustration may help understand how RSUs typically work:
+										<br> ABC Pvt. Ltd. (“ABC”) offers 999 RSUs to Mr. X vested equally over 3 years. This means that Mr. X will get 333
+										equity shares of ABC upon completion of Year 1, 2 and 3, respectively. Unlike in the case of an ESOP, Mr. X will
+										not be required to pay for the shares. Effectively, the shares will be issued to Mr. X for free.
+										<br>
+										<br> RSU Vs. ESOP and Other Employee Incentive Plans
+										<br> The difference between ESOP and a Restricted Stock Unit is that while in case of a ESOP, the employee has an option
+										to purchase shares of the company/startup, in case of a RSU or a Restricted Stock Unit, the employee is allotted
+										shares upon the occurance of the vesting event, and doesn’t have to typically buy these shares. However, given
+										the Indian Companies Act requirement, this structure becomes difficult to implement, as the Act doesnt provide
+										for allotment of shares for "free" and the terms for issuance of sweat equity are quite a few.
+										<br>
+										<br> But unlike a RSA, the employee does not actually receive shares, unless the conditions are met and so does not
+										have voting rights or rights to receive dividends on the date of grant. The employee receives the shares only once
+										the conditions are met.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: What is a Restricted Stock Award (“RSA”)?</p>
+									<p class="answer description">Under a Restricted Stock Award plan or RSA, the employee receives shares of the company/startup upfront when the
+										Restricted Stock Award is granted. The Restricted Stock Award plan is the most generous of all employee incentive
+										plans that are typically in practice.
+										<br>
+										<br> Restricted Stock Award Vs. Other Employee Incentive Plans
+										<br>
+										<br> This is because, unlike all other incentive plans, including ESOPs, where the employee has the right to buy or
+										enjoy the benefits of shares only after vesting has occurred, in the case of a Restricted Stock Award or RSA, the
+										employee gets the shares upfront subject to certain conditions. If the conditions are not met, then the shares
+										are forfeited. Unlike an ESOP, in case of Restricted Stock Award/RSA, the employee is considered to be the owner
+										of the shares from the date of the Restricted Stock Award is granted and is entitled to receive dividends and has
+										voting rights immediately. Additionally, once shares are allotted, if the employee does not meet the conditions,
+										then enforcing a buy back of shares from the employee may be challenging. Which is why incentive structures such
+										as ESOPs are more popular, as the employee has to earn the right to buy shares in the company as opposed to getting
+										the shares upfront and putting the onus on the company to retrieve them in case of default, as is the case with
+										Restricted Stock Awards.
+										<br>
+										<br> Restricted Stock Award for Startups
+										<br>
+										<br> For reasons stated in the preceding paragraph, a Restricted Stock Award/RSA is not very popular in early stage
+										companies/startups in India or in fact even with private limited companies.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: Which is the most popular mode of granting stock incentives to employees in India?</p>
+									<p class="answer description">ESOPs are the most popular mode of employee stock incentives. This is because ESOPs as employee stock incentive
+										structure have been used more widely and commonly. As a result there is clarity in the way ESOPs function both
+										for employer and employee. Even from familiarity perspective, employees and employers are more familiar with ESOPs
+										than other mode of employee incentives.
+										<br>
+										<br> Employee Stock Option Plan or ESOPs are options granted to an employee to buy shares of the company (also referred
+										to as exercise of ESOPs) at a predetermined price (also referred to as exercise price of ESOPs), subject to certain
+										conditions, such as active employment with the company over a vesting period and meeting individual or team level
+										performance based milestones.
+										<br>
+										<br> Illustration: ABC Pvt. Ltd. (“ABC”) offers ESOPs to Mr. X, under the terms of which Mr. X is entitled to 200 equity
+										shares of ABC, amounting to 2% of the paid-up share capital of ABC at the time of grant of the ESOPs, at par value
+										of the shares. The ESOPs granted to Mr. X are exercisable as per the schedule set out below:
+										<br>
+										<br> 25% of the ESOPs shall be exercisable upon completion of 2 years by Mr. X with ABC
+										<br> 25% of the ESOPs shall be exercisable upon completion of 3 years by Mr. X with ABC
+										<br> 25% of the ESOPs shall be exercisable upon completion of 4 years by Mr. X with ABC
+										<br> 25% of the ESOPs shall be exercisable upon completion of 5 years by Mr. X with ABC
+										<br>
+										<br> This means that once Mr. X has completed 2 years with ABC, he will be entitled to buy 50 equity shares of ABC
+										at Rs. 10/share. Please understand that it is not mandatory for Mr. X to buy these shares once he is entitled to
+										them. It is his option to buy the shares if he wants to. The policy will state the time period till when Mr. X
+										can exercise this option. Such period is referred to as the “Exercise Period”. However, if not exercised, the option
+										to buy the shares will lapse after the Exercise Period.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: WWho is eligible to receive ESOPs?</p>
+									<p class="answer description">ESOPs are governed under the Companies Act, 2013. Under the Companies Act, 2013, ESOPs can only be granted to employees
+										or some directors. Please see below for the detailed list of persons to whom ESOPs can be granted:
+										<br>
+										<br> (a) a permanent employee of the company/startup, whether working in India or outside India
+										<br> (b) director of the company/startup, as long as he not an independent director
+										<br> (c) director of the company/startup, as long as he holds less than 10% of the paid up share capital of the company,
+										whether directly or through his relative or through any body corporate, directly or indirectly
+										<br> (d) an employee of a subsidiary, in India or outside India
+										<br> (e) an employee of a holding company.
+										<br> (f) Promoters of a company if such company has received a “Startup” recognition from DIPP,
+										<br>
+										<br> Government of India and such grant is proposed to be made within 5 years from teh date of incorporation of the
+										Startup.
+										<br>
+										<br> Who cannot be granted ESOPs?
+										<br>
+										<br> (a) Part time employee
+										<br> (b) Advisor
+										<br> (c) Mentor
+										<br> (d) Consultant
+										<br> (e) Promoter/Co-founder of a company not recognized as a Startup by the DIPP, Government of India, or in case
+										of a recognized Startup, where such grant is proposed to be made after 5 years from the date of incorporation.
+										<br>
+										<br> Private limited companies especially company in early stages of business or startups typically like to grant ESOPs
+										to part time employees, advisors, mentors, consultants and co-founders. However, considering the provisions of
+										the Companies Act, 2013, these persons cannot be granted ESOPs unless they are permanent employees of the company
+										or are directors holding less than 10% of the share capital of the company/startup. For such persons, the company
+										will have to structure different modes of stock incentive plans and not the statutorily regulated ESOPs. Warrants
+										or partly paid up shares are popular instruments for incentivizing advisors and mentors.
+									</p>
+								</div>
+							</div>
+
+							<div id="eligibility" class="tab accordion">
+								<div class="individual-container">
+									<p class="question plus title">Q: Who is eligible to receive ESOPs?</p>
+									<p class="answer description">ESOPs are governed under the Companies Act, 2013. Under the Companies Act, 2013, ESOPs can only be granted to employees
+										or some directors. Please see below for the detailed list of persons to whom ESOPs can be granted:
+										<br>
+										<br> (a) a permanent employee of the company/startup, whether working in India or outside India
+										<br> (b) director of the company/startup, as long as he not an independent director
+										<br> (c) director of the company/startup, as long as he holds less than 10% of the paid up share capital of the company,
+										whether directly or through his relative or through any body corporate, directly or indirectly
+										<br> (d) an employee of a subsidiary, in India or outside India
+										<br> (e) an employee of a holding company.
+										<br> (f) Promoters of a company if such company has received a “Startup” recognition from DIPP,
+										<br>
+										<br> Government of India and such grant is proposed to be made within 5 years from teh date of incorporation of the
+										Startup.
+										<br>
+										<br> Who cannot be granted ESOPs?
+										<br>
+										<br> (a) Part time employee
+										<br> (b) Advisor
+										<br> (c) Mentor
+										<br> (d) Consultant
+										<br> (e) Promoter/Co-founder of a company not recognized as a Startup by the DIPP, Government of India, or in case
+										of a recognized Startup, where such grant is proposed to be made after 5 years from the date of incorporation.
+										<br>
+										<br> Private limited companies especially company in early stages of business or startups typically like to grant ESOPs
+										to part time employees, advisors, mentors, consultants and co-founders. However, considering the provisions of
+										the Companies Act, 2013, these persons cannot be granted ESOPs unless they are permanent employees of the company
+										or are directors holding less than 10% of the share capital of the company/startup. For such persons, the company
+										will have to structure different modes of stock incentive plans and not the statutorily regulated ESOPs. Warrants
+										or partly paid up shares are popular instruments for incentivizing advisors and mentors.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: Who is an independent director?</p>
+									<p class="answer description">An independent director is defined under the Companies Act, 2013, as a director other than a managing/whole-time/nominee
+										director, who:
+										<br>
+										<br> (a) is or was not a promoter, or related to promoters or directors of the company;
+										<br> (b) has or had no pecuniary relationship with the company, or its promoters or its directors, during the current
+										or 2 preceding financial years;
+										<br> (c) has no relative, who has or had pecuniary relationship with the company, or its promoters or its directors,
+										amounting to 2% or more of its gross turnover or Rs.5,000,000/-, whichever is lower, during the current or 2 preceding
+										financial years;
+										<br>
+										<br> (d) neither himself nor his relative:
+										<br> (i) is or has been a key managerial personnel of the company in the 3 preceding financial years;
+										<br> (ii) is or has been an employee or a proprietor or a partner, in the 3 preceding financial years, of a firm of
+										auditors or company secretaries in practice or cost auditors of the company; or any legal or a consulting firm
+										that has or had any transaction with the company amounting to 10% or more of the gross turnover of such firm;
+										<br> (iii) holds with his relatives 2% or more of the total voting power of the company; or
+										<br> (iv) is a chief executive or director, of any nonprofit that receives 25% or more of its receipts from the company,
+										or its promoters or its directors or that holds 2% or more of the total voting power of the company.
+										<br>
+										<br> It is not mandatory for a private limited company to appoint an independent director on its Board of Directors.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: Is a promoter entitled to ESOPs?</p>
+									<p class="answer description">Promoter of a company, irrespective of whether he is an employee of the company, or not, is not eligible for ESOPs
+										under the Companies Act, 2013. However, if such company is recognized as a “Startup” by DIPP, Government of India,
+										the the promoter of such a Startup can be granted ESOPs, as long as such grant is made within 5 years from the
+										date of incorporation of such startup.
+										<br>
+										<br> Who can be granted ESOPs?
+										<br>
+										<br> (a) a permanent employee of the company/startup, whether working in India or outside India
+										<br> (b) director of the company/startup, as long as he not an independent director
+										<br> (c) director of the company/startup, as long as he holds less than 10% of the paid up share capital of the company,
+										whether directly or through his relative or through any body corporate, directly or indirectly
+										<br> (d) an employee of a subsidiary, in India or outside India
+										<br> (e) an employee of a holding company.
+										<br> (f) Promoters of a company if such company has received a “Startup” recognition from DIPP, Government of India
+										as long as such grant is made within 5 years from the date of incorporation of such startup.
+										<br>
+										<br> Who cannot be granted ESOPs?
+										<br>
+										<br> (a) Part time employee
+										<br> (b) Advisor
+										<br> (c) Mentor
+										<br> (d) Consultant
+										<br> (e) Promoter/Co-founder of a company not recognized as a Startup by the DIPP, Government of India or where recognized,
+										where such grant is proposed to be made 5 years after the date of incorporation of such startup.
+										<br>
+										<br> Who is a Promoter?
+										<br>
+										<br> The term “Promoter” has been defined under the Companies Act, 2013. A Promoter with respect to a Startup or a
+										Company refers to persons in the following capacity:
+										<br>
+										<br> (a) who has been named as such in a prospectus or is identified by the company in the annual return referred to
+										in section 92; or
+										<br>(b) who has control over the affairs of the company, directly or indirectly whether as a shareholder, director
+										or otherwise; or
+										<br>(c) in accordance with whose advice, directions or instructions the Board of Directors of the company is accustomed
+										to act. However, if such person is acting merely in a professional capacity, then such person shall not be considered
+										a Promoter.
+										<br>
+										<br> Alternate Stock Incentive Plans
+										<br>
+										<br> Private limited companies especially company in early stages of business or startups typically like to grant ESOPs
+										to part time employees, advisors, mentors, consultants and co-founders. However, considering the provisions of
+										the Companies Act, 2013, these persons cannot be granted ESOPs unless they are permanent employees of the company
+										or are directors holding less than 10% of the share capital of the company.
+
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: Is there a minimum percentage prescribed under the law for an ESOP pool?</p>
+									<p class="answer description">No, there is no minimum percentage prescribed under the Indian laws for an ESOP pool. Typically ESOP pool vary between
+										8-15% pre any fundraise. The size of a ESOP pool can be determined after taking into consideration the following
+										factors:
+										<br>
+										<br> 1. Purpose of the pool
+										<br>
+										<br> It is important to first determine the reason/objective for setting up the esop pool. For example, if the pool
+										is being set up to compensate for reduced compensation or is it being set up to incentivize employees, and issue
+										esops more as a bonus. If the objective is the former, then the pool should be on higher side of the spectrum set
+										out above. If it is the latter, then it should be on the lower side of the spectrum
+										<br>
+										<br> 2. No. of Co-founders
+										<br>
+										<br> Where a company has multiple co-founders, the company would not ideally require to hire senior management level
+										employees and thus, would require far lesser esops. In such a case the pool can be on the lower side of the spectrum.
+										On the other hand, in case of a company with a solo founder, multiple management level hires will have to be made
+										and hence larger esop stakes will have to be issued by the company. In such cases, the company will have to have
+										a larger esop pool.
+										<br>
+										<br> 3. Nature of business
+										<br>
+										<br> One needs to also take in to consideration the nature of business while determining the esop pool size. If your
+										business is manpower heavy, then you will have larger no. of employees, hence more no. of ESOPs would be required.
+										As a result, your ESOP pool should be bigger.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: Can an employee transfer the stock options?</p>
+									<p class="answer description">No. ESOPs are not transferable. The rights, options or stocks granted to employees under an incentive plan or through
+										ESOPs, cannot be transferred to any other person. ESOPs cannot be marketable, because (a) these are options granted
+										to specific employees and hence are personal to such employee. Transferring the option would defeat the entire
+										objective of granting the ESOPs, (b) ESOPs do not give any rights to the holder, including the dividend and voting
+										right.
+										<br>
+										<br> Additionally the ESOPs granted to employees under an ESOP policy cannot be pledged, hypothecated, mortgaged or
+										otherwise encumbered or alienated in any other manner.
+										<br>
+										<br> Transferability of Shares upon Exercise of ESOPs
+										<br>
+										<br> Once an employee exercises the ESOPs granted to him/her, the employee is issued shares in the company/start up
+										and effectively becomes shareholder of the company. Upon becoming the shareholder, the employee may be restricted
+										from freely transferring the shares in the company/start up. This would depend on the ESOP Policy and Charter Documents,
+										more specifically Articles of Association of the company.
+										<br>
+										<br> Typically the restrictions would be one or more of the following:
+										<br>
+										<br> (a) Transfer of shares by an employee shall be subject to approval of the Board
+										<br> (b) Transfer of shares by an employee shall be subject to the Right of First Refusal or Right of First Offer of
+										the Promoter/Investor/Other Shareholders
+										<br> (c) Employee cannot transfer shares to a competitor of the company/start up
+										<br> (d) Employee cannot transfer shares below Fair Market Value of the company/start up
+										<br>
+										<br> In the absence of any transfer restrictions in either the ESOP Policy of the Charter Documents of a company/start
+										up, an employee will be free to transfer his/her shares in such company/start up.
+									</p>
+								</div>
+							</div>
+
+							<div id="grant" class="tab accordion">
+								<div class="individual-container">
+									<p class="question plus title">Q: What does granting of an ESOP mean?</p>
+									<p class="answer description">Granting of ESOPs is the process of offering the ESOP to an employee. An ESOP is said to be granted only when an
+										employer issues/offers the ESOPs to the employee and the employee accepts it.
+										<br>
+										<br> How does granting work?
+										<br>
+										<br> The below illustration should be able to help:
+										<br>
+										<br> ABC Pvt. Ltd. (“ABC”) issues a grant letter to Mr. X granting him ESOPs of 0.5%. The ESOPs will be granted to
+										Mr. X upon acceptance of the offer by him. Grant date will, therefore, be the date stated in the grant letter.
+										<br>
+										<br> Is an Offer Letter for Employment and Grant Letter the same?
+										<br>
+										<br> Typically the offer letter for employment of an employee includes the promise of ESOPs as well. However, an employee
+										offer letter is usually not the same as a ESOP grant letter. An employment offer letter will be construed as the
+										grant letter if the following conditions are met:
+										<br>
+										<br> (a) if the Board has allowed for an offer letter and ESOP grant letter to be the same, and
+										<br> (b) the offer letter clearly sets out all the terms and conditions of the ESOPs being granted, and
+										<br> (c) most importantly, the Company has an ESOP policy in place, then the offer letter and ESOP grant letter can
+										be the same. Most startups develop their stock incentive plans a few months/year after starting their business
+										or just when they are about to hire a few senior employees or when they are fundraising since it is a requirement
+										from the investor.
+										<br>
+										<br> One, therefore, has to be clear on the grant date, because you cannot grant ESOPs without having an ESOP Policy
+										in place.</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: Does the law prescribe any guidelines for grant of incentives?</p>
+									<p class="answer description">Currently, the only statute that deals with grant of ESOPs for private limited companies/startups, in India is the
+										Companies Act, 2013. Under the Companies Act, 2013 and the rules made thereunder, ESOPs can only be granted to
+										the following persons:
+										<br>
+										<br> (a) a permanent employee of the company/startup, whether working in India or outside India
+										<br> (b) director of the company/startup, as long as he not an independent director
+										<br> (c) director of the company/startup, as long as he holds less than 10% of the paid up share capital of the company,
+										whether directly or through his relative or through any body corporate, directly or indirectly
+										<br> (d) an employee of a subsidiary, in India or outside India
+										<br> (e) an employee of a holding company.
+										<br> (f) Promoters of a company if such company has received a “Startup” recognition from DIPP, Government of India
+										as long as such grant is made within 5 years from the date of incorporation of such startup.
+										<br>
+										<br> Who cannot be granted ESOPs?
+										<br>
+										<br> (a) Part time employee
+										<br> (b) Advisor
+										<br> (c) Mentor
+										<br> (d) Consultant
+										<br> (e) Promoter/Co-founder of a company not recognized as a Startup by the DIPP, Government of India or where recognized,
+										where such grant is proposed to be made 5 years after the date of incorporation of such startup.
+										<br>
+										<br> Additionally, the law also imposes a 1 year cliff on the vesting of ESOPs. This means that an employee cannot
+										enjoy the benefits of ESOPs or purchase shares against the ESOPs in the first year of grant, even if the employer/startp
+										wants to allow the employee to do so.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: What are the prerequisites for granting ESOPs?</p>
+									<p class="answer description">In order for a company/startup to be able to grant ESOPs to its employees, it has to first create an Employee Stock
+										Option Policy and then obtain approval of its Board of Directors and shareholders on the same. Typically the offer
+										letter for employment of an employee includes the promise of ESOPs as well. However, an employee offer letter is
+										usually not the same as a ESOP grant letter.
+										<br>
+										<br> An employment offer letter will be construed as the grant letter if the following conditions are met:
+										<br>
+										<br> (a) if the Board has allowed for an offer letter and ESOP grant letter to be the same, and
+										<br> (b) the offer letter clearly sets out all the terms and conditions of the ESOPs being granted, and
+										<br> (c) most importantly, the Company has an ESOP policy in place, then the offer letter and ESOP grant letter can
+										be the same. Most startups develop their stock incentive plans a few months/year after starting their business
+										or just when they are about to hire a few senior employees or when they are fundraising since it is a requirement
+										from the investor.
+										<br>
+										<br> One, therefore, has to be clear on the grant date, because you cannot grant ESOPs without having an ESOP Policy
+										in place.
+										<br>
+										<br> What is a ESOP grant letter?
+										<br>
+										<br> A ESOP grant letter is a letter issued to an employee setting out terms of the ESOPs granted to such employee.
+										It is only when an ESOP grant letter is issued that a company is said to have granted ESOPs to such employee.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: Does an employee receive voting rights or dividend rights when ESOPs are granted to him?</p>
+									<p class="answer description">No, an employee does not receive any voting or dividend rights with the grant of ESOPs, unless he exercises the
+										ESOPs and buys shares in the company/startup. Once an employee buys shares in the company, he gets voting and dividend
+										rights. One has to remember that ESOPs are not shares, ESOPs are options granted to an employee to buy shares of
+										the company (also referred to as exercise of ESOPs) at a predetermined price (also referred to as exercise price
+										of ESOPs), subject to certain conditions, such as active employment with the company over a vesting period and
+										meeting individual or team level performance based milestones.
+										<br>
+										<br> An employee who has been granted ESOPs can exercise his right to acquire shares, upon the ESOPs vesting on him.
+										This right of an employee to buy the shares is not in perpetuity and is usually subject to certain restrictions,
+										including an Exercise Period and sometimes a lock-in-period.
+										<br>
+										<br> Illustration: ABC Pvt. Ltd. (“ABC”) offers ESOPs to Mr. X, under the terms of which Mr. X is entitled to 200 equity
+										shares of ABC, amounting to 2% of the paid-up share capital of ABC at the time of grant of the ESOPs, at par value
+										of the shares. The ESOPs granted to Mr. X are exercisable as per the schedule set out below:
+										<br>
+										<br> 25% of the ESOPs shall be exercisable upon completion of 2 years by Mr. X with ABC
+										<br> 25% of the ESOPs shall be exercisable upon completion of 3 years by Mr. X with ABC
+										<br> 25% of the ESOPs shall be exercisable upon completion of 4 years by Mr. X with ABC
+										<br> 25% of the ESOPs shall be exercisable upon completion of 5 years by Mr. X with ABC
+										<br>
+										<br> This means that once Mr. X has completed 2 years with ABC, he will be entitled to buy 50 equity shares of ABC
+										at Rs. 10/share. Please understand that it is not mandatory for Mr. X to buy these shares once he is entitled to
+										them. It is his option to buy the shares if he wants to. The policy will state the time period till when Mr. X
+										can exercise this option. Such period is referred to as the “Exercise Period”. However, if not exercised, the option
+										to buy the shares will lapse after the Exercise Period.</p>
+								</div>
+							</div>
+
+							<div id="vest" class="tab accordion">
+
+								<div class="individual-container">
+									<p class="question plus title">Q: What does vesting of an ESOP mean?</p>
+									<p class="answer description">Under the Companies Act, 2013, ESOPs are required to have a minimum cliff period of 1 year i.e. for at least 1 year
+										from the date of grant of the ESOPs, no ing can happen. Post the cliff period, vesting can be designed in any manner
+										that a company/startup deems fit.
+										<br>
+										<br> What is a cliff period in ESOPs?
+										<br>
+										<br> A cliff is the time period between grant of ESOPs to an employee and vesting of the ESOPs. How does it matter?
+										<br>
+										<br> A cliff is a very significant provision in ESOPs. It matters because in most start ups, the promoters tend to
+										offer ESOPs to employee as part of the compensation in the offer letter. A promise to give ESOPs in an offer letter
+										is not “granting” of ESOP and the 1year cliff does not start from this period. An ESOP is said to have been “granted”
+										only once the company/startup has taken steps to put in place an ESOP Policy, such ESOP Policy is approved by Board
+										and Shareholders of the Company and then the company/startup issues a Grant Letter summarizing terms of the ESOP
+										Policy to the employee.
+										<br>
+										<br> It is therefore important that if as an employer you are bringing employees on board with a promise to grant ESOPs,
+										do not delay granting of the ESOPs, as by doing so, you would effectively be delaying the vesting timeline for
+										your employee, who is anyway working hard for you from Day 1.
+										<br>
+										<br> How does a cliff work?
+										<br>The following illustration may help.
+										<br> Let’s say Mr. X joined ABC Pvt. Ltd. (“ABC”) on September 1, 2014 and while discussing compensation, the promoter
+										of ABC had promised him ESOPs with a vesting period of 1 year. Well, Mr. X is under the impression that the ESOPs
+										would vest in him by September 1, 2015. However, ABC implemented its ESOP policy only on July 25, 2015. As a result
+										X was granted ESOPs only on July 26, 2015. Since the law mandates a minimum of 1 year as vesting period, X will
+										have no choice but to wait till July 26, 2016 to exercise the ESOPs. Almost 10 months later than what he had anticipated.
+										It is, therefore, important for start-ups to set expectations with employees accordingly.
+										<br>
+										<br> What is a typical vesting period in a company/startup?
+										<br>
+										<br> Most incentives vest over a period of time or are subject to certain performance metrics. The vesting schedule
+										is dependent on various factors, including the nature of your business, the compensation package being offered
+										by your company vis-à-vis the market standards, the role of the person joining your company, etc. Under the Companies
+										Act, 2013, it is mandatory to have a one year cliff period before the ESOPs vest. The typical vesting period is
+										4 years.
+										<br>
+										<br> How does vesting work?
+										<br> The following illustration may help:
+										<br> On January 1, 2017, ABC Pvt. Ltd. (“ABC”) offers ESOPs to Mr. X, under the terms of which Mr. X is entitled to
+										200 equity shares of ABC, amounting to 2% of the paid-up share capital of ABC at the time of grant of the ESOPs,
+										at par value of the shares. The ESOPs have 1 year cliff and a vesting schedule of 4 years.
+										<br>
+										<br> As a result, the vesting shall occur as follows:
+										<br>
+										<br> • 25% of the ESOPs shall vest on January 1, 2018
+										<br> • 25% of the ESOPs shall vest on January 1, 2019
+										<br> • 25% of the ESOPs shall vest on January 1, 2020
+										<br> • 25% of the ESOPs shall vest on January 1, 2021
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: Does the law prescribe any guidelines for vesting of ESOPs?</p>
+									<p class="answer description">Under the Companies Act, 2013, ESOPs are required to have a minimum vesting period of 1 year i.e. a minimum of 1
+										year from the date of grant of the ESOPs.
+										<br>
+										<br> LexGyaan: This is very important. Especially because most start-ups promise their employees ESOPs at the time
+										of making them a job offer. However, it is almost 6-12 months (to say the least) from the employee joining the
+										company that the start-up actually puts together a policy and formally grants ESOPs to employees. As a result while
+										the employer may have promised the employee a vesting period of 1 year, the vesting may in practice be longer because
+										the employer took a long time to implement the policy. Confused?
+										<br>
+										<br> Let’s say Mr. X joined ABC Pvt. Ltd. (“ABC”) on September 1, 2014 and while discussing compensation, the promoter
+										of ABC had promised him ESOPs with a vesting period of 1 year. Well, Mr. X is under the impression that the ESOPs
+										would vest in him by September 1, 2015. However, ABC implemented its ESOP policy only on July 25, 2015. As a result
+										X was granted ESOPs only on July 26, 2015. Since the law mandates a minimum of 1 year as vesting period, X will
+										have no choice but to wait till July 26, 2016 to exercise the ESOPs. Almost 10 months later than what he had anticipated.
+										It is, therefore, important for start-ups to set expectations with employees accordingly.
+									</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Q: What happens if an employee leaves the company before the shares have vested?</p>
+									<p class="answer description">See Attachment</p>
+								</div>
+
+							</div>
+							<div id="exercise" class="tab accordion">
+								<div class="individual-container">
+									<p class="question plus title">Q: What does exercise of ESOPs mean?</p>
+									<p class="answer description">As explained earlier, ESOPs are just “options” in the hands of employees. The shares don't automatically get issued
+										to an employee upon the ESOPs being vested, and certain steps have to be taken by the employee in order to acquire
+										the shares. Such action/step on the part of the employee is referred to as exercise of the ESOP.
+										<br>
+										<br> Illustration: Upon completion of 2 years with ABC Pvt. Ltd. (“ABC”), ESOPs of 0.5% will vest in Mr. X. After 6
+										months from the date of vesting, Mr. X writes to ABC requesting for the 0.5% shares to be issued to him, thus exercising
+										his right under the ESOP Policy.
+										<br>
+										<br> It is advisable to have a form that the employee has to sign in order to exercise the ESOPs; this way there will
+										be no confusion as to whether an employee has exercised his right or is just asking a question.
+										<br>
+										<br> Exercise Period
+										<br>
+										<br> Once vested, does the employee have a right in perpetuity to buy shares of the startup? The right of an employee
+										to buy the shares is not in perpetuity and is usually subject to certain restrictions, including an Exercise Period
+										and sometimes a lock-in-period.
+										<br>
+										<br> The law does not prescribe any Exercise Period. Employers are free to choose an Exercise Period as they deem appropriate.
+										<br>
+										<br> In practice, Exercise Periods are usually anywhere upward of 4 years from the vesting of the ESOPs. It is advisable
+										to have a longer Exercise Period, so as to ensure that the employees have the option to exercise at convenience
+										and when there are chances of liquidity. Imagine having to force an employee to buy shares of the company because
+										the “Exercise Period” is running out and then have to wait and hope and pray that somebody buys their shares. That’s
+										a risk for an employee. Therefore, the least the employer can do is provide for a longer Exercise Period. That
+										way the employee has the option to exercise the right under ESOPs closer to a liquidity event.
+									</p>
+
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Can a company buy-back shares acquired by an employee pursuant to exercise of ESOPs?</p>
+									<p class="answer description">Yes, a company can buy-back its shares granted to employees under an incentive plan, provided the procedure for
+										buy-back of such shares is in compliance with the Companies Act, 2013 and its rules. The ESOP Policy and Articles
+										of Association of the company need to provide for buy back of employee shares.
+										<br>Typically, a ESOP Policy would give the company the right to buy shares of the company, upon cessation of the employee's
+										employment with the company, or where the employee joins a competitor of the employer company.
+										<br>Buy back under the Indian Companies Act, 2013 is a long drawn process. Also the criteria for the company to be
+										eligible to conduct a buy back are so many, that sometimes its not practical for a company to conduct a buy back.
+										It is therefore advisable to provide for alternate options to buy back, such as purchase of shares by promoters.</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">Does the law prescribe a minimum or maximum Exercise Period?</p>
+									<p class="answer description">No, the law does not prescribe any Exercise Period. Employers are free to choose an Exercise Period as they deem
+										appropriate.
+										<br>
+										<br> Once vested, does the employee have a right in perpetuity to buy shares of the startup? The right of an employee
+										to buy the shares is not in perpetuity and is usually subject to certain restrictions, including an Exercise Period
+										and sometimes a lock-in-period.
+										<br>
+										<br> In practice, Exercise Periods are usually anywhere upward of 4 years from the vesting of the ESOPs. It is advisable
+										to have a longer Exercise Period, so as to ensure that the employees have the option to exercise at convenience
+										and when there are chances of liquidity. Imagine having to force an employee to buy shares of the company because
+										the “Exercise Period” is running out and then have to wait and hope and pray that somebody buys their shares. That’s
+										a risk for an employee. Therefore, the least the employer can do is provide for a longer Exercise Period. That
+										way the employee has the option to exercise the right under ESOPs closer to a liquidity event.
+										<br>
+										<br> Change in Exercise Period
+										<br>
+										<br> Any change in terms of a ESOP Policy, including the Exercise Peiord, will require prior approval of the shareholders
+										of the Company. Also, such changes cannot be prejudicial to the interest of the employees who have already been
+										granted ESOPs.
+										<br>
+										<br> Acquisition of Company/Startup during the Exercise Period
+										<br>
+										<br> Most employees are worried about what happens to their ESOPs if a company/startup is acquired before the employees
+										have had a chance to exercise their right to buy shares against vested ESOPs. The ESOP policy terefore should provide
+										for consequences on vested ESOPs in case of an acquisition. Typically there would be some accelerated vesting in
+										case of acquisition.</p>
+								</div>
+								<div class="individual-container">
+									<p class="question plus title">What is the general practice on Exercise Periods?</p>
+									<p class="answer description">IN practice, Exercise Periods are usually anywhere upward of 4 years from the vesting of the ESOPs. It is advisable
+										to have a longer Exercise Period, so as to ensure that the employees have the option to wait till a liquidity event
+										in order to exercise their ESOPs. Why so? Because shares of a private limited company are not “marketable”. So,
+										imagine having to force an employee to buy shares of the company because the “Exercise Period” is running out and
+										then have to wait and hope and pray that somebody buys their shares. That’s a risk for an employee. Therefore,
+										the least the employer can do is provide for a longer Exercise Period. That way the employee has the option to
+										exercise the right under ESOPs closer to a liquidity event.</p>
+								</div>
+							</div>
+
+							<!--<div id="cessation" class="tab accordion">
+				            <div class="individual-container">
+				            <p class="question plus title">What happens if an employee leaves the company before the shares have vested?</p>
+					            <p class="answer description">Q: Who is an independent director?</p>
+				            </div>
+				        </div>
+				 
+				        <div id="tax" class="tab accordion">
+				            <div class="individual-container">
+				            <p class="question plus title">Q: What does granting of an ESOP mean?/p>
+					            <p class="answer description">Q: Who is an independent director?</p>
+				            </div>
+				        </div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="testimonial-section" class="customer-review">
+				<div class="container width-setter">
+					<p class="center review-title">Why Our Customers Love Us</p>
+					<span class="blockquotes"></span>
+					<section class="regular slider">
+						<div>
+							<p>They have simplified ESOP Policy implementation and with LexStart’s intuitive app - one needs to answer a handful
+								of critical questions, post which the process is taken care of”</p>
+							<p class="upper-case bold">Arpit Ratan</p>
+							<p class="post">Signzy</p>
+							<img class="testimonial-profile-img" src="images/arpit.jpg" alt="">
+						</div>
+						<div>
+							<p>
+								LexStart gave us good advice regarding our structuring options and the process of incorporating the entity was done very
+								smoothly with due attention to detail. Overall we have been quite pleased with their services”.
+							</p>
+							<p class="upper-case bold">Kartik Desai</p>
+							<p class="post">Asha Impact</p>
+							<img class="testimonial-profile-img" src="images/kartik_desai.jpg" alt="">
+						</div>
+						<div>
+							<p>
+								Having worked with LexStart since over a year, we are convinced that they have one of the best teams to manage compliances
+								and legal matters. As a startup, we rarely give much credit to compliances and legal. With LexStart, we could actually
+								see the difference. Having them onboard and work with us made our investor's due-diligence run with ease which could
+								have otherwise been a nightmare and delayed our fund-raising. I would definitely recommend LexStart.”,
+							</p>
+							<p class="upper-case bold">Gaurav Samdaria</p>
+							<p class="post">Karza</p>
+							<img class="testimonial-profile-img" src="images/gaurav.jpg" alt="">
+						</div>
+						<!-- <div>
+						<p>
+							LexStart is good mix of young and experienced professionals. I had the opportunity to work with her for one of my projects
+							and am truly satisfied with the deliveries. Keep it going. Highly recommended to other startups!!”, 
+						</p>
+						<p class="upper-case bold">Rachit Aggarwal</p>
+						<p class="post">GamePlan</p>
+						<img class="testimonial-profile-img" src="images/gaurav.jpg" alt="">
+					</div> -->
+						<div>
+							<p>
+								LexStart is a godsend for anyone starting up! They take care of a range of administrative and legal issues which few entrepreneurs
+								will be able to manage on their own. Anisha and Ashutosh are a great sounding board and really help your business
+								as partners as opposed to advisors.”,
+							</p>
+							<p class="upper-case bold">Gaurav Mathur</p>
+							<p class="post">DigiGold</p>
+							<img class="testimonial-profile-img" src="images/Gaurav-Mathur.jpg" alt="">
+						</div>
+					</section>
+				</div>
+			</div>
+			<div id="team-section" class="our-team">
+				<div class="container width-setter">
+					<p class="center team-title">Meet Our Team</p>
+					<hr>
+					<div class="team-partition flex">
+						<div class="team-members">
+							<span>
+								<img src="images/anisha.jpg" alt="">
+							</span>
+							<p class="member center upper-case">ANISHA PATNAIK</p>
+							<p class="center description">Anisha is a corporate lawyer with over a decade of experience in M&A, Joint Ventures and PE/VC deals. Anisha is passionate
+								about working with startups, travelling and good food! Anisha is based out of Mumbai and overlooks service delivery
+								and operations.</p>
+						</div>
+						<div class="team-members">
+							<span>
+								<img src="images/karthik.jpg" alt="">
+							</span>
+							<p class="member center upper-case">KARTHIK CHANDRASEKAR</p>
+							<p class="center description">Karthik wears the product manager hat in LexStart. He also runs Sangam Ventures, an early stage cleantech fund. He
+								stays in Delhi in between his travels, loves accounting, cooking and building stuff.</p>
+						</div>
+						<div class="team-members">
+							<span>
+								<img src="images/ashutosh.jpg" alt="">
+							</span>
+							<p class="member center upper-case">Ashutosh Sharma</p>
+							<p class="center description">Ashutosh Sharma is the Chief Execution Officer at LexStart. Ashutosh comes with 7 years of experience in Corporate
+								Commercial laws and has extensive experience in M&A and VC transactions. At LexStart, Ashutosh’s main focus is on
+								execution of customer deliverables. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="our-client">
+				<div class="flex width-setter">
+					<div class="clients">
+						<span class="number center">100+</span>
+						<p class="center upper-case happy-clients">Happy Clients</p>
+						<img src="images/clients-icon.png" alt="" class="people">
+					</div>
+					<div class="phrase">
+						<p class="center">When it comes to legal matters, as Yoda says,
+							<br>"try not, do or do not, there is no try"</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="contact-section">
+			<div class="footer-container width-setter">
+				<p class="center footer-title">Contact
+					<span>Us</span>
+				</p>
+				<div class="footer-flex flex">
+					<div class="footer-widget-one location position-relative flex">
+						<div class="address">
+							<p class="bold no-margin">Registered Office:</p>
+							916, Tulsiani Chambers, Nariman Point,
+							<br>Mumbai - 400021
+						</div>
+					</div>
+					<div class="footer-widget-two location position-relative">
+						<div class="address">
+							<p class="bold no-margin">Current Office:</p>
+							19, Rise, Peninsula Business Park,
+							<br/> Tower B, Lower Parel,
+							<br/> Mumbai - 400013
+						</div>
+					</div>
+					<div class="footer-widget-three contact-details">
+						<div class="position-relative call">
+							<a href="tel:+912233835994">+91 (22) 33835994</a>
+						</div>
+						<div class="position-relative email">
+							<a href="mail:support@lexstart.in">support@lexstart.in</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright center">
+				&copy;
+				<script type="text/javascript">
+					var today = new Date()
+					var year = today.getFullYear()
+					document.write(year)
+				</script> LexStart Consultancy Private Limited
+			</div>
+		</footer>
+		<div class="modal fade thankYou-modal" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static"
+		 data-keyboard="false">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div style="margin: 0 auto">
+							<span class="fa fa-check-square" aria-hidden="true"></span>
+						</div>
+					</div>
+					<div class="modal-body" style="padding:0;">
+						<p>Thank you for registering with LexStart.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="http://localhost:9002/#/login" class="loginBtn">Login</a>
+						<button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade emailError_modal" id="emailErrorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+		 data-backdrop="static" data-keyboard="false">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div style="margin: 0 auto;">
+							<span class="fa fa-exclamation-triangle" aria-hidden="true"></span>
+						</div>
+					</div>
+					<div class="modal-body">
+						<h5>Something went wrong</h5>
+						<p>Email id already exists</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade orgError_Modal" id="orgErrorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static"
+		 data-keyboard="false">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div style="margin: 0 auto;">
+							<span class="fa fa-exclamation-triangle" aria-hidden="true"></span>
+						</div>
+					</div>
+					<div class="modal-body">
+						<h5>Something went wrong</h5>
+						<p>Organization with same name already signed up!</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default closeBtn" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

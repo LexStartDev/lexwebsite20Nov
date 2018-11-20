@@ -1,0 +1,20 @@
+footer { background-color: #3e4750; color: #fff; }
+footer .footer-title { margin-top: 0; font-family: "Poppins Medium"; font-size: 35px; color: #fff; }
+footer .footer-title span { color: #00b2e7; }
+
+.footer-container { padding-bottom: 60px !important; }
+
+.footer-flex { padding-left: 40px; }
+.footer-flex > div { width: calc(100%/3); }
+.footer-flex .contact-details .call, .footer-flex .contact-details .email { padding: 10px 35px; }
+.footer-flex .contact-details .call a, .footer-flex .contact-details .email a { color: #fff; }
+.footer-flex .address { margin-left: 10px; }
+.footer-flex .address p { margin-top: 0; }
+
+.location { padding: 0 35px; background: url("../images/location-icon.png") no-repeat left top; }
+
+.call { background: url("../images/phone-icon.png") no-repeat left center; }
+
+.email { background: url("../images/mail-icon.png") no-repeat left center; }
+
+.copyright { padding: 30px; background-color: #384545; }

@@ -1,0 +1,374 @@
+    <html>
+        <head>
+            <title>LexStart</title>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="description" content="">
+            <meta name="author" content="">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,800,900" rel="stylesheet">  
+        <link rel="stylesheet" type="text/css" href="wp-content/themes/lexstart/css/slick-home.css"/>
+        <link rel="stylesheet" type="text/css" href="wp-content/themes/lexstart/css/slick-theme-home.css"/>
+        <link rel="stylesheet" href="wp-content/themes/lexstart/css/homepage.css">
+        
+        </head>
+        <body>
+        <section class="First">
+            <div class="header">
+                <div class="clearfix">
+                    <div class="col1">
+                        <div><a class="logo" href="#">LexStart</a></div>
+                    </div>
+                    <div class="col2">  
+                        <ul class="nav clearfix">                                
+                            <li><a href="#">OFFERING</a></li>
+                            <li><a href="#">RESOURCES</a></li>
+                            <li><a href="#">COMPANY</a></li>
+                        </ul>
+                    </div>
+                    <div class="col3">
+                        <div><button class="search">SEARCH</button></div>
+                    </div>
+                    <div class="col4">
+                        <ul class="nav">
+                            <li><a href="#">CONTACT US</a></li>
+                            <li><a href="#">LOGIN</a></li>
+                            <li><button class="signup">SIGN UP</button></li>
+                        </ul>
+                    </div>                        
+                </div>
+            </div>     
+            
+            <div class="single-item">
+                        <div class="content1">                    
+                            <p>Keep your promise to your employees, issue <span>ESOP</span>s now!</p>
+                                <div class="row-btn clearfix">
+                                    <div class="col-btn1">
+                                        <button class="learn">Learn More</button>
+                                    </div>
+                                    <div class="col-btn2">
+                                        <button class="demo">Request Demo</button>
+                                    </div>
+                                </div>                   
+                        </div>                                
+                        <div class="content2">
+                            <p>Do you have what it takes to get investment?</p>
+                            <p class="readinesscheck">Sign up with LexStart &amp; do a Basic Investment Readiness Check now!</p>
+                                <div class="row-btn clearfix">
+                                    <div class="col-btn1">
+                                        <button class="learn">Learn More</button>
+                                    </div>
+                                    <div class="col-btn2">
+                                        <button class="demo">Sign Up</button>
+                                    </div>
+                                </div>                 
+                        </div>                 
+                        <div class="content3">
+                            <p>When it comes to legal compliance, do or do not. There is no try!</p>
+                                <div class="row-btn clearfix">
+                                    <div class="col-btn1">
+                                        <button class="learn">Learn More</button>
+                                    </div>
+                                    <div class="col-btn2">
+                                        <button class="demo">Request Demo</button>
+                                    </div>
+                                </div>    
+                        </div>
+                        <div class="content4">
+                            <p>What’s in a name?...A lot!</p>
+                            <span>Protect your brand. Get a Trademark search done now!</span>
+                                <div class="row-btn clearfix">
+                                    <div class="col-btn1">
+                                        <button class="learn">Learn More</button>
+                                    </div>
+                                    <div class="col-btn2">
+                                        <button class="demo">Request Demo</button>
+                                    </div>
+                                </div>    
+                        </div>                        
+            </div>                
+            </section>
+
+            <section class="second">
+                
+                    <h1>Latest Articles</h1>
+                    <div class="post-item">
+                    <div class="content1">
+                    <div class="row-post1 clearfix">
+                        <div class="col-svg">
+                            <svg><rect ></rect></svg>
+                            <svg class="behind"><rect></rect></svg>
+                        </div>
+                        <div class="col-post">
+                                <h2>Did you know that there is a mandatory 1 year cliff on ESOPs?</h2>                
+                                <p>A cliff is the time period between grant of ESOPs to an employee and vesting of the ESOPs. Under the Indian Companies Act, 2013, there has to be a mandatory one year gap between granting and vesting of ESOPs. Why does it matter?</p>
+                                <p>It matters because in most start ups, the promoters tend to offer ESOPs to employee as part of the compensation in the offer letter. A promise to give <br>ESOPs in an offer letter is not “granting.” </p>
+                                <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="row-post2 clearfix">
+                        <div class="col-prev">
+                            <h2>The Valuation Game…What Does It Mean Exactly?</h2>
+                            <p>In this blog, we will be explaining the concepts of investment amount and valuations</p>                
+                        </div>
+                        
+                        <div class="col-next">
+                            <h2>Convertible Note- The Simpler Form of Fundraising</h2>
+                            <p>Anyone who has gone through the process of fundraising in India, will tell you how cumbersome and tedious</p>
+                        </div>                    
+                    </div>
+                    </div>
+                    <div class="content2">
+                    <div class="row-post1 clearfix">
+                            <div class="col-svg">
+                                <svg><rect ></rect></svg>
+                                <svg class="behind"><rect></rect></svg>
+                            </div>
+                            <div class="col-post">
+                                    <h2>Convertible Note- The Simpler Form of Fundraising</h2>                
+                                    <p class="para1">Anyone who has gone through the process of fundraising in India, will tell you how cumbersome and tedious the process can be! Right from haggling over valuation for a startup that is still in the process of building a product or testing the waters to having to procure a valuation certificate and a string of board and shareholders’ resolution – the entire process can sometimes leave you in need for a break even before you have started out!</p>
+                                    <p class="para2">“Why can’t we simply do a Convertible Note?” was a common question we got asked often. For most of you familiar with the Silicon Valley style convertible note – this was not an option in India till very recently. </p>
+                                    <a href="#">Read More</a>
+                            </div>
+                        </div>
+                        <div class="row-post2 clearfix">
+                            <div class="col-prev">
+                                <h2>Did you know that there is a mandatory 1 year cliff on ESOPs?</h2>
+                                <p>A cliff is the time period between grant of ESOPs to an employee and vesting of the ESOPs.</p>
+                            </div>
+                            
+                            <div class="col-next">
+                                <h2>The Valuation Game…What Does It Mean Exactly?</h2>
+                                <p>In this blog, we will be explaining the concepts of investment amount and valuations</p>
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <div class="content3">
+                        <div class="row-post1 clearfix">
+                                <div class="col-svg">
+                                    <svg><rect ></rect></svg>
+                                    <svg class="behind"><rect></rect></svg>
+                                </div>
+                                <div class="col-post">
+                                        <h2>The Valuation Game…What Does It Mean Exactly?</h2>                
+                                        <p class="para1">In this blog, we will be explaining the concepts of investment amount and valuations. The most basic of all concepts in an investment process – if you get these basics right then the rest of the process may become relatively easier (not necessarily painless!)</p>
+                                        <p class="para2">Most investors / VCs and entrepreneurs start the investment game / conversation with a statement that goes something like this:</p>
+                                        <p class="para3">Entrepreneur: “I am seeking a $1m investment in exchange for a 20% equity stake in my company.”</p>
+                                        <a href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="row-post2 clearfix">
+                                <div class="col-prev">
+                                    <h2>The Valuation Game…What Does It Mean Exactly?</h2>
+                                    <p>In this blog, we will be explaining the concepts of investment amount and valuations</p>
+                                </div>                            
+                                <div class="col-next">
+                                    <h2>Convertible Note- The Simpler Form of Fundraising</h2>
+                                    <p>Anyone who has gone through the process of fundraising in India, will tell you how cumbersome and tedious</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                
+            </section>
+<!-- 
+            
+            <section class="clearfix">
+                <div class="new-offerings">
+                    <div>offer 1</div>
+                    <div>offer 2</div>
+                    <div>offer 3</div>
+                    <div>offer 4</div>
+                    <div>offer 5</div>
+                </div>
+            </section> -->
+
+            <section class="three">                
+                    <!-- <div class="content"></div> -->
+                        <h1>Lexstart Offerings</h1>
+                        <div class="off-item">
+                            <!-- <div class="content1"> -->
+                                    <!-- <button class="slick-prev slick-arrow" type="button"><img src="images/arrow-left.png"></button> -->
+                                <div class="col-off1">
+                                    <svg><rect></rect></svg>
+                                    <h2>Startup Package</h2>
+                                    <p>Get the baisc essentials that you need in the first year of setting up an entity!</p>
+                                    <a class="learn-more" href="#">Learn More</a>
+                                </div>
+                                <div class="col-off2">
+                                    <svg><rect></rect></svg>
+                                    <h2>ESOP Implementation &amp; 
+                                        Management Package</h2>
+                                    <p>Create and manage ESOPs with LexStart’s ESOP Management Tool!</p>
+                                    <a class="learn-more" href="#">Learn More</a>
+                                </div>
+                                <div class="col-off3">
+                                    <svg><rect></rect></svg>
+                                    <h2>Corporate Compliance Management Package</h2>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                    <a class="learn-more" href="#">Learn More</a>
+                                </div>     
+                                <!-- <button class="slick-next slick-arrow" type="button"><img src="images/arrow-right.png"></button> -->
+                            <!-- </div> -->
+                            <!-- <div class="content2"> -->
+                                    <!-- <button class="slick-prev slick-arrow" type="button"><img src="images/arrow-left.png"></button> -->
+                                <div class="col-off4">
+                                    <svg><rect></rect></svg>
+                                    <h2>Corporate Compliance Management Package</h2>
+                                    <p>It is a long established fact that a reader will be distracted by the readable content</p>
+                                    <a class="learn-more" href="#">Learn More</a>
+                                </div>
+                                <div class="col-off5">
+                                    <svg><rect></rect></svg>
+                                    <h2>Fundraising Package</h2>
+                                    <p>Create and manage ESOPs with LexStart’s ESOP Management Tool!</p>
+                                    <a class="learn-more" href="#">Learn More</a>
+                                </div>
+                                <div class="col-off6">
+                                    <svg><rect></rect></svg>
+                                    <h2>Incubator/Accelerator Package</h2>
+                                    <p>Get the baisc essentials that you need in the first year of setting up an entity!</p>
+                                    <a class="learn-more" href="#">Learn More</a>
+                                </div>
+                                <!-- <button class="slick-next slick-arrow" type="button"><img src="images/arrow-right.png"></button> -->
+                                <!-- <img class="aright" src="./images/arrow-right.png" alt=""> -->
+                            <!-- </div> -->
+                        </div>
+                        <button class="view-all" href="#">View All</button>
+                <!-- </div> -->
+            </section>
+            <section class="four">
+                <div class="content">
+                    <h1>Why our customers love us</h1>
+                    <div class="cust-item">
+                    <div class="row-cust1">                    
+                        <div class="col-cust1">
+                            <svg><rect></rect></svg>
+                            <svg class="behind"><rect></rect></svg>
+                            <h3>Shabnam Aggarwal</h3>
+                            <p>CEO, KleverKid</p>
+                        </div>
+                        <div class="col-cust2">
+                            <p class="quote">&#34;</p>
+                            <h2>LexStart has changed my CEO stress levels in the blink of an eye.</h2>
+                            <p>I used to manage everything myself. LexStart simplified my life immensely,they put everything in one easy place for me to regain my sanity and for my team to get a better hold on what their ownership in the company meant. The team is professional, diligent, and timely. I would be lost without them."</p>
+                                <!-- <div class="prevnext">
+                                        <div class="col-prev">&#8678;</div>
+                                        <div class="col-next">&#8680;</div>
+                                </div>                                 -->
+                        </div>                    
+                    </div>
+    
+                    <div class="row-cust2">
+                            <div class="col-cust1">
+                                <svg><rect></rect></svg>
+                                <svg class="behind"><rect></rect></svg>
+                                <h3>Rishabh Khosla</h3>
+                                <p>Country Head(India), Shortlist</p>
+                            </div>
+                            <div class="col-cust2">
+                                <p class="quote">&#34;</p>
+                                <h2>Lexstart has really built something unique here. As a startup, their simple starter packages</h2>
+                                <p>were all we needed to get going and be compliant. Their stellar document management and straightforward processes made giving our inputs a breeze. Finally, with a world-class team we could rest assured that nothing would fall through the cracks and we’d always have access to the best advice."</p>
+                                    <!-- <div class="prevnext">
+                                            <div class="col-prev">&#8678;</div>
+                                            <div class="col-next">&#8680;</div>
+                                    </div>                                 -->
+                            </div>
+                        </div>
+    
+                        <div class="row-cust3">
+                                <div class="col-cust1">
+                                    <svg><rect></rect></svg>
+                                    <svg class="behind"><rect></rect></svg>
+                                    <h3>Apoorv Shankar </h3>
+                                    <p>Founder, Lazy Co</p>
+                                </div>
+                                <div class="col-cust2">
+                                    <p class="quote">&#34;</p>
+                                    <h2>taxes, complaince, preparing all sorts of legal documents, stock options, etc is a huge pain.</h2>
+                                    <p>Being a Designer and an Engineer, I soon realized building a product is not much of a problem for us but learning about taxes, complaince, preparing all sorts of legal documents, structuring stock options, etc is a huge pain. Anisha and her team have helped us understand all such complicated things using very simple examples just through phone calls. Lexstart has definitely made my life easier as a Founder and would highly recommend it". </p>
+                                        <!-- <div class="prevnext">
+                                                <div class="col-prev">&#8678;</div>
+                                                <div class="col-next">&#8680;</div>
+                                        </div>                                 -->
+                                </div>
+                            </div>
+    
+                    </div>
+                    
+                    <!-- <div class="row-cust2">
+                        <div class="col-logo-microsoft">
+                            <img src="./images/Microsoft.png" alt="Microsoft logo">
+                        </div>
+                        <div class="col-logo-bookmyshow">
+                            <img src="./images/Microsoft.png" alt="Microsoft logo">
+                        </div>
+                        <div class="col-logo-flipkart">
+                            <img src="./images/Microsoft.png" alt="Microsoft logo">
+                        </div>
+                        <div class="col-logo-amazon">
+                            <img src="./images/Microsoft.png" alt="Microsoft logo">
+                        </div>                                   
+                    </div> -->
+                </div>
+            </section>
+            <section class="contactus">
+                <div class="content">
+                    <h1>Contact us</h1>
+                    <p>If you have feedback, suggestions or issues please click below to get in touch.</p>
+                    <button class="connect">Get Connect</button>
+                </div>
+            </section>  
+            <section class="footer">
+                <div class="content">
+                    <div class="row-footer1">
+                        <div class="col-offerings">
+                            <p>OFFERINGS</p>                        
+                                <a href="#" class="fundraising">Fundrasing Managment</a>
+                                <a href="#" class="esop">ESOP Management</a>
+                                <a href="#" class="contract">Contract Management</a>
+                                <a href="#" class="other">Other Links</a>                    
+                        </div>
+                        <div class="col-company">
+                            <p>COMPANY</p>
+                                <a href="#" class="about">About us</a>
+                                <a href="#" class="contact">Contact us</a>
+                                <a href="#" class="career">Career</a>
+                                <a href="#" class="terms">Terms &amp; Conditions</a>
+                                <a href="#" class="policy">Privacy Policy</a>
+                        </div>
+                        <div class="col-support">
+                            <p>SUPPORT</p>
+                            <div class="phone">
+                                <!-- <img src="" alt=""> -->
+                                <div class="ph"></div>
+                                <p>+91 (22) 33835994</p>
+                            </div>
+                            <div class="email">
+                                <!-- <img src="" alt=""> -->
+                                <div class="emailimg"></div>
+                                <p>support@lexstart.in</p>      
+                            </div>              
+                        </div>
+                    </div>
+                    <div class="row-footer2">
+                        <p>LexStart</p>
+                        <div class="social-net-logo">
+                            <a href="#"><img src="" alt="f"></a>
+                            <a href="#"><img src="" alt="in"></a>
+                            <a href="#"><img src="" alt="insta"></a>
+                            <a href="#"><img src="" alt="twitter"></a>
+                        </div>
+                    </div>
+                    <div><p class="copyright">LexStart Consultancy Private Limited  |  CIN: U74999MH2015PTC265981</p></div>
+                </div>
+            </section>
+            <script type="text/javascript" src="wp-content/themes/lexstart/js/homepageJS/jquery-3.3.1.js"></script>
+            <script type="text/javascript" src="wp-content/themes/lexstart/js/homepageJS/slick.js"></script>
+            <script type="text/javascript" src="wp-content/themes/lexstart/js/homepageJS/slick-function.js"></Script>
+                
+        </body>
+    </html>

@@ -1,0 +1,11 @@
+.taxonomy-card-layout { border-radius: 2px; padding: 10px 15px; line-height: 28px; background-color: #fff; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); border: 1px solid rgba(0, 0, 0, 0.1); }
+.taxonomy-card-layout .ls-taxonomy-title { margin: 21px 0 14px; font-family: 'Playfair Display', serif; font-size: 28px; font-weight: bold; line-height: normal; color: #36cac2; }
+.taxonomy-card-layout .ls-taxonomy-description { margin-bottom: 17px; font-size: 14px; line-height: 1.29; color: #4d4d4d; }
+.taxonomy-card-layout .tab-links { padding: 0; list-style-type: none; border-bottom: solid 0.5px #666666; }
+.taxonomy-card-layout .tab-links li { position: relative; }
+.taxonomy-card-layout .tab-links a { padding: 6px 15px; font-size: 14px; line-height: normal; color: #4d4d4d; }
+.taxonomy-card-layout .tab-links a:after { content: '\f0d8'; font-family: fontawesome; position: absolute; left: 50%; bottom: -4px; color: #fff; }
+.taxonomy-card-layout .tab-links a:hover { color: #36cac2; border-bottom: 1px solid #36cac2; }
+.taxonomy-card-layout .tab-links a:hover:after { color: #36cac2; }
+.taxonomy-card-layout .tab-links li.active a { color: #36cac2; border-bottom: 1px solid #36cac2; }
+.taxonomy-card-layout .tab-links li.active a:after { color: #36cac2; }

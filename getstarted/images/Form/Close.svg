@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Template" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="company_details1_v1" transform="translate(-741.000000, -267.000000)">
+            <g id="Close" transform="translate(741.000000, 267.000000)">
+                <circle id="Oval-2" fill="#F90404" cx="12" cy="12" r="12"></circle>
+                <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="16.4571429 8.50971429 15.4902857 7.54285714 11.6571429 11.376 7.824 7.54285714 6.85714286 8.50971429 10.6902857 12.3428571 6.85714286 16.176 7.824 17.1428571 11.6571429 13.3097143 15.4902857 17.1428571 16.4571429 16.176 12.624 12.3428571"></polygon>
+                <polygon id="Shape" points="3.42857143 4.11428571 19.8857143 4.11428571 19.8857143 20.5714286 3.42857143 20.5714286"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

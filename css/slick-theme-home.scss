@@ -1,0 +1,592 @@
+@charset 'UTF-8';
+
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/slick.eot');
+    src: url('../fonts/slick.eot?#iefix') format('embedded-opentype'), url('../fonts/slick.woff') format('woff'), url('../fonts/slick.ttf') format('truetype'), url('../fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+// .three .content1 .prev,
+// .three .content1 .next,
+// .three .content2 .prev,
+// .three .content2 .next
+// {
+//     font-size: 20px;
+//     line-height: 20px;
+//     position: relative;
+//     top: 150px;
+//     /* right: 55px; */
+//     display: block;
+    
+//     width: 10px;
+//     height: 20px;
+//     padding: 0;
+//     -webkit-transform: translate(0, -50%);
+//     -ms-transform: translate(0, -50%);
+//     transform: translate(0, -50%);
+
+//     cursor: pointer;
+
+
+//     border: none;
+//     outline: none;
+// }
+
+
+.prev:hover,
+.prev:focus,
+.next:hover,
+.next:focus
+{
+    outline: none;
+    background: transparent;
+}
+.prev:hover:before,
+.prev:focus:before,
+.next:hover:before,
+.next:focus:before
+{
+    opacity: 1;
+}
+.prev.slick-disabled:before,
+.next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.prev:before,
+.next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: #000000;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// .four .cust-item .prev
+// {
+//     /* left: -25px; */
+//     float: left;
+//     position: relative;
+//     // left: 859px;
+// }
+// .four .cust-item .slick-next
+// {
+//     /* left: -25px; */
+//     float: left;
+//     position: relative;
+//     // left: 899px;
+// }
+
+.prev
+{
+    /* left: -25px; */
+    float: left;
+    position: relative;
+    top: 200px;
+}
+
+[dir='rtl'] .prev
+{   
+    right: -25px;
+    left: auto;
+}
+.prev:before
+{
+    content: '←';
+    
+}
+[dir='rtl'] .prev:before
+{
+    content: '→';    
+}
+
+// .slick-next, .slick-prev {
+// font-size: 0;
+// line-height: 0;
+// position: absolute;
+// top: 50%;
+// display: block;
+// width: 20px;
+// height: 20px;
+// padding: 0;
+// -webkit-transform: translate(0, -50%);
+// -ms-transform: translate(0, -50%);
+// transform: translate(0, -50%);
+// cursor: pointer;
+// color: transparent;
+// border: none;
+// outline: none;
+// background: transparent;
+// }
+
+//  .second .slick-next, 
+//  .second .slick-prev
+// {    
+//     margin: 0%;
+//     // padding-bottom: 40px;
+//     // text-transform: uppercase;
+//     font-size: 0;
+//     // color: #c1c1c1;
+//     position: absolute;
+//     right: 90px;
+//     bottom: 60px;
+//     width: 405px !important;
+//     height: 120px !important;
+//     &:before {
+//         display: block;
+//     }
+// }
+// .second .slick-prev
+// {    
+//     left: 95px;
+// }
+
+// .second {
+//     .slick-next
+//     {      
+//         margin: 0 0 0 20px;
+//         font-size: 0;
+//         position: absolute;
+//         right: 230px;
+//         top: 380px;
+//         // height: auto !important;
+//         &:before {
+//             background: url(/lexstart/images/Home_Page_Icons/Next.svg) no-repeat;
+//             content: '' !important;
+//             height: 36px;
+//             width: 36px;
+//             padding: 21px;
+//             display: block;
+//         }
+//     }
+//      .slick-prev
+//     {      
+//         margin: 0%;
+//         font-size: 0;
+//         position: absolute;
+//         left: 999px;
+//         top: 380px;
+//         &:before {        
+//             background: url(/lexstart/images/Home_Page_Icons/Pre.svg) no-repeat;
+//             content: '' !important;
+//             height: 36px;
+//             width: 36px;
+//         display: block;
+//         padding: 21px;
+//         }
+//     }
+// }
+
+
+.second .slick-next, 
+.second .slick-prev
+{    
+   margin: 0%;
+   // padding-bottom: 40px;
+   // text-transform: uppercase;
+   font-size: 0;
+   // color: #c1c1c1;
+   position: absolute;
+   right: 120px;
+   bottom: 30px;
+    height: 42px !important;
+    width: 42px !important;
+    background: url(/lexstart/images/Home_Page_Icons/Next.svg) no-repeat;
+//    width: 400px !important;
+//    height: 120px !important;
+   &:before {
+    display: none;
+   }
+}
+.second .slick-prev
+{    
+   left: 1125px;
+   background: url(/lexstart/images/Home_Page_Icons/Pre.svg) no-repeat;
+}
+
+
+
+.three .off-item .slick-next,
+.three .off-item .slick-prev 
+{    
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.four .cust-item .slick-next{
+    margin: 0 0 0 20px;
+    font-size: 0;
+    position: absolute;
+    right: 230px;
+    top: 300px;
+    height: auto !important;
+    &:before {
+        background: url(/lexstart/images/Home_Page_Icons/Next.svg) no-repeat;
+        content: '' !important;
+        height: 36px;
+        width: 36px;
+        padding: 21px;
+        display: block;
+    }
+}
+
+.four .cust-item .slick-prev
+{    
+    margin: 0%;
+    font-size: 0;
+    position: absolute;
+    left: 999px;
+    top: 300px;
+    &:before {        
+        background: url(/lexstart/images/Home_Page_Icons/Pre.svg) no-repeat;
+        content: '' !important;
+        height: 36px;
+        width: 36px;
+    display: block;
+    padding: 21px;
+    }
+}
+
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+
+/* Dots */
+
+.slick-dotted.slick-slider
+{
+    display: block;    
+}
+
+.slick-dots
+{
+    position: absolute !important;
+    bottom: 55px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+    direction: ltr;
+    width: 13px;
+    height: 13px;
+    margin: 0 10px 0 0;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.slick-dots li button
+{font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 13px;
+    height: 13px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 96px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    content: '\00B7' !important;
+    // content: "\f1db" !important;
+    text-align: center;
+    opacity: .25;
+    color: #fff !important;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    content: "\00B7" !important;
+    opacity: .75;
+    color: #ff500b !important;
+}
+
+// .slick-dots li button:before
+// {
+//     font-family: 'slick';
+//     font-size: 6px;
+//     line-height: 20px;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 13px;
+//     display: block;
+//     height: 13px;
+//     content: '';
+//     text-align: center;
+//     opacity: .25;
+//     // border: 1px solid #fff;
+//     border-radius: 50%;
+//     background-color: #fff;
+
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+// }
+// .slick-dots li.slick-active button:before
+// {
+//     opacity: .75;
+//     background-color: #ff500b;
+// }
+
+
+@media screen and (max-width: 1280px)  {
+    .second .slick-prev {
+        left: 1040px;
+    }
+    .four .cust-item .slick-prev {
+        left: 919px;
+    }
+}
+
+
+@media screen and (max-width: 1024px)  {
+    // .second .slick-next,
+    // .second .slick-prev {
+    //     bottom: 170px;
+    // }
+    .second .slick-prev {
+        left: 800px;
+    }
+    .three .off-item .col1 {
+        margin-left: 45px;
+    }
+    .four .cust-item { 
+        .slick-prev {
+            left: 830px;
+        }
+        .slick-next {
+            right: 100px;
+        }
+    }
+}
+
+
+// @media screen and (max-width: 991px) {
+//     .four .cust-item .slick-prev {
+//         left: 670px;
+//     }
+// }
+
+@media screen and (max-width: 768px) { 
+    .second {
+        .slick-next
+        {      
+            display: block !important;
+            right: 60px;
+            bottom: 30px;
+            background: url(/lexstart/images/Home_Page_Icons/Next.svg) no-repeat;
+        }
+         .slick-prev
+        {      
+            display: block !important;
+            left: 600px;
+            bottom: 30px;
+            background: url(/lexstart/images/Home_Page_Icons/Pre.svg) no-repeat;
+        }
+    }
+        .four .cust-item .slick-next {   
+            display: block !important;
+            right: 90px;
+            top: 310px;
+        }
+        .four .cust-item .slick-prev {      
+            display: block !important;
+            left: 580px;
+            top: 310px;
+        }
+}
+
+@media screen and (max-width: 640px) {
+    .second {
+    .slick-next
+    {      
+        display: block !important;
+        right: 100px;
+        bottom: 30px;
+        background: url(/lexstart/images/Home_Page_Icons/Next.svg) no-repeat;
+    }
+     .slick-prev
+    {      
+        display: block !important;
+        left: 440px;
+        bottom: 30px;
+        background: url(/lexstart/images/Home_Page_Icons/Pre.svg) no-repeat;
+    }
+}
+    .four .cust-item .slick-next {   
+        display: block !important;
+        background: url(/lexstart/images/Home_Page_Icons/Next.svg) no-repeat;
+        // bottom: -60px !important;
+        right: 100px;
+        top: 370px;
+    }
+    .four .cust-item .slick-prev {      
+        display: block !important;
+        left: 450px;
+        top: 370px;
+        // bottom: -60px !important;
+        background: url(/lexstart/images/Home_Page_Icons/Pre.svg) no-repeat;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .second .slick-next {
+        right: 50px;
+    }
+    .second .slick-prev {
+        left: 260px;
+    }
+    .four .cust-item .slick-next {   
+        top: 699px;
+        right: 90px;
+    }
+    .four .cust-item .slick-prev {      
+        left: 230px;
+        top: 699px;
+
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .second {
+    .slick-next, .slick-prev
+    {      
+        display: block !important;
+        right: 70px;
+        top: 959px;
+        width: 45px !important;
+    }
+     .slick-prev
+    {      
+        left: 230px;
+    }
+}
+    .four .cust-item .slick-next {   
+        display: block !important;
+        background: url(/lexstart/images/Home_Page_Icons/Next.svg) no-repeat;
+        top: 699px;
+        right: 90px;
+    }
+    .four .cust-item .slick-prev {      
+        display: block !important;
+        left: 230px;
+        top: 699px;
+        background: url(/lexstart/images/Home_Page_Icons/Pre.svg) no-repeat;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .second .slick-next {
+        right: 50px;
+    }
+    .second .slick-prev {
+        left: 220px;
+    }
+    .four .cust-item .slick-next {
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .second .slick-next,
+    .second .slick-prev {
+        top: 1089px;
+        left: 260px;
+    }
+    .second .slick-prev {
+        left: 200px;
+    }
+
+    .four .slick-next,
+    .four .slick-prev {
+        top: 720px !important;
+        left: 260px;
+    }
+    .four .slick-prev {
+        left: 220px !important;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .second .slick-next {
+        left: 220px;
+        top: 1139px;
+    }
+    .second .slick-prev {
+        left: 160px;
+        top: 1139px;
+    }
+    .four .cust-item .slick-prev {
+        left: 180px !important;
+        top: 800px !important;
+    }
+    .four .cust-item .slick-next {
+        left: 220px;
+        top: 800px !important;
+    }
+}

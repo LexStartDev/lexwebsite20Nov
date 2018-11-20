@@ -1,0 +1,30 @@
+form[id*="gform_"] ul { margin-left: 0; padding-left: 0; list-style: none; }
+form[id*="gform_"] .gform_body input, form[id*="gform_"] .gform_body textarea { border: 0; border-bottom: 1px solid #dcdcdc; }
+form[id*="gform_"] .gfield { margin: 15px 0; }
+form[id*="gform_"] .ginput_container_name { display: flex; }
+form[id*="gform_"] .ginput_container_name > span { width: 50%; }
+form[id*="gform_"] .ginput_container_name > span:nth-child(1) { margin-right: 10px; }
+form[id*="gform_"] .ginput_container_name > span:nth-child(2) { margin-left: 10px; }
+form[id*="gform_"] input, form[id*="gform_"] select { width: 100%; }
+form[id*="gform_"] input[type="submit"] { width: auto; border-radius: 2px; color: #ffffff; background-color: #00a7d4; border: none; margin: 10px 0; font-weight: bold; }
+form[id*="gform_"] .gfield_checkbox input, form[id*="gform_"] .gfield_radio input { width: auto; }
+form[id*="gform_"] .gfield_checkbox label, form[id*="gform_"] .gfield_radio label { display: inline-block; }
+form[id*="gform_"] .gfield_checkbox li, form[id*="gform_"] .gfield_radio li { position: relative; padding-left: 30px; margin-bottom: 0px; cursor: pointer; }
+form[id*="gform_"] .gfield_checkbox input[type="checkbox"], form[id*="gform_"] .gfield_checkbox input[type="radio"], form[id*="gform_"] .gfield_radio input[type="checkbox"], form[id*="gform_"] .gfield_radio input[type="radio"] { position: absolute; top: 50%; left: 0; height: 15px; width: 15px; transform: translateY(-50%); }
+form[id*="gform_"] .validation_error { color: red; }
+
+.ui-datepicker { padding: 15px; width: auto; background-color: #fff; border: 1px solid #f2f2f2; }
+.ui-datepicker a { text-decoration: none; }
+.ui-datepicker .ui-datepicker-title { margin: 10px 0; }
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-year { float: right; }
+.ui-datepicker td { padding: 3px 5px; text-align: center; }
+
+/*=============================*\
+## Media Queries
+\*=============================*/
+@media screen and (min-width: 601px) { .dnbsame-contact-form form[id*="gform_"] .gform_fields { display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .dnbsame-contact-form form[id*="gform_"] .gfield { width: 48%; } }
+@media screen and (max-width: 480px) { form[id*="gform_"] .ginput_container_name { display: block; }
+  form[id*="gform_"] .ginput_container_name > span { width: 100%; }
+  form[id*="gform_"] .ginput_container_name > span:nth-child(1) { margin: 0 0 5px; }
+  form[id*="gform_"] .ginput_container_name > span:nth-child(2) { margin-left: 0; } }

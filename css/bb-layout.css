@@ -1,0 +1,233 @@
+/***Why Section***/
+.img-border .fl-photo-content {
+   display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border-left: 12px solid #f1f6f9;
+    border-right: 12px solid #f1f6f9;
+}
+
+.img-border .fl-photo-content:before {
+    position: absolute;
+    content: "";
+    bottom: 7%;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0 19px 2px #f1f6f9, inset 0 -4px 2px #f1f6f9;
+}
+
+/****Tabs****/
+/***tabs-style-one***/
+.tabs-style-one .fl-tabs-labels .fl-tab-active {
+    color: #00b3ea;
+    font-weight: 600;
+    border-top-color: #fff !important;
+}
+
+.tabs-style-one .fl-tabs-panels {
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+}
+
+/****tabs-style-two***/
+.tabs-style-two .fl-tabs-labels {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 3px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.tabs-style-two .fl-tabs-label,
+.tabs-style-three .fl-tabs-label{
+    position: relative;
+}
+
+.tabs-style-two .fl-tabs-label.fl-tab-active,
+.tabs-style-three .fl-tabs-label.fl-tab-active {
+    border: none !important;
+    background-color: transparent !important;
+    color: #00b3ea;
+}
+
+.tabs-style-two .fl-tabs-label.fl-tab-active:after,
+.tabs-style-two .fl-tabs-label:hover:after,
+.tabs-style-two .fl-tabs-label:hover,
+.tabs-style-three .fl-tabs-label.fl-tab-active:after,
+.tabs-style-three .fl-tabs-label:hover:after,
+.tabs-style-three .fl-tabs-label:hover {
+    color: #00b3ea;
+}
+
+.tabs-style-two .fl-tabs-label:after,
+.tabs-style-three .fl-tabs-label:after {
+    content: "\f0d8";
+    font-family: fontawesome;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    color: transparent;
+    font-size: 25px;
+}
+
+.tabs-style-two .fl-tabs-panels {
+    background-color: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/****tabs-style-three****/
+.tabs-style-three .fl-tabs-labels {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*.tabs-style-three .fl-tabs-label.fl-tab-active {*/
+/*    border: none !important;*/
+/*    background-color: transparent !important;*/
+/*    color: #00b3ea;*/
+/*}*/
+
+.tabs-style-three .fl-tabs-panels {
+    border: none;
+    background-color: transparent;
+}
+
+/***How it work section****/
+.image-position .fl-row-content-wrap {
+    background-size: cover !important;
+    background-position-y: -100px !important;
+}
+
+.image-position .fl-col-content {
+    border-radius: 5px;
+}
+
+/*****Accordion*****/
+.su-spoiler-icon-plus .su-spoiler-title {
+    color: #00bf69;
+}
+
+.su-spoiler-icon-plus.su-spoiler-closed .su-spoiler-title {
+    color: #4d4d4d;
+}
+
+/*****step-by-step*****/
+.step-by-step .fl-photo-content {
+    position: relative;
+}
+
+
+.step-by-step .fl-photo-content:before {
+    content: "";
+    left: -100px;
+    border: 1px solid #06c8fe;
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    height: 100%;
+}
+
+.step-by-step .fl-col-group:nth-child(1) .fl-module .fl-photo-content:after {
+    content: "1";
+    position: absolute;
+    top: -25px;
+    left: -120px;
+    border: 1px solid #06c8fe;
+    border-radius: 50%;
+    padding: 19px 15px;
+    background-color: #fff;
+}
+
+.step-by-step .fl-col-group:nth-child(2) .fl-module .fl-photo-content:after {
+    content: "2";
+    position: absolute;
+    top: -25px;
+    left: -120px;
+    border: 1px solid #06c8fe;
+    border-radius: 50%;
+    padding: 19px 15px;
+    background-color: #fff;
+}
+
+.step-by-step .fl-col-group:nth-child(3) .fl-module .fl-photo-content:after {
+    content: "3";
+    position: absolute;
+    top: -25px;
+    left: -120px;
+    border: 1px solid #06c8fe;
+    border-radius: 50%;
+    padding: 19px 15px;
+    background-color: #fff;
+}
+
+/*****Clock-icon*****/
+.clock-icon:before {
+    content: "\f017";
+    font-family: fontawesome;
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+/*****Faq****/
+.faq-section .title p:before {
+    content: url("../images/faq-icon.png");
+    font-family: fontawesome;
+    color: #01bd66;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .fl-tabs-labels {
+       display: none !important;
+    }
+    
+    .tabs-style-two .fl-tabs-label:after,
+    .tabs-style-three .fl-tabs-label:after,
+    .img-border .fl-photo-content:before {
+        content: none;
+    }
+    
+    .img-border .fl-photo-content {
+        border: none !important;
+    }
+    
+    .why-section .fl-row-content-wrap {
+        padding-bottom: 15px !important;
+    }
+    
+    .why-section p {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .image-position .fl-row-content-wrap {
+        background-position-y: initial !important;
+    }
+    
+    .image-position .fl-col-group .fl-col-group .fl-col {
+        margin-bottom: 15px;
+    }
+    
+    .image-position .fl-col-group .fl-col-group .fl-col .fl-col-content.fl-node-content {
+        padding-top: 20px;
+    }
+    
+    .step-by-step .fl-photo-content:before {
+        left: 24px !important;
+    }
+    
+    .step-by-step .fl-col-group .fl-module .fl-photo-content:after {
+        left: 5px !important;
+    }
+}

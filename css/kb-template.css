@@ -1,0 +1,60 @@
+.page-template-page-kb { /***********Start of Accordion*****************/ /***********End of Accordion*****************/ /***********Slick***********/ /***********Slick***********/ }
+.page-template-page-kb .site-content { max-width: 100%; padding: 0; margin: 0 auto; }
+.page-template-page-kb .main-post-header .entry-title { color: #36cac2; }
+.page-template-page-kb .site-main { max-width: 1124px; margin: 0 auto; padding: 15px; }
+.page-template-page-kb .knowledge-container { display: inline-block; width: 89%; margin-top: 30px; padding: 30px; border-radius: 2px; background-color: #ffffff; box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); }
+.page-template-page-kb .knowledge-container .sharedaddy { display: none; }
+.page-template-page-kb .kb-accordion-desc { font-size: 14px; line-height: normal; }
+.page-template-page-kb .entry-content { font-size: 14px; line-height: 1.29; }
+.page-template-page-kb .individual-container { margin-top: 25px; }
+.page-template-page-kb ul { padding: 0; list-style-type: none; }
+.page-template-page-kb .kb-classify .kb-accordion-content > ul > li { border-right: 0.5px solid #979797; }
+.page-template-page-kb .kb-classify .kb-accordion-content > ul > li:nth-child(1) a { padding-left: 0; }
+.page-template-page-kb .kb-classify .kb-accordion-content > ul > li:nth-last-child(1) { border-right: none; }
+.page-template-page-kb .kb-classify .kb-accordion-content > ul > li > a { display: block; padding: 5px 20px; font-size: 18px; line-height: normal; color: #666666; }
+.page-template-page-kb .kb-classify .kb-accordion-content > ul > li.active > a { font-weight: 600; }
+.page-template-page-kb .tab-links li.active { color: #36cac2; }
+.page-template-page-kb .tab-links li.active > a { color: #36cac2; }
+.page-template-page-kb .tab-links .fas { color: #4d4d4d; }
+.page-template-page-kb .tab { display: none; }
+.page-template-page-kb .tab.active { display: block; }
+.page-template-page-kb .taxonomy-terms { margin: 26px 0 55px; }
+.page-template-page-kb .taxonomy-terms .tab-links { width: 30%; padding-right: 15px; }
+.page-template-page-kb .taxonomy-terms .tab-links a { display: inline-block; width: 70%; padding: 10px 10px 10px 0; font-size: 14px; line-height: 1.29; }
+.page-template-page-kb .taxonomy-terms .fas { display: inline-block; padding: 10px 0; cursor: pointer; vertical-align: top; }
+.page-template-page-kb .taxonomy-terms .tab-content { width: 70%; padding-left: 15px; font-size: 13px; line-height: normal; letter-spacing: -0.2px; }
+.page-template-page-kb .taxonomy-terms .tab-content .term_title { display: block; padding: 5px 0; font-size: 16px; color: #36cac2; text-decoration: underline; }
+.page-template-page-kb .taxonomy-terms .tab-content .term_read_more { display: inline-block; padding: 7px 20px; font-size: 11px; color: #00a7d4; border: 1px solid #00a7d4; border-radius: 2px; letter-spacing: normal; text-transform: uppercase; }
+.page-template-page-kb .taxonomy-terms .tab-content .term_read_more:hover { color: #fff; background-color: #00a7d4; }
+.page-template-page-kb .taxonomy-terms .term-child { display: none; }
+.page-template-page-kb .blog_slider_section { max-width: 1024px; padding: 15px; margin: 0 auto; }
+.page-template-page-kb .kb-subscribe, .page-template-page-kb .kb-document { font-size: 14px; line-height: 1.29; }
+.page-template-page-kb .kb-subscribe a, .page-template-page-kb .kb-document a { display: block; padding: 10px 10px 5px 0; font-size: 14px; line-height: 1.29; }
+.page-template-page-kb .kb-subscribe a:hover, .page-template-page-kb .kb-document a:hover { color: #36cac2; }
+.page-template-page-kb .kb-subscribe .post-listing, .page-template-page-kb .kb-document .post-listing { padding: 0; list-style-type: none; }
+.page-template-page-kb .kb-accordion .kb-accordion-content { display: none; margin: 14px 0 55px; }
+.page-template-page-kb .kb-accordion .kb-accordion-title { text-align: center; cursor: pointer; }
+.page-template-page-kb .kb-accordion .kb-accordion-title p { display: inline-block; position: relative; margin: 0; padding: 10px; font-size: 18px; font-weight: 600; line-height: normal; letter-spacing: 0.5px; color: #666666; border-radius: 2px; border: solid 0.5px #979797; z-index: 3; background-color: #fff; }
+.page-template-page-kb .kb-accordion .kb-accordion-title:before { content: ''; width: 96%; border-bottom: solid 1px #666666; position: absolute; left: 0; top: 45%; z-index: 1; }
+.page-template-page-kb .kb-accordion .individual-container:nth-child(1) .kb-accordion-content { display: block; }
+.page-template-page-kb .plus { position: relative; }
+.page-template-page-kb .plus:after { content: "\f055"; font-family: fontawesome; font-size: 16px; position: absolute; right: 0; color: #999999; margin: 10px 0 0 10px; }
+.page-template-page-kb .minus { position: relative; }
+.page-template-page-kb .minus:after { content: "\f056" !important; font-family: fontawesome; font-size: 16px; position: absolute; right: 0; color: #999; }
+.page-template-page-kb .testimonials_section .slick-next { right: 25px; }
+.page-template-page-kb .testimonials_section .slick-prev { left: 25px; }
+
+/*=============================*\
+## Media Queries
+\*=============================*/
+@media (max-width: 980px) { .page-template-page-kb .lexstart-share-icons { display: none; }
+  .page-template-page-kb .knowledge-container { width: 100%; margin-top: 0; } }
+@media (max-width: 620px) { .page-template-page-kb .kb-accordion-content > ul > li { border-right: none !important; }
+  .page-template-page-kb .kb-accordion-content > ul > li a { padding: 5px 20px !important; }
+  .page-template-page-kb .kb-accordion-content .tab-links { justify-content: space-evenly; }
+  .page-template-page-kb .taxonomy-terms .tab-links, .page-template-page-kb .taxonomy-terms .tab-content { width: 100%; }
+  .page-template-page-kb .taxonomy-terms .tab-links { padding-right: 0; display: flex; flex-wrap: wrap; justify-content: space-between; }
+  .page-template-page-kb .taxonomy-terms .tab-links li { width: 48%; }
+  .page-template-page-kb .taxonomy-terms .tab-content { position: relative; padding: 15px; }
+  .page-template-page-kb .taxonomy-terms .tab-content:before { content: ''; width: 80%; border-bottom: solid 1px #666666; position: absolute; left: 10%; top: 0; z-index: 1; }
+  .page-template-page-kb .taxonomy-terms .term-child { margin: -10px 0 5px 10px; } }

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="/lexstart/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/lexstart/css/basic.css"> 
+      <link rel="stylesheet" href="/lexstart/css/global.css"> 
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,800,900" rel="stylesheet">  
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="icon" href="/lexstart/images/Lex_logo.png" type="image/gif">
+  </head>
+
+<body>
+        <div class="header default-container">
+            <a class="logo" href="/lexstart/homepage.html"><img src="/lexstart/images/Home_Page_Icons/Lex_logo_blue.svg" alt=""></a>
+        </div>
+<form id="diligenceForm" name="diligenceForm">
+<!-- <form id="regForm" action="/action_page.php"> -->
+  <div class="group">
+      <p class="title">Do a quick 2 minute investment readiness check</p>
+  </div>
+  <!-- One "tab" for each step in the form: -->
+  
+   <div class="tab org_details">
+    <label class="first_name">Name</label> <p class="name-input"><input type="text"  placeholder="Enter First Name" oninput="this.className = ''" name="first_name" id="f_name" class="input-box"></p>
+    
+    <label class="email">E-mail</label> <p  class="email-input"><input type="email" placeholder="Enter E-mail Address" oninput="this.className = ''" name="email" id="email" class="input-box"></p>    
+    <p id="error">Enter valid Email-Id</p>
+   </div> 
+
+  <div class="tab">
+      <p class="questions">1. What kind of an entity have you formed?</p>                     
+      <div class="clerafix option-wrapper">
+        <label class="radioWrapper">LLP
+            <input type="radio"  name="question1" class="question1"   id="q1_1" value="LLP"  oninput="this.className = ''" >
+            <span class="checkmark"></span>
+        </label>
+        <label class="radioWrapper">Company
+            <input type="radio" name="question1"  class="question1"  id="q1_2" value="company"  oninput="this.className = ''" >
+            <span class="checkmark"></span>
+        </label>                            
+        <label class="radioWrapper">Partnership firm
+            <input type="radio" name="question1"  class="question1"  id="q1_3"  value="Partnership"  oninput="this.className = ''" >
+            <span class="checkmark"></span>
+        </label>
+        <label class="radioWrapper">Section 8 company
+            <input type="radio" name="question1"  class="question1"  id="q1_4" value="Section8"  oninput="this.className = ''" >
+            <span class="checkmark"></span>
+        </label>
+        <label class="radioWrapper">Sole Proprietorship
+            <input type="radio" name="question1"  class="question1"  id="q1_5" value="soleProprietorship"  oninput="this.className = ''" >
+            <span class="checkmark"></span>
+        </label>
+        <label class="radioWrapper">None
+            <input type="radio" name="question1"  class="question1"  id="q1_6" value="none"  oninput="this.className = ''" >
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    
+
+    <p class="questions">2. Have you executed employment agreements with all your employees (including founders)?</p>
+    <div class="clerafix option-wrapper">
+        <label class="radioWrapper" >Yes
+            <input type="radio" name="question2" id="q2_yes" value="yes"  oninput="this.className = ''"  >
+            <span class="checkmark"></span>
+        </label>
+        <label class="radioWrapper">No
+            <input type="radio" name="question2" id="q2_no" value="no"  oninput="this.className = ''"  >
+            <span class="checkmark"></span>
+        </label>
+        <div id="ifNotExecuted"  style="font-size:12px;margin-left:40px;">
+            <label class="radioWrapper">Neither employees nor founder
+                <input type="radio" name="ifNo" id="q2_b1"  value="Neither Employees nor Founders"  oninput="this.className = ''" >
+                <span class="checkmark"></span>
+            </label>
+            <label class="radioWrapper">Only employees not founder
+                <input type="radio" name="ifNo" id="q2_b2"  value="Only employees not founders" oninput="this.className = ''" >
+                <span class="checkmark"></span>
+            </label>
+            <label class="radioWrapper">Only founder not employees
+                <input type="radio" name="ifNo" id="q2_b3"  value="Only founders not employees" oninput="this.className = ''" >
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        <label class="radioWrapper" >I don't know
+            <input type="radio" name="question2" id="q2_idk"  value="I dont know" oninput="this.className = ''"  >
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <!-- <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p> -->
+  </div>
+
+  <div class="tab">
+      <p class="questions">3. Is your brand name and logo registered?</p>
+      <div class="clerafix option-wrapper">
+          <label class="radioWrapper">Yes
+              <input type="radio"  id="q3_yes" name="question3"  value="yes" >
+              <span class="checkmark"></span>
+          </label>
+          <label class="radioWrapper">No
+              <input type="radio"  id="q3_no" name="question3" value="no" >
+              <span class="checkmark"></span>
+          </label>
+          <div id="ifNot"  style="font-size:12px;margin-left:15px;">
+              <label class="radioWrapper">Neither brand name nor logo
+                  <input type="radio" name="ifNot" id="q3_b1"  value="Neither brand name nor logo">
+                  <span class="checkmark"></span>
+              </label>
+              <label class="radioWrapper">Only brand name not logo
+                  <input type="radio" name="ifNot" id="q3_b2"  value="Only brand name not logo">
+                  <span class="checkmark"></span>
+              </label>
+              <label class="radioWrapper">Only logo not brand name
+                  <input type="radio" name="ifNot" id="q3_b3"  value="Only logo not brand name">
+                  <span class="checkmark"></span>
+              </label>                                
+          </div>
+      </div>
+    <!-- <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p> -->
+
+    <p class="questions">4. Is the intellectual property including trademarks, websites, patents owned by you or your startup?
+    <div class="clerafix option-wrapper">
+        <label class="radioWrapper">All owned by startup
+            <input type="radio" name="question4" id="q4_1"  value="all owned" >
+            <span class="checkmark"></span>
+        </label>
+        <label class="radioWrapper">None owned by startup
+            <input type="radio" name="question4" id="q4_2"   value="none owned" >
+            <span class="checkmark"></span>
+        </label>
+        <label class="radioWrapper">Partially owned by startup
+            <input type="radio" name="question4" id="q4_3"   value="partially owned" >
+            <span class="checkmark"></span>
+        </label>
+        <label class="radioWrapper">I don't know
+            <input type="radio" name="question4" id="q4_4"  value="I dont know" >
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <!-- <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p> -->
+  </div>
+
+  <div class="tab">
+      <p class="questions">5. Do you have a Terms of Service and Privacy Policy on your website?</p>
+      <div class="clerafix option-wrapper">
+          <label class="radioWrapper">Yes
+              <input type="radio"  name="question5"  id="q5_1"   value="yes" >
+              <span class="checkmark"></span>
+          </label>
+          <label class="radioWrapper">No
+              <input type="radio" id="q5_2" name="question5"   value="no" >
+              <span class="checkmark"></span>
+          </label>
+          <label class="radioWrapper">I don't know
+              <input type="radio" id="q5_3" name="question5"   value="I dont know" >
+              <span class="checkmark"></span>
+          </label>
+      </div>
+      <div id="question5b" >
+          <p class="questions">   Do you want us to review Terms of Service and Privacy Policy on your website?</p>
+          <div class="clerafix ">
+              <label class="radioWrapper">Yes
+                  <input type="radio" name="question5a" id="q5_b1"  value="yes">
+                  <span class="checkmark"></span>
+              </label>
+              <label class="radioWrapper">No
+                  <input type="radio" name="question5a" id="q5_b2"  value="no">
+                  <span class="checkmark"></span>
+              </label>
+          </div>                            
+      </div>
+    <!-- <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p> -->
+
+    <!-- <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p> -->
+  </div>
+  <div class="tab">
+      <p class="questions">6. Do you have contracts in place with all your vendors and customers?</p>
+      <div class="clerafix option-wrapper">
+          <label class="radioWrapper">Yes
+              <input type="radio" name="question6" id="q6_1"  value="yes" >
+              <span class="checkmark"></span>
+          </label>
+          <label class="radioWrapper">No
+              <input type="radio"  name="question6" id="q6_2" value="no" >
+              <span class="checkmark"></span>
+          </label>
+          <label class="radioWrapper">With some
+              <input type="radio" name="question6"  id="q6_3" value="with some" >
+              <span class="checkmark"></span>
+          </label>
+      </div>
+      <div id="question6b" >
+          <p class="questions">   Do you want us to review contracts with vendors or customers?</p>
+          <div class="clerafix ">
+              <label class="radioWrapper">Yes
+                  <input type="radio" name="question6a" id="q6_b1"  value="yes">
+                  <span class="checkmark"></span>
+              </label>
+              <label class="radioWrapper">No
+                  <input type="radio" name="question6a" id="q6_b2"  value="no">
+                  <span class="checkmark"></span>
+              </label>
+          </div>
+      </div>
+    <!-- <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p> -->
+  </div>
+  <div class="tab">
+      <p class="questions">7. Do you have all your compliance filings, board meetings up to date?</p>
+      <div class="clerafix option-wrapper">
+          <label class="radioWrapper">Yes
+              <input type="radio" name="question7" id="q7_1" value="yes" >
+              <span class="checkmark"></span>
+          </label>
+          <label class="radioWrapper" >No
+              <input type="radio" name="question7" id="q7_2" value="No" >
+              <span class="checkmark"></span>
+          </label>
+          <label class="radioWrapper" >Maybe
+              <input type="radio" name="question7" id="q7_3" value="maybe" >
+              <span class="checkmark"></span>
+          </label>
+      </div>
+  </div>
+  <div class="tab">
+      <p class="questions">8. Have you ever taken money in a form other than equity or revenues from friends, family, advisors
+          etc.?
+      </p>
+      <div class="clerafix option-wrapper">
+          <label class="radioWrapper">Yes
+              <input type="radio" name="question8" id="q8_1"  value="yes" >
+              <span class="checkmark"></span>
+          </label>
+          <label class="radioWrapper" >No
+              <input type="radio" id="q8_2" name="question8"  value="no" >
+              <span class="checkmark"></span>
+          </label>
+      </div>
+      <div id="ifYesTaken" >
+          <p class="questions">In what form was the money taken ?</p>
+          <div class="clerafix ">
+              <label class="radioWrapper">Loan
+                  <input type="radio" id="q8_b1" name="ifTaken"  value="loan">
+                  <span class="checkmark"></span>
+              </label>
+              <label class="radioWrapper" >Debentures
+                  <input type="radio" id="q8_b2" name="ifTaken"  value="debentures">
+                  <span class="checkmark"></span>
+              </label>
+              <label class="radioWrapper">Convertible Note
+                  <input type="radio" id="q8_b3" name="ifTaken" value="convertible note">
+                  <span class="checkmark"></span>
+              </label>
+          </div>
+      </div>
+      <div id="question8c">
+          <p class="questions">Have you followed compliance &amp; made requisite filings ?</p>
+          <div class="clerafix ">
+              <label class="radioWrapper">Yes
+                  <input type="radio" id="q8_c1" name="question8c" value="yes">
+                  <span class="checkmark"></span>
+              </label>
+              <label class="radioWrapper">No
+                  <input type="radio" id="q8_c2" name="question8c" value="no">
+                  <span class="checkmark"></span>
+              </label>
+              <label class="radioWrapper">Maybe
+                  <input type="radio" id="q8_c3" name="question8c"  value="maybe" >
+                  <span class="checkmark"></span>
+              </label>
+          </div>
+      </div>
+  </div>
+
+  <div>
+    <div class="buttons">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>      
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> 
+      <button type="submit" id="submitBtn">Submit</button>
+    </div>
+  </div>
+  
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+      
+
+
+
+
+      <!-- Modal empty field-->
+      <div class="modal fade" id="emptyModal" tabindex="-1" role="dialog" aria-labelledby="emptyModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="emptyModalLabel">Message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Field cannot be empty.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="ok" data-dismiss="modal">Ok</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+            <!-- Modal if not-->
+            <div class="modal fade" id="ifNotModal" tabindex="-1" role="dialog" aria-labelledby="ifNotModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalLabel">Message</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        If not, Please select one of the following option.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="ok" data-dismiss="modal">Ok</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                    <!-- Modal if yes-->
+      <div class="modal fade" id="ifYesModal" tabindex="-1" role="dialog" aria-labelledby="ifYesModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ifYesModalLabel">Message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                If yes, Please select one of the following option.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="ok" data-dismiss="modal">Ok</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+                          <!-- Modal unchecked
+      <!-- <div class="modal fade" id="uncheckedModal" tabindex="-1" role="dialog" aria-labelledby="uncheckedModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uncheckedModalLabel">Message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="ok" data-dismiss="modal">Ok</button>
+              
+            </div>
+          </div>
+        </div>
+      </div> --> 
+
+      <!-- Modal mail-check-->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Entered Email-Id already registerd with us please use another Email-Id to check Investment Readiness Score.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="ok" data-dismiss="modal">Ok</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- Org_Modal start -->
+
+      <div class="modal fade" id="Org_Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Success</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        You have successfully completed Investment Readiness Check. Please login to see the score. Your credentials to login to app is mailed to you.
+                </div>
+                <div class="modal-footer">
+                  <a type="button" class="login" href="https://app.lexstart.com/#/login">Login</a>
+                  <a type="button" class="ok" href="https://lexstart.com">Go home</a>
+                </div>
+              </div>
+            </div>
+          </div>
+<script type="text/javascript" src="/lexstart/js/homepageJS/global.js"></script>
+<script type="text/javascript" src="/lexstart/js/bootstrap.min.js"></Script>
+<script type="text/javascript" src="/lexstart/js/homepageJS/basic.js"></script>
+</body>
+</html>
+
+

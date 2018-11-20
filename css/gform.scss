@@ -1,0 +1,148 @@
+form[id*="gform_"] {
+	ul {
+		margin-left: 0;
+		padding-left: 0;
+		list-style: none;
+	}
+
+	.gform_body {
+		input, textarea {
+		    border: 0;
+		    border-bottom: 1px solid #dcdcdc;
+		}
+	}
+
+	.gform_footer {
+
+	}
+
+	.gfield {
+	    margin: 15px 0;
+	}
+
+	.ginput_container_name {
+	    display: flex;
+
+	    & > span{
+	    	width: 50%;
+
+	    	&:nth-child(1) {
+			    margin-right: 10px;
+			}
+
+	    	&:nth-child(2) {
+			    margin-left: 10px;
+			}
+		}
+	}
+
+	input, select {
+		width: 100%;
+	}
+
+	input[type="submit"] {
+		width: auto;
+		border-radius: 2px;
+	    color: #ffffff;
+	    background-color: #00a7d4;
+	    border: none;
+	    margin: 10px 0;
+	    font-weight: bold;
+	}
+
+	.gfield_checkbox, .gfield_radio {
+
+		input {
+			width: auto;
+		}
+
+		label {
+			display: inline-block;
+		}
+
+		li {
+			position: relative;
+		    padding-left: 30px;
+		    margin-bottom: 0px;
+		    cursor: pointer;
+		}
+
+		input[type="checkbox"], input[type="radio"] {
+		    position: absolute;
+		    top: 50%;
+		    left: 0;
+		    height: 15px;
+		    width: 15px;
+		    transform: translateY(-50%);
+		}
+
+	}
+
+	.validation_error {
+	    color: red;
+	}
+}
+
+//Date-picker
+.ui-datepicker {
+    padding: 15px;
+    width: auto;
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    
+    a {
+	    text-decoration: none;
+	}
+
+    .ui-datepicker-title {
+	    margin: 10px 0;
+	}
+
+    .ui-datepicker-next, .ui-datepicker-year {
+	    float: right;
+    }
+
+    td {
+	    padding: 3px 5px;
+	    text-align: center;
+	}
+}
+
+/*=============================*\
+## Media Queries
+\*=============================*/
+@media screen and (min-width: 601px) {
+	.dnbsame-contact-form form[id*="gform_"] {
+		.gform_fields {
+			display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-between;
+		}
+
+		.gfield {
+		    // margin: 15px 1%;
+		    width: 48%;
+		    // display: inline-block;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	form[id*="gform_"] {
+		.ginput_container_name {
+			display: block;
+
+			& > span {
+			    width: 100%;
+
+			    &:nth-child(1) {
+				    margin: 0 0 5px;
+				}
+
+		    	&:nth-child(2) {
+				    margin-left: 0;
+				}
+			}
+		}
+	}
+}

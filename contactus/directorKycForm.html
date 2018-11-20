@@ -1,0 +1,649 @@
+<html>
+
+<head>
+    <style type="text/css">
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <script src="js/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <!-- <script src="js/custom-script.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/directorKyc.client.controller.js" type="text/javascript" charset="utf-8"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link href="css/vendors/slick/slick.css" type="text/css" rel="stylesheet">
+    <link href="css/vendors/slick/slick-theme.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+</head>
+
+<body ng-app="esopApp" ng-controller="myCtrl" class="kycFormBody">
+    <section>
+        <div class="header">
+            <img src="images/svg/Lexstart_logo.svg" alt="logo">
+        </div>
+        <!-- {{kycDetails}} -->
+        <div class="container">
+            <p class="heading">Submit KYC for Directorship in 2 Minutes</p>
+            <!-- <p class="sub-heading">Submit KYC for Directorship in 2 Minutes</p> -->
+
+            <form name="directorKycForm">
+                <div class="loader2"></div>
+                <div class="tab-wrapper">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active tab-heading">
+                            <a href="#personalDetails" class="tabs-1" aria-controls="personalDetails" role="tab" data-toggle="tab">Personal Details</a>
+                            <a href="#personalDetails" class="tabs-2" aria-controls="personalDetails" role="tab" data-toggle="tab">Personal<br>Details</a>
+                        </li>
+                        <li role="presentation" class="tab-heading">
+                            <a href="#kycDetails" class="tabs-1" aria-controls="kycDetails" role="tab" data-toggle="tab">KYC Details</a>
+                            <a href="#kycDetails" class="tabs-2" aria-controls="kycDetails" role="tab" data-toggle="tab">KYC<br>Details</a>
+                        </li>
+                        <li role="presentation" class="tab-heading">
+                            <a href="#uploadDocuments" class="tabs-1" aria-controls="uploadDocuments" id="upload-Tab" role="tab" data-toggle="tab">Upload Documents</a>
+                            <a href="#uploadDocuments" class="tabs-2" aria-controls="uploadDocuments" id="upload-Tab" role="tab" data-toggle="tab">Upload<br>Documents</a>
+                        </li>
+                        <li role="presentation" class="tab-heading">
+                            <a href="#Payment" class="tabs-1" aria-controls="Payment" role="tab" data-toggle="tab">Payment</a>
+                            <a href="#Payment" class="tabs-2" aria-controls="Payment" role="tab" data-toggle="tab">Payment</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content ">
+                        <div role="tabpanel" class="tab-pane active" id="personalDetails">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="fullname">Full Name*</label>
+                                    <input type="text" name="fullname" class="input-box" ng-model="kycDetails.name" placeholder="Enter Full Name">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="email">Email* </label>
+                                    <input type="text" name="email" class="input-box" ng-model="kycDetails.emailId" placeholder="Enter E-mail Address">
+                                    <p class="error" data-ng-show="invalidEmail">Enter valid email address</p>
+                                    <p class="error" data-ng-show="noEmail">Enter email address</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="phone">Mobile Number* </label>
+                                    <input type="tel" name="phone" class="input-box" ng-model="kycDetails.contactNumber" placeholder="Enter Mobile Number">
+                                    <p class="error" data-ng-show="invalidContact">Enter valid phone number</p>
+                                    <p class="error" data-ng-show="nocontact">Enter phone number</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="info-1">You can return to fill this form at any time by using the
+                                    <span>Reference Number</span> sent on your registered email id.</p>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="kycDetails">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="din">DIN*</label>
+                                    <input type="text" name="din" class="input-box" ng-model="kycDetails.dinNumber" placeholder="Enter DIN">
+                                    <p class="error" data-ng-show="noDin">Enter DIN number</p>
+                                </div>
+                                <!-- <div class="col-md-4">
+                                    <label for="aadhaarNumber">Aadhaar Number<span ng-show="kycDetails.residentDirector">*</span> </label>
+                                    <input type="text" name="aadhaarNumber" class="input-box" ng-model="kycDetails.aadhaarNumber" placeholder="Enter Aadhaar Number">
+                                    <p class="error" data-ng-show="invalidAadhaar">Enter valid aadhaar number</p>
+                                    <p class="error" data-ng-show="noAadhaar">Enter aadhaar number</p>
+                                </div> -->
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="address">Address Details*</label>
+                                    <textarea name="address" class="input-box address" cols="100" ng-model="kycDetails.address" placeholder="Enter Full Address"></textarea>
+                                </div>
+                            </div>
+                            <div class="row" data-ng-show="kycDetails.residentDirector" style="margin-top:50px;">
+                                <div class="col-md-6">
+                                    <p class="sameAddress">Are your present and permanent addresses same?</p>
+                                    <div style="font-size: 18px;">
+                                        <label for="" style="display: inline-block; width: 100px; margin-top: 0px;">
+                                            <input type="radio" name="sameAddress" id="sameAdd" value="yes" ng-model="kycDetails.permanentAddress" style="margin-left:10px; margin-right: 10px;">Yes
+                                        </label>
+                                        <label for="" style="display: inline-block; width: 100px; margin-top: 0px;">
+                                            <input type="radio" name="sameAddress" id="sameAdd2" value="no" ng-model="kycDetails.permanentAddress" style="margin-left:10px; margin-right: 10px;">No
+                                        </label>
+                                    </div>
+                                    <div id="address2">
+                                        <label for="address">Address Details*</label>
+                                        <textarea name="address" class="input-box" cols="100" ng-model="kycDetails.address2" placeholder="Enter Full Address"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="uploadDocuments">
+                            <div class="row noDsc-tab" data-ng-show="!kycDetails.hasDsc">
+                                <div class="col-md-2">
+                                    <div class="document">
+                                        <img src="images\Form\id-card.png" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Identity Proof</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <span class="upload" data-ng-hide="kycDetails.identityProof">Upload
+                                            <input type="file" class="fileUpload" file-model="identityProof" onchange="angular.element(this).scope().setFileID(this)"
+                                                required>
+                                        </span>
+                                        <p class="selected-file" data-ng-show="kycDetails.identityProof">{{IdFileName}}
+                                            <span>
+                                                <img src="images/Form/Close.svg" class="remove_chosen_file" alt="close" data-ng-click="removeFile1()">
+                                            </span>
+                                        </p>
+                                        <!-- <button type="button" class="upload" data-ng-click="uploadFile1(identityProof)">Upload</button> -->
+                                        <!-- <p class="file-uploaded" data-ng-show="kycDetails.identityProof">File Uploaded</p> -->
+                                        <!-- <p class="no-file-selected1">No File Choosen</p> -->
+                                    </div>
+                                    <div class="documentDes">
+                                        <p>(i.e self-attested PAN)</p>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-2 aadharSection">
+                                    <div class="document">
+                                        <img src="images/Form/id-card-2.svg" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Aadhaar Card</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <a class="browse">Browse</a>
+                                        <input type="file" class="fileUpload" file-model="aadhaar" onchange="angular.element(this).scope().setFileAC(this)" required>
+                                        <p class="selected-file">{{file2.name}}</p>
+                                        <button type="button" class="upload" data-ng-click="uploadFile5(aadhaar)">Upload</button>
+                                        <p class="file-uploaded" data-ng-show="kycDetails.aadhaar">File Uploaded</p>
+                                        <p class="no-file-selected5">No File Choosen</p>
+                                    </div>
+                                    <div class="documentDes">
+                                        <p>(self-attested Aadhaar card)</p>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-2">
+                                    <div class="document">
+                                        <img src="images\Form\Address_Proof.png" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Address Proof</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <span class="upload" data-ng-hide="kycDetails.addressProof">Upload
+                                            <input type="file" class="fileUpload" file-model="addressProof" onchange="angular.element(this).scope().setFileAP(this)"
+                                                required>
+                                        </span>
+                                        <p class="selected-file" data-ng-show="kycDetails.addressProof">{{ApFileName}}
+                                            <span>
+                                                <img src="images/Form/Close.svg" class="remove_chosen_file" alt="close" ng-click="removeFileAP()">
+                                            </span>
+                                        </p>
+                                        <!-- <button type="button" class="upload" data-ng-click="uploadFile2(addressProof)">Upload</button> -->
+                                        <!-- <p class="file-uploaded" data-ng-show="kycDetails.addressProof">File Uploaded</p> -->
+                                        <!-- <p class="no-file-selected2">No File Choosen</p> -->
+                                    </div>
+                                    <div class="documentDes">
+                                        <p>(i.e self-attested Aaddhar card, Voting card, Bank Statment or electicity bill not
+                                            more than 2 months old)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="document">
+                                        <img src="images\Form\passport.svg" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Passport</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <span class="upload" data-ng-hide="kycDetails.passport">Upload
+                                            <input type="file" class="fileUpload" file-model="passport" onchange="angular.element(this).scope().setFilePass(this)" required>
+                                        </span>
+                                        <p class="selected-file" data-ng-show="kycDetails.passport">{{PassFileName}}
+                                            <span>
+                                                <img src="images/Form/Close.svg" class="remove_chosen_file" alt="close" ng-click="removeFilePass()">
+                                            </span>
+                                        </p>
+                                        <!-- <button type="button" class="upload" data-ng-click="uploadFile6()">Upload</button> -->
+                                        <!-- <p class="file-uploaded" data-ng-show="kycDetails.passport">File Uploaded</p> -->
+                                        <!-- <p class="no-file-selected6">No File Choosen</p> -->
+                                    </div>
+                                    <div class="documentDes">
+                                        <p>(self-attested Passport)</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="document">
+                                        <img src="images\Form\passport_photo.png" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Passport Size Photo</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <span class="upload" data-ng-hide="kycDetails.photo">Upload
+                                            <input type="file" class="fileUpload" file-model="photo" onchange="angular.element(this).scope().setFilePP(this)" required>
+                                        </span>
+                                        <p class="selected-file" data-ng-show="kycDetails.photo">{{PpFileName}}
+                                            <span>
+                                                <img src="images/Form/Close.svg" class="remove_chosen_file" alt="close" ng-click="removeFilePP()">
+                                            </span>
+                                        </p>
+                                        <!-- <button type="button" class="upload" data-ng-click="uploadFile3()">Upload</button> -->
+                                        <!-- <p class="file-uploaded" data-ng-show="kycDetails.photo">File Uploaded</p> -->
+                                        <!-- <p class="no-file-selected3">No File Choosen</p> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="document">
+                                        <img src="images\Form\profiles.png" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>DSC Application
+                                            <span data-ng-if="!kycDetails.hasDsc">
+                                                <a class="glyphicon glyphicon-download-alt download" href="{{'https://portal.lexstart.com/api/downloadDscResident'}}" data-ng-show="kycDetails.residentDirector"></a>
+                                                <a class="glyphicon glyphicon-download-alt download" href="{{'https://portal.lexstart.com/api/downloadDscNonResident'}}"
+                                                    data-ng-show="!kycDetails.residentDirector"></a>
+                                                <!-- <img src="images/Form/Tooltip.png" alt="tooltip" title="If you don't have the DSC, you will not able to submit your KYC. You can download and continoue the proess from here."
+                                                    width="24" height="24" style="margin-left:5px; cursor: pointer;"> -->
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="documentName">
+                                        <div>
+                                            <span class="upload" data-ng-hide="kycDetails.dscAppForm">Upload
+                                                <input type="file" class="fileUpload" file-model="dscAppForm" onchange="angular.element(this).scope().setFileDSC(this)" required>
+                                            </span>
+                                            <p class="selected-file" data-ng-show="kycDetails.dscAppForm">{{DSCFileName}}
+                                                <span>
+                                                    <img src="images/Form/Close.svg" class="remove_chosen_file" alt="close" ng-click="removeFileDSC()">
+                                                </span>
+                                            </p>
+                                            <!-- <button type="button" class="upload" data-ng-click="uploadFile4()">Upload</button> -->
+                                            <!-- <p class="file-uploaded" data-ng-show="kycDetails.dscAppForm">File Uploaded</p> -->
+                                            <!-- <p class="no-file-selected4">No File Choosen</p> -->
+                                        </div>
+                                    </div>
+                                    <div class="documentDes">
+                                        <div data-ng-show="noDsc">
+                                            <p class="documentDes1">
+                                                An additional fees of
+                                                <span> &#8377 1499</span> shall be applicable in case a DSC has to be procured.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 aadharSection">
+                                    <div class="documentHasDsc">
+                                        <img src="images\Form\id-card-2.svg" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Aadhaar Card</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <p class="aadhaarInfo">Aadhar No. and Card is mandatory for resident Indians. However, due to restrictions
+                                            under the Aadhar Act, 2016 we cannot ask for such information here. The LexStart
+                                            team will be in touch with you separately in this regard.</p>
+                                        <!-- <a class="upload">Browse</a>
+                                            <input type="file" class="fileUpload2" file-model="aadhaar" onchange="angular.element(this).scope().setFileAC(this)" required>
+                                            <p class="selected-file">{{file2.name}}</p>
+                                            <button type="button" class="upload2" data-ng-click="uploadFile5(aadhaar)">Upload</button>
+                                            <p class="file-uploaded" data-ng-show="kycDetails.aadhaar">File Uploaded</p>
+                                            <p class="no-file-selected5">No File Choosen</p> -->
+                                    </div>
+                                    <!-- <div class="documentDes">
+                                            <p>(self-attested Aadhaar card)</p>
+                                        </div> -->
+                                </div>
+                            </div>
+                            <!-- //////////////////////////////////////HAS DSC//////////////////////////////// -->
+                            <div class="row hasDsc-tab" data-ng-show="kycDetails.hasDsc">
+                                <div class="col-md-1">
+
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="documentHasDsc">
+                                        <img src="images\Form\id-card.png" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Identity Proof</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <span class="upload2" data-ng-hide="kycDetails.identityProof">Upload
+                                            <input type="file" class="fileUpload2" file-model="identityProof" onchange="angular.element(this).scope().setFileID(this)"
+                                                required> </span>
+                                        <p class="selected-file" data-ng-show="kycDetails.identityProof">{{IdFileName}}
+                                            <span>
+                                                <img src="images/Form/Close.svg" class="remove_chosen_file" alt="close" data-ng-click="removeFile1()">
+                                            </span>
+                                        </p>
+                                        <!-- <button type="button" class="upload2" data-ng-click="uploadFile1(identityProof)">Upload</button> -->
+                                        <!-- <p class="file-uploaded" data-ng-show="kycDetails.identityProof">File Uploaded</p> -->
+                                        <!-- <p class="no-file-selected1">No File Choosen</p> -->
+                                    </div>
+                                    <div class="documentDes">
+                                        <p>(i.e self-attested PAN)</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="documentHasDsc">
+                                        <img src="images\Form\Address_Proof.png" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Address Proof</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <span class="upload2" data-ng-hide="kycDetails.addressProof">Upload
+                                            <input type="file" class="fileUpload2" file-model="addressProof" onchange="angular.element(this).scope().setFileAP(this)"
+                                                required>
+                                        </span>
+                                        <p class="selected-file" data-ng-show="kycDetails.addressProof">{{ApFileName}}
+                                            <span>
+                                                <img src="images/Form/Close.svg" class="remove_chosen_file" alt="close" ng-click="removeFileAP()">
+                                            </span>
+                                        </p>
+                                        <!-- <button type="button" class="upload2" data-ng-click="uploadFile2(addressProof)">Upload</button> -->
+                                        <!-- <p class="file-uploaded" data-ng-show="kycDetails.addressProof">File Uploaded</p> -->
+                                        <!-- <p class="no-file-selected2">No File Choosen</p> -->
+                                    </div>
+                                    <div class="documentDes">
+                                        <p>(i.e self-attested Voting card, Bank Statment or electicity bill not more than 2
+                                            months old)
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="documentHasDsc">
+                                        <img src="images\Form\passport.svg" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Passport</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <span class="upload2" data-ng-hide="kycDetails.passport">Upload
+                                            <input type="file" class="fileUpload2" file-model="passport" onchange="angular.element(this).scope().setFilePass(this)" required>
+                                        </span>
+                                        <p class="selected-file" data-ng-show="kycDetails.passport">{{PassFileName}}
+                                            <span>
+                                                <img src="images/Form/Close.svg" class="remove_chosen_file" alt="close" ng-click="removeFilePass()">
+                                            </span>
+                                        </p>
+                                        <!-- <button type="button" class="upload2" data-ng-click="uploadFile6()">Upload</button> -->
+                                        <!-- <p class="file-uploaded" data-ng-show="kycDetails.passport">File Uploaded</p> -->
+                                        <!-- <p class="no-file-selected6">No File Choosen</p> -->
+                                    </div>
+                                    <div class="documentDes">
+                                        <p>(self-attested Passport)</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="documentHasDsc">
+                                        <img src="images\Form\passport_photo.png" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Passport Size Photo</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <span class="upload2"  data-ng-hide="kycDetails.photo">Upload
+                                            <input type="file" class="fileUpload2" file-model="photo" onchange="angular.element(this).scope().setFilePP(this)" required>
+                                        </span>
+                                        <p class="selected-file" data-ng-show="kycDetails.photo">{{PpFileName}}
+                                            <span>
+                                                <img src="images/Form/Close.svg" class="remove_chosen_file" alt="close" ng-click="removeFilePP()">
+                                            </span>
+                                        </p>
+                                        <!-- <button type="button" class="upload2" data-ng-click="uploadFile3()">Upload</button> -->
+                                        <!-- <p class="file-uploaded" data-ng-show="kycDetails.photo">File Uploaded</p> -->
+                                        <!-- <p class="no-file-selected3">No File Choosen</p> -->
+                                    </div>
+                                </div>
+                                <div class="col-md-3 aadharSection">
+                                    <div class="documentHasDsc">
+                                        <img src="images\Form\id-card-2.svg" width="41" height="36">
+                                    </div>
+                                    <div class="documentHeading">
+                                        <p>Aadhaar Card</p>
+                                    </div>
+                                    <div class="documentName">
+                                        <p class="aadhaarInfo">Aadhar No. and Card is mandatory for resident Indians. However, due to restrictions
+                                            under the Aadhar Act, 2016 we cannot ask for such information here. The LexStart
+                                            team will be in touch with you separately in this regard.</p>
+                                        <!-- <a class="upload">Browse</a>
+                                            <input type="file" class="fileUpload2" file-model="aadhaar" onchange="angular.element(this).scope().setFileAC(this)" required>
+                                            <p class="selected-file">{{file2.name}}</p>
+                                            <button type="button" class="upload2" data-ng-click="uploadFile5(aadhaar)">Upload</button>
+                                            <p class="file-uploaded" data-ng-show="kycDetails.aadhaar">File Uploaded</p>
+                                            <p class="no-file-selected5">No File Choosen</p> -->
+                                    </div>
+                                    <!-- <div class="documentDes">
+                                            <p>(self-attested Aadhaar card)</p>
+                                        </div> -->
+                                </div>
+                                <!-- <div class="col-md-1">
+
+                                </div> -->
+                            </div>
+                            <div class="row">
+                                <p class="info-1">You can skip this step and upload the documents later, by revisiting this form and using
+                                    the Reference Number sent on your registered email id.
+                                    If you are not comfortable uploading your documents here, please email us at support@lexstart.in
+                                </p>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="Payment">
+                            <!-- {{kycDetails}} -->
+                            <!-- <button type="button" class="upload" data-ng-click="makePayment()"> Make Payment </button> -->
+                            <div class="row payment-box" ng-hide="kycDetails.isPaid">
+                                <div class="col-md-12">
+                                    <p>Amount Payable</p>
+                                    <h3>Rs. {{kycDetails.amountPaid}}/-</h3>
+                                </div>
+                            </div>
+                            <div ng-show="kycDetails.isPaid" class="payment-text">
+                                Payment of Rs. {{kycDetails.amountPaid}}/- done!
+                            </div>
+                            <div class="coupon-wrapper" ng-hide="kycDetails.isPaid">
+                                <input type="text" class=" input-box coupon-value" placeholder="Enter valid coupon code" ng-model="coupon_value">
+                                <button type="button" class="upload coupon-submit" data-ng-click="calc_discount(coupon_value)">Get Discount</button>
+                            </div>
+                            <p class="success" style="font-size: 16px; font-weight: normal; text-align: center; color: green; margin: 10px 0px; display:none;">
+                                Coupon applied successfully.
+                            </p>
+                            <p class="invalid" style="font-size: 16px; font-weight: normal; text-align: center; color:red; margin: 10px 0px; display:none;">
+                                Invalid coupon
+                            </p>
+                        </div>
+                        <p class="note">*Mandatory fields</p>
+                    </div>
+                    <div class="bottom-group">
+                        <!-- <p class="note1" data-ng-hide="hideNotes">* If you have the DSC, then you need to pay only Rs 999/- for the procedure.</p> -->
+                        <!-- <p class="note2" data-ng-hide="hideNotes">An additional fees of &#8377 1499 shall be applicable in case a DSC has to be procured. </p> -->
+                        <div class="buttons">
+                            <!-- <button class="cancel cancel-text">Cancel</button> -->
+                            <button type="button" class="cancel next-text" id="makePayment" data-ng-click="makePayment()" ng-hide="kycDetails.isPaid"
+                                style="display:none;"> Make Payment </button>
+                            <button type="button" class="next next-text" id="next" data-ng-click="submitKycDeatils()">Next</button>
+                            <button type="button" class="next next-text" id="file" data-ng-click="submitKycDeatils2()">Proceed</button>
+
+                            <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#directorModal">Open Modal</button> -->
+                        </div>
+                    </div>
+                    <!-- ///////////////////////////////////////MODALS//////////////////////////////////////////////////// -->
+                    <div class="modal fade" id="referenceModal" role="dialog" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="my-modal-content">
+                                <div class="modal-header">
+                                    <!-- <button type="button" class="modal-close close" data-dismiss="modal">&times;</button> -->
+                                    <img src="images\Form\close.png" alt="close" class="custome-close" data-dismiss="modal">
+                                </div>
+                                <div class="modal-body">
+                                    <div class="resident-icon">
+                                        <img src="images\Form\user_pop.png" alt="resident director" class="director-img">
+
+                                    </div>
+                                    <p class="userQUestion">Are you an existing user? </p>
+                                    <p class="user-modal-text">Don't worry if you left the form incomplete, you can retrieve the information entered
+                                        by you earlier, by entering the reference number sent on your registered email id.
+                                    </p>
+                                    <form>
+                                        <div class="user-modal">
+                                            <label for="referenceNumber">Reference Number*</label>
+                                            <input type="text" name="referenceNumber" class="input-box" ng-model="referenceNumber" placeholder="Enter Reference Number"
+                                                style="margin-top:1px;">
+                                            <p class="emailError" data-ng-show="error">*Reference number not registered with us.</p>
+                                            <p class="emailError" data-ng-show="error" style="color:black;">Click
+                                                <a href="#" data-dismiss="modal">here</a> to register.</p>
+                                        </div>
+
+                                    </form>
+                                    <div class="buttons" style="margin-top: 60px;">
+                                        <button type="button" class="no-button" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="yes-button" data-ng-click="userForm()">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="directorModal" role="dialog" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog">
+                            <!-- Modal content-->
+                            <div class="my-modal-content">
+                                <div class="modal-header">
+                                    <!-- <button type="button" class="modal-close close" data-dismiss="modal">&times;</button> -->
+                                    <img src="images\Form\close.png" alt="close" class="custome-close" data-dismiss="modal">
+                                </div>
+                                <div class="modal-body">
+                                    <div class="resident-icon">
+                                        <img src="images\Form\resident_director_icon.png" alt="resident director" class="director-img">
+
+                                    </div>
+                                    <p class="rdquestion">Are you a Resident Director? </p>
+                                    <div class="buttons">
+                                        <button type="button" class="no-button" value="no" data-ng-click="nonResidntDirector()">No</button>
+                                        <button type="button" class="yes-button" value="yes" data-ng-click="residntDirector()">Yes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="passportModal" role="dialog" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog">
+                            <div class="my-modal-content">
+                                <div class="modal-header">
+                                    <img src="images\Form\close.png" alt="close" class="custome-close" data-dismiss="modal">
+                                </div>
+                                <div class="modal-body">
+                                    <div class="warning-icon">
+                                        <img src="images/Form/passport.png" alt="resident director" class="warning-img">
+
+                                    </div>
+                                    <p class="rdquestion">Do you have a valid passport? </p>
+                                    <div class="buttons">
+                                        <button type="button" class="no-button" value="no" data-ng-click="noValidPassport()">No</button>
+                                        <button type="button" class="yes-button" value="yes" data-ng-click="validPassport()">Yes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="modal fade" id="permanentAddressModal" role="dialog" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog">
+                            <div class="my-modal-content">
+                                <div class="modal-header">
+                                    <img src="images\Form\close.png" alt="close" class="custome-close" data-dismiss="modal">
+                                </div>
+                                <div class="modal-body">
+                                    <div class="resident-icon">
+                                        <img src="images\Form\resident_director_icon.png" alt="resident director" class="director-img">
+
+                                    </div>
+                                    <p class="rdquestion">Are your present and permanent addresses same?</p>
+                                    <div class="buttons">
+                                        <button type="button" class="no-button1" value="no" data-ng-click="noSameAddress()">No</button>
+                                        <button type="button" class="yes-button1" value="yes" data-ng-click="sameAddress()">Yes</button>
+                                        <button type="button" class="no-button1" value="yes" data-ng-click="noSameAddress()">I don't know</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="modal fade" id="dscModal" role="dialog" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="my-modal-content">
+                                <div class="modal-header">
+                                    <!-- <button type="button" class="modal-close close" data-dismiss="modal">&times;</button> -->
+                                    <img src="images\Form\close.png" alt="close" class="custome-close" data-dismiss="modal">
+                                </div>
+                                <div class="modal-body">
+                                    <div class="resident-icon">
+                                        <img src="images\Form\DSC.png" alt="resident director" class="director-img">
+
+                                    </div>
+                                    <p class="rdquestion" style="font-size:16px;">Do you have DSC (Digital Signature Certificate)?</p>
+                                    <div class="buttons">
+                                        <button type="button" class="no-button" value="no" data-ng-click="noDsc()">No</button>
+                                        <button type="button" class="yes-button" value="yes" data-ng-click="hasDsc()">Yes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="fileErrorModal" role="dialog" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog">
+                            <div class="my-modal-content">
+                                <div class="modal-header">
+                                    <img src="images\Form\close.png" alt="close" class="custome-close" data-dismiss="modal">
+                                </div>
+                                <div class="modal-body">
+                                    <div class="warning-icon">
+                                        <img src="images\Form\warning.svg" alt="resident director" class="warning-img">
+
+                                    </div>
+                                    <p class="rdquestion">Please upload mandatory files</p>
+                                    <div class="buttons">
+                                        <button type="button" class="no-button" value="no" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="userAlreadyExistsModal" role="dialog" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="my-modal-content">
+                                <div class="modal-header">
+                                    <!-- <button type="button" class="modal-close close" data-dismiss="modal">&times;</button> -->
+                                    <img src="images\Form\close.png" alt="close" class="custome-close" data-dismiss="modal">
+                                </div>
+                                <div class="modal-body">
+                                    <div class="warning-icon">
+                                        <img src="images\Form\warning.svg" alt="resident director" class="warning-img">
+
+                                    </div>
+                                    <p class="rdquestion" style="font-size:13px; padding:30px 10px 15px;">Looks like your e-mail id is already registered with us. Please check your inbox for
+                                        the reference number sent by us to proceed further.</p>
+                                    <div class="buttons">
+                                        <button type="button" class="no-button" value="no" data-dismiss="modal" data-ng-click="refresh()">Close</button>
+                                        <!-- <button type="button" class="yes-button" value="yes" data-ng-click="hasDsc()">Yes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+<script>
+    $('#referenceModal').modal('show');
+</script>
+
+</html>

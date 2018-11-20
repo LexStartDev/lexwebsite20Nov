@@ -1,0 +1,282 @@
+#secondary {
+	.ls-search-form input[type="search"] {
+		width: 80%;
+	}
+}
+
+.single {
+	#secondary {
+		ul {
+			padding: 0;
+			list-style-type: none;
+		}
+
+		.widget-title {
+		    font-size: 16px;
+		    font-weight: bold;
+		    line-height: 1.13;
+		    letter-spacing: 0.4px;
+		    color: #4d4d4d;
+		    padding-bottom: 15px;
+		    border-bottom: solid 0.5px #666666;
+		}
+	}
+
+	.entry-meta {
+	    letter-spacing: 0.3px;
+	    text-align: left;
+	    color: #666666;
+	}
+
+	.blog_tag, .blog_category {
+		a {
+			display: inline-block;
+		    margin: 12px 13px 7px 0;
+		    padding: 4px 7px 6px;
+		    border: solid 0.5px #999999;
+		    border-radius: 2px;
+		    font-size: 11px;
+			line-height: normal;
+			letter-spacing: -0.5px;
+			text-align: center;
+			color: #666666;
+		}
+	}
+
+	.entry-content {
+		.post-meta {
+			display: none;
+		}
+	}
+
+	.testimonials_title_section_Container {
+		text-align: center;
+		margin: 51px auto 40px;
+	}
+
+	.testimonials_title_section {
+		display: inline-block;
+		padding: 10px 66px;
+		border-radius: 2px;
+		background-color: #36cac2;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+	}
+
+	.testimonials_subtitle, .testimonials_title {
+		font-weight: 400;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	.testimonials_title {
+	    font-size: 22px;
+	    line-height: 1;
+	}
+
+	.testimonials_subtitle {
+		font-size: 16px;
+		line-height: 1.38;
+	}
+
+	#primary {
+	    width: 63%;
+	}
+
+	#secondary {
+	    width: 25%;
+	}
+
+	.blog-widget-container {
+	    margin: 45px auto 39px;
+	    text-align: center;
+	}
+}
+
+
+//Jetpack share button
+.lexstart-share-icons {
+	position: relative;
+    display: inline-block;
+    margin-top: 10rem;
+    width: 10%;
+    vertical-align: top;
+
+    .sd-title {
+    	display: none !important;
+	}
+
+	.ls-shareit {
+	    position: absolute;
+	    bottom: 0;
+	    padding: 8px 15px 20px 8px;
+        width: 0;
+	    color: #00a7d4;
+	    word-break: break-all;
+	    background-color: #fff;
+	    border-radius: 2px;
+	    border: 1px solid rgba(0, 0, 0, 0.2);
+
+	    &:after {
+		    content: "\f055";
+		    font-family: fontawesome;
+		    position: absolute;
+		    color: #4A4A4A;
+		    bottom: 4px;
+		    left: 30%;
+		}
+	}
+
+	.sharedaddy {
+		position: absolute;
+		top: -999rem;
+
+	    .sd-title:before {
+			content: none;
+		}
+	}
+}
+
+/*Comments*/
+.comment-author {
+    padding-left: 62px;
+    position: relative;
+
+    & > img {
+        position: absolute;
+        left: 0;
+        vertical-align: middle;
+        height: 48px;
+        width: 48px;
+    }
+
+    .fn {
+        color: #676262;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .says {
+        color: rgba(0,39,59,.35);
+        font-size: 13px;
+        font-weight: 700;
+    }
+}
+
+.comment-metadata {
+    padding-left: 62px;
+    font-weight: 700;
+
+    a, span {
+        color: rgba(0,39,59,.35);
+        font-size: 13px;
+    }
+}
+
+.comment-content {
+    padding-left: 62px;
+    border-bottom: 2px solid #e5e5e5;
+    margin-bottom: 45px;
+    padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+.comment-body {
+    position: relative;
+
+    .reply {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.children {
+    margin: 0 0 1.5em 1em;
+
+    & > li {
+        padding: 25px;
+        padding-bottom: 0;
+        margin-bottom: 1rem;
+        border-radius: 2px;
+    }
+}
+
+.comments-area {
+	label {
+		display: block;
+	}
+
+	ul, ol {
+		margin-left: 0;
+		padding-left: .5rem;
+		list-style: none;
+	}
+}
+
+
+/*=============================*\
+## Media Queries
+\*=============================*/
+@media (max-width: 980px) {
+	.single {
+		.lexstart-share-icons {
+			display: none;
+			margin-top: 0;
+			width: 100%;
+		}
+	}
+
+	#primary {
+	    width: 100% !important;
+	    padding-right: 0;
+	}
+
+	#secondary {
+	    width: 100% !important;
+	    padding: 0;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+
+	    .ls-search-form {
+		    justify-content: center;
+		}
+
+	    .widget_search {
+	    	width: 96% !important;
+	    }
+
+		.widget {
+	        width: 47%;
+		    padding:  1rem;
+		    margin: 0.5rem;
+		}
+
+		.widget-title {
+			margin: 0;
+		}
+	}
+}
+
+
+@media (max-width: 600px) {
+	#secondary {
+		.widget {
+		    width: 100% !important;
+		    padding: 1rem;
+		    margin: 0.5rem;
+		}
+	}
+
+	.ls-thumbnail-nav {
+		& > li {
+		    width: 100%;
+		    float: none;
+		}
+
+		.previous {
+		    border-right: none;
+		    border-bottom: 1px solid #eee;
+		}
+	}
+}

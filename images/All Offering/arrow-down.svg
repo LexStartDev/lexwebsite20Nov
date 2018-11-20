@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="8px" viewBox="0 0 13 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Offering-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="all_offerings_content3_v1" transform="translate(-1191.000000, -327.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="arrow-point-to-right" transform="translate(1197.500000, 331.000000) rotate(90.000000) translate(-1197.500000, -331.000000) translate(1194.000000, 325.000000)">
+                <path d="M6.74064729,6.59182301 L1.46929457,11.7497257 C1.13397287,12.078 0.590306202,12.078 0.255147287,11.7497257 C-0.0800387597,11.4217434 -0.0800387597,10.8897876 0.255147287,10.5618319 L4.91948062,5.99787611 L0.255282946,1.43407965 C-0.0799031008,1.1059646 -0.0799031008,0.574061947 0.255282946,0.246079646 C0.590468992,-0.0820353982 1.13410853,-0.0820353982 1.46943023,0.246079646 L6.74078295,5.40406195 C6.90837597,5.56813274 6.99207752,5.78293805 6.99207752,5.99784956 C6.99207752,6.21286726 6.90821318,6.42783186 6.74064729,6.59182301 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,47 @@
+.panel-default { margin-bottom: 0; }
+
+form { background-color: white; padding: 20px; border-radius: 5px; }
+
+.questions { font-size: 18px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+
+.selectCompany { font-size: 15px; }
+
+.selectCompany:hover { background-color: #45afde; color: white; padding: 5px; }
+
+.group { margin: 40px; }
+
+.title { font-size: 24px; font-weight: bold; color: #3675e0; text-align: center; }
+
+.radioWrapper { margin: 18px 0; font-size: 16px; font-weight: bold; color: black; display: block; position: relative; padding-left: 30px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+
+.option-wrapper { margin-left: 15px; }
+
+/* Hide the browser's default checkbox */
+.radioWrapper input { position: absolute; opacity: 0; cursor: pointer; }
+
+/* Create a custom checkbox */
+.checkmark { position: absolute; top: 3px; left: 5px; height: 16px; width: 16px; border-radius: 100%; border: solid 1px #000000; background-color: #ffffff; }
+
+/* When the checkbox is checked, add a blue background */
+.radioWrapper input:checked ~ .checkmark { background-color: #ffffff; border: solid 1px #2069e7; opacity: 0.88; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after { content: ""; position: absolute; display: none; }
+
+/* Show the checkmark when checked */
+.radioWrapper input:checked ~ .checkmark:after { display: block; }
+
+/* Style the checkmark/indicator */
+.radioWrapper .checkmark:after { top: 3px; left: 3px; width: 8px; height: 8px; border-radius: 50%; background: #2069e7; /* left: 3px; top: 3px;  width: 2px; height: 2px; border: solid 1px #2069e7;  background-color: #ffffff; border-radius: 50%; */ }
+
+.animate-switch-container { padding: 10px; }
+
+.animate-switch { padding: 10px; width: 100%; }
+
+.btn-wrapper { margin: 20px; float: right; }
+
+.skip_btn { color: black  !important; font-size: 12px; padding: 10px 20px; font-weight: bold; }
+
+.next_btn { margin-left: 10px; }
+
+.error { font-size: 13px; color: red; display: none; }

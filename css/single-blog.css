@@ -1,0 +1,56 @@
+#secondary .ls-search-form input[type="search"] { width: 80%; }
+
+.single #secondary ul { padding: 0; list-style-type: none; }
+.single #secondary .widget-title { font-size: 16px; font-weight: bold; line-height: 1.13; letter-spacing: 0.4px; color: #4d4d4d; padding-bottom: 15px; border-bottom: solid 0.5px #666666; }
+.single .entry-meta { letter-spacing: 0.3px; text-align: left; color: #666666; }
+.single .blog_tag a, .single .blog_category a { display: inline-block; margin: 12px 13px 7px 0; padding: 4px 7px 6px; border: solid 0.5px #999999; border-radius: 2px; font-size: 11px; line-height: normal; letter-spacing: -0.5px; text-align: center; color: #666666; }
+.single .entry-content .post-meta { display: none; }
+.single .testimonials_title_section_Container { text-align: center; margin: 51px auto 40px; }
+.single .testimonials_title_section { display: inline-block; padding: 10px 66px; border-radius: 2px; background-color: #36cac2; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
+.single .testimonials_subtitle, .single .testimonials_title { font-weight: 400; text-align: center; color: #ffffff; }
+.single .testimonials_title { font-size: 22px; line-height: 1; }
+.single .testimonials_subtitle { font-size: 16px; line-height: 1.38; }
+.single #primary { width: 63%; }
+.single #secondary { width: 25%; }
+.single .blog-widget-container { margin: 45px auto 39px; text-align: center; }
+
+.lexstart-share-icons { position: relative; display: inline-block; margin-top: 10rem; width: 10%; vertical-align: top; }
+.lexstart-share-icons .sd-title { display: none !important; }
+.lexstart-share-icons .ls-shareit { position: absolute; bottom: 0; padding: 8px 15px 20px 8px; width: 0; color: #00a7d4; word-break: break-all; background-color: #fff; border-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.2); }
+.lexstart-share-icons .ls-shareit:after { content: "\f055"; font-family: fontawesome; position: absolute; color: #4A4A4A; bottom: 4px; left: 30%; }
+.lexstart-share-icons .sharedaddy { position: absolute; top: -999rem; }
+.lexstart-share-icons .sharedaddy .sd-title:before { content: none; }
+
+/*Comments*/
+.comment-author { padding-left: 62px; position: relative; }
+.comment-author > img { position: absolute; left: 0; vertical-align: middle; height: 48px; width: 48px; }
+.comment-author .fn { color: #676262; font-weight: 600; font-style: normal; }
+.comment-author .says { color: rgba(0, 39, 59, 0.35); font-size: 13px; font-weight: 700; }
+
+.comment-metadata { padding-left: 62px; font-weight: 700; }
+.comment-metadata a, .comment-metadata span { color: rgba(0, 39, 59, 0.35); font-size: 13px; }
+
+.comment-content { padding-left: 62px; border-bottom: 2px solid #e5e5e5; margin-bottom: 45px; padding-bottom: 30px; margin-top: 10px; }
+
+.comment-body { position: relative; }
+.comment-body .reply { position: absolute; top: 0; right: 0; }
+
+.children { margin: 0 0 1.5em 1em; }
+.children > li { padding: 25px; padding-bottom: 0; margin-bottom: 1rem; border-radius: 2px; }
+
+.comments-area label { display: block; }
+.comments-area ul, .comments-area ol { margin-left: 0; padding-left: .5rem; list-style: none; }
+
+/*=============================*\
+## Media Queries
+\*=============================*/
+@media (max-width: 980px) { .single .lexstart-share-icons { display: none; margin-top: 0; width: 100%; }
+  #primary { width: 100% !important; padding-right: 0; }
+  #secondary { width: 100% !important; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+  #secondary .ls-search-form { justify-content: center; }
+  #secondary .widget_search { width: 96% !important; }
+  #secondary .widget { width: 47%; padding: 1rem; margin: 0.5rem; }
+  #secondary .widget-title { margin: 0; } }
+@media (max-width: 600px) { #secondary .widget { width: 100% !important; padding: 1rem; margin: 0.5rem; }
+  .ls-thumbnail-nav > li { width: 100%; float: none; }
+  .ls-thumbnail-nav .previous { border-right: none; border-bottom: 1px solid #eee; } }
