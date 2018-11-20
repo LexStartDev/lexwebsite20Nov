@@ -168,7 +168,7 @@
 //         top: 380px;
 //         // height: auto !important;
 //         &:before {
-//             background: url(images/Home_Page_Icons/Next.svg) no-repeat;
+//             background: url(/images/Home_Page_Icons/Next.svg) no-repeat;
 //             content: '' !important;
 //             height: 36px;
 //             width: 36px;
@@ -184,7 +184,7 @@
 //         left: 999px;
 //         top: 380px;
 //         &:before {        
-//             background: url(images/Home_Page_Icons/Pre.svg) no-repeat;
+//             background: url(/images/Home_Page_Icons/Pre.svg) no-repeat;
 //             content: '' !important;
 //             height: 36px;
 //             width: 36px;
@@ -208,7 +208,7 @@
    bottom: 30px;
     height: 42px !important;
     width: 42px !important;
-    background: url(images/Home_Page_Icons/Next.svg) no-repeat;
+    background: url(/images/Home_Page_Icons/Next.svg) no-repeat;
 //    width: 400px !important;
 //    height: 120px !important;
    &:before {
@@ -218,7 +218,7 @@
 .second .slick-prev
 {    
    left: 1125px;
-   background: url(images/Home_Page_Icons/Pre.svg) no-repeat;
+   background: url(/images/Home_Page_Icons/Pre.svg) no-repeat;
 }
 
 
@@ -252,7 +252,7 @@
     top: 300px;
     height: auto !important;
     &:before {
-        background: url(images/Home_Page_Icons/Next.svg) no-repeat;
+        background: url(/images/Home_Page_Icons/Next.svg) no-repeat;
         content: '' !important;
         height: 36px;
         width: 36px;
@@ -269,7 +269,7 @@
     left: 999px;
     top: 300px;
     &:before {        
-        background: url(images/Home_Page_Icons/Pre.svg) no-repeat;
+        background: url(/images/Home_Page_Icons/Pre.svg) no-repeat;
         content: '' !important;
         height: 36px;
         width: 36px;
@@ -438,14 +438,14 @@
             display: block !important;
             right: 60px;
             bottom: 30px;
-            background: url(images/Home_Page_Icons/Next.svg) no-repeat;
+            background: url(/images/Home_Page_Icons/Next.svg) no-repeat;
         }
          .slick-prev
         {      
             display: block !important;
             left: 600px;
             bottom: 30px;
-            background: url(images/Home_Page_Icons/Pre.svg) no-repeat;
+            background: url(/images/Home_Page_Icons/Pre.svg) no-repeat;
         }
     }
         .four .cust-item .slick-next {   
@@ -467,19 +467,19 @@
         display: block !important;
         right: 100px;
         bottom: 30px;
-        background: url(images/Home_Page_Icons/Next.svg) no-repeat;
+        background: url(/images/Home_Page_Icons/Next.svg) no-repeat;
     }
      .slick-prev
     {      
         display: block !important;
         left: 440px;
         bottom: 30px;
-        background: url(images/Home_Page_Icons/Pre.svg) no-repeat;
+        background: url(/images/Home_Page_Icons/Pre.svg) no-repeat;
     }
 }
     .four .cust-item .slick-next {   
         display: block !important;
-        background: url(images/Home_Page_Icons/Next.svg) no-repeat;
+        background: url(/images/Home_Page_Icons/Next.svg) no-repeat;
         // bottom: -60px !important;
         right: 100px;
         top: 370px;
@@ -489,7 +489,7 @@
         left: 450px;
         top: 370px;
         // bottom: -60px !important;
-        background: url(images/Home_Page_Icons/Pre.svg) no-repeat;
+        background: url(/images/Home_Page_Icons/Pre.svg) no-repeat;
     }
 }
 
@@ -527,7 +527,7 @@
 }
     .four .cust-item .slick-next {   
         display: block !important;
-        background: url(images/Home_Page_Icons/Next.svg) no-repeat;
+        background: url(/images/Home_Page_Icons/Next.svg) no-repeat;
         top: 699px;
         right: 90px;
     }
@@ -535,7 +535,7 @@
         display: block !important;
         left: 230px;
         top: 699px;
-        background: url(images/Home_Page_Icons/Pre.svg) no-repeat;
+        background: url(/images/Home_Page_Icons/Pre.svg) no-repeat;
     }
 }
 
