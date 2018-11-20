@@ -7,9 +7,9 @@
             <meta name="description" content="">
             <meta name="author" content="">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,800,900" rel="stylesheet">  
-        <link rel="stylesheet" type="text/css" href="wp-content/themes/lexstart/css/slick-home.css"/>
-        <link rel="stylesheet" type="text/css" href="wp-content/themes/lexstart/css/slick-theme-home.css"/>
-        <link rel="stylesheet" href="wp-content/themes/lexstart/css/homepage.css">
+        <link rel="stylesheet" type="text/css" href="wp-content/themescss/slick-home.css"/>
+        <link rel="stylesheet" type="text/css" href="wp-content/themescss/slick-theme-home.css"/>
+        <link rel="stylesheet" href="wp-content/themescss/homepage.css">
         
         </head>
         <body>
@@ -366,9 +366,9 @@
                     <div><p class="copyright">LexStart Consultancy Private Limited  |  CIN: U74999MH2015PTC265981</p></div>
                 </div>
             </section>
-            <script type="text/javascript" src="wp-content/themes/lexstart/js/homepageJS/jquery-3.3.1.js"></script>
-            <script type="text/javascript" src="wp-content/themes/lexstart/js/homepageJS/slick.js"></script>
-            <script type="text/javascript" src="wp-content/themes/lexstart/js/homepageJS/slick-function.js"></Script>
+            <script type="text/javascript" src="wp-content/themesjs/homepageJS/jquery-3.3.1.js"></script>
+            <script type="text/javascript" src="wp-content/themesjs/homepageJS/slick.js"></script>
+            <script type="text/javascript" src="wp-content/themesjs/homepageJS/slick-function.js"></Script>
                 
         </body>
     </html>
