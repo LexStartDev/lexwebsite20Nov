@@ -22,7 +22,7 @@ div { margin: 0%; }
 .first .heading { margin: 0 auto; text-align: center; padding: 70px 0 50px; font-size: 32px; font-weight: 900; color: #000000; }
 .first .content { padding: 0 60px; }
 .first .content .col-svg { position: relative; float: left; padding-right: 15px; }
-.first .content .col-svg div { position: relative; z-index: 2; }
+.first .content .col-svg div { position: relative; z-index: 2; width: 580px; }
 .first .content .col-svg .front { width: 100%; height: auto; border: solid 1px #c4c0c0; }
 .first .content .col-svg .front.behind { width: 580px; height: 100%; position: absolute; left: -20px; top: 20px; box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.07); border: none; background-color: #ffffff; }
 .first .content .col-post { padding: 0 15px 0; width: 49%; float: left; text-align: justify; }
