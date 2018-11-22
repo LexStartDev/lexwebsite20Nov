@@ -71,8 +71,10 @@ jq(document).ready(function(){
                     type : 'POST',
                     data : signupDetails,
                     success : function(response) {              
-                        // alert('Organization created: '+ JSON.stringify(response));          
-                        
+                        // alert('Organization created: '+ JSON.stringify(response));
+                        console.log("test"+JSON.stringify(response)); 
+                        var orgid = response.result.organization_ID;
+         
                             var reqst = {
                                 email: document.getElementById('email').value,
                                 name: document.getElementById("f_name").value
@@ -84,6 +86,12 @@ jq(document).ready(function(){
                             type : 'POST',
                             data : reqst,
                             success : function(data) {
+                                $.ajax({
+                                    url: 'https://api.lexstart.com/accounts/' + orgid,
+                                    type: 'POST',
+                                    contentType: 'application/json',
+                                    success: function () {
+                                        }})
                                 // alert('mail sent to client: '+ data);
                             },
                             error : function(request,error)

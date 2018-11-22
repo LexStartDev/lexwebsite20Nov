@@ -391,12 +391,6 @@ jq(document).ready(function(){
   
   
         jq('#Org_Modal').modal('show')
-  
-        
-  
-  
-  
-  
             var response = response;
             var orgid = response.result.organization_ID;
             var org_name = response.result.organization_NAME;
@@ -408,7 +402,24 @@ jq(document).ready(function(){
               type : 'POST',
               data :dataToPass,
              
-              success : function(response) {              
+              success : function(response) {  
+
+
+
+                $.ajax({
+                  url: 'https://api.lexstart.com/accounts/' + orgid,
+                  type: 'POST',
+                  contentType: 'application/json',
+                  success: function () {
+
+
+
+                  // }})
+                
+
+
+
+
                   // alert('Package added: '+JSON.stringify(response));
                   // JSON object for weightage
   var categoryDetails = [
@@ -1066,12 +1077,7 @@ jq(document).ready(function(){
                           // alert("Request: "+JSON.stringify(request));
                       }
                    });
-  
-  
-  
-  
-  
-                },
+              },
                 error : function(request,error)
                 {
                     // alert("Request: "+JSON.stringify(request));
@@ -1084,45 +1090,10 @@ jq(document).ready(function(){
               // alert("Request: "+JSON.stringify(request));
           }
        });
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-                  
-              },
+        
+                  }
+                })
+ },
               error : function(error)
               {
                   // alert("Request: "+JSON.stringify(request));
