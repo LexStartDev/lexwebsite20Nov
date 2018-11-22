@@ -79,7 +79,6 @@ jq(document).ready(function(){
                                 email: document.getElementById('email').value,
                                 name: document.getElementById("f_name").value
                             };
-                
                         jq.ajax({
                 
                             url : 'https://api.lexstart.com/mailtriggerforbasiclogin',

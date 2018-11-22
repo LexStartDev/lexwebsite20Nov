@@ -396,29 +396,24 @@ jq(document).ready(function(){
             var org_name = response.result.organization_NAME;
             var basicPackageObject = { "type": "Package", "package_id": "32904e30-da58-4f1b-b70d-9b37be3d5290", "price": 0, "start_date": new Date(), "status": 1 };
   
-          var dataToPass = {organization_subscription: basicPackageObject}
+          var dataToPass = {
+
+            organization_subscription: basicPackageObject
+
+          }
+          jq.ajax({
+            url: 'https://api.lexstart.com/accounts/' + orgid,
+            type: 'POST',
+            contentType: 'application/json',
+            success: function () {
+              
             jq.ajax({
               url : 'https://api.lexstart.com/organizations/' + orgid + '/packages',
               type : 'POST',
               data :dataToPass,
              
               success : function(response) {  
-
-
-
-                jq.ajax({
-                  url: 'https://api.lexstart.com/accounts/' + orgid,
-                  type: 'POST',
-                  contentType: 'application/json',
-                  success: function () {
-
-
-
-                  // }})
-                
-
-
-
+              
 
                   // alert('Package added: '+JSON.stringify(response));
                   // JSON object for weightage
