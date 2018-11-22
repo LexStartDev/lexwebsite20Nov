@@ -86,7 +86,7 @@ jq(document).ready(function(){
                             type : 'POST',
                             data : reqst,
                             success : function(data) {
-                                $.ajax({
+                                jq.ajax({
                                     url: 'https://api.lexstart.com/accounts/' + orgid,
                                     type: 'POST',
                                     contentType: 'application/json',

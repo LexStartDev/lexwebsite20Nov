@@ -406,7 +406,7 @@ jq(document).ready(function(){
 
 
 
-                $.ajax({
+                jq.ajax({
                   url: 'https://api.lexstart.com/accounts/' + orgid,
                   type: 'POST',
                   contentType: 'application/json',
