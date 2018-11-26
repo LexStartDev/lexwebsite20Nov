@@ -1,3 +1,5 @@
+* { -webkit-tap-highlight-color: transparent; }
+
 * { box-sizing: border-box; }
 
 html [type=button] { -webkit-appearance: unset; }
@@ -22,6 +24,10 @@ input[type=text]::placeholder, input[type=email]::placeholder { font-size: 16px;
 input.invalid { border: 1px solid #ff0000 !important; }
 
 #error { display: none; font-size: 16px; color: #ff0000; }
+
+#email_exists { display: none; font-size: 16px; color: #ff0000; }
+
+.signin_link { color: #2069e7; text-decoration: underline; font-weight: bold; }
 
 /* Hide all steps by default: */
 .tab { display: none; }
@@ -61,7 +67,7 @@ form { background-color: white; padding: 20px; border-radius: 5px; }
 
 .title { font-size: 24px; font-weight: bold; color: #3675e0; text-align: center; }
 
-.radioWrapper { margin: 18px 0; font-size: 16px; font-weight: bold; color: black; display: block; position: relative; padding-left: 30px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+.radioWrapper { margin: 18px 0; font-size: 16px; color: #585858; font-weight: 600; display: block; position: relative; padding-left: 30px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
 .option-wrapper { margin-left: 15px; }
 
@@ -69,7 +75,7 @@ form { background-color: white; padding: 20px; border-radius: 5px; }
 .radioWrapper input { position: absolute; opacity: 0; cursor: pointer; }
 
 /* Create a custom checkbox */
-.checkmark { position: absolute; top: 3px; left: 5px; height: 16px; width: 16px; border-radius: 100%; border: solid 1px #000000; background-color: #ffffff; }
+.checkmark { position: absolute; top: 2px; left: 5px; height: 16px; width: 16px; border-radius: 100%; border: solid 1px #000000; background-color: #ffffff; }
 
 /* When the checkbox is checked, add a blue background */
 .radioWrapper input:checked ~ .checkmark { background-color: #ffffff; border: solid 1px #2069e7; opacity: 0.88; }

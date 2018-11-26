@@ -1111,7 +1111,7 @@ myApp.controller('myCtrl', ['$rootScope', '$scope', '$http', 'fileUpload', '$win
 
 //   return valid; // return the valid status
 } else {
-    alert("Invalid Email-Id");
+    alert("Please enter a valid E-Mail id");
     return false;
   }
 

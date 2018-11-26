@@ -85,6 +85,7 @@ function nextPrev(n) {
       data : req,
       success : function(data) {
 
+        document.getElementById("email_exists").style.display = "none";
     
   // Hide the current tab:
   x[currentTab].style.display = "none";
@@ -102,7 +103,8 @@ function nextPrev(n) {
    },
    error : function(request,error) {
        // alert("Request: "+JSON.stringify(request));
-       jq('#exampleModal').modal('show')
+      //  jq('#exampleModal').modal('show')
+      document.getElementById("email_exists").style.display = "block";
         return false;
    }
   });
@@ -269,6 +271,7 @@ function validateForm() {
     var reg = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
     if (reg.test(email)){
       // alert("valid");
+      document.getElementById("error").style.display = "none";
     document.getElementsByClassName("step")[currentTab].className += " finish";
     return true; 
   } else {
