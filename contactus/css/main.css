@@ -673,12 +673,14 @@ label { display: block; margin-top: 40px; font-family: Lato; font-size: 15px; fo
 
 @media screen and (max-width: 1024px) { .address { width: 100%; }
   .nav-tabs li.tab-heading { padding: 0 10px; } }
-@media screen and (max-width: 812px) { .kyc_director .modal-dialog { width: 90%; margin: 0 auto; }
+@media screen and (max-width: 812px) { .form-wrapper .input-box { max-width: unset; }
+  .kyc_director .modal-dialog { width: 90%; margin: 0 auto; }
   .kyc_director .modal-content .landing-banner { height: 80vh; }
   .kyc_director .modal-content .landing-banner .close { top: 10px; right: 10px; }
   .payment-box { max-width: 60%; }
   .coupon-wrapper { max-width: 100%; } }
-@media screen and (min-width: 768px) { .kyc_director .modal-dialog { width: 770px; } }
+@media screen and (min-width: 768px) { .form-wrapper .input-box { max-width: unset; }
+  .kyc_director .modal-dialog { width: 770px; } }
 @media screen and (max-width: 480px) { .heading { font-size: 20px; }
   .nav > li { vertical-align: middle; }
   .nav > li > a.tabs-2 { display: block; }
@@ -695,3 +697,7 @@ label { display: block; margin-top: 40px; font-family: Lato; font-size: 15px; fo
   .yes-button { padding: 8px 20px; } }
 @media screen and (max-width: 480px) { .tab-heading a { padding: 8px 8px !important; } }
 .ppTitle { color: #45afde; font-size: 30px; text-align: center; }
+
+@media screen and (max-width: 414px) { .form-wrapper { padding: 50px 35px 20px !important; } }
+@media screen and (max-width: 360px) { .form-wrapper { padding: 50px 25px 20px !important; } }
+@media screen and (max-width: 320px) { .form-wrapper { padding: 50px 13px 20px !important; } }

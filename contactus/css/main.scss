@@ -622,6 +622,9 @@ h4{
     }
 
     @media screen and (max-width: 812px){
+        .form-wrapper .input-box {
+            max-width: unset;
+        }
         .kyc_director {
             .modal-dialog{
                 width: 90%; margin:  0 auto;
@@ -643,6 +646,9 @@ h4{
         }
     }
     @media screen and (min-width: 768px){
+        .form-wrapper .input-box {
+            max-width: unset;
+        }
         .kyc_director {
             .modal-dialog{
                 width: 770px;
@@ -708,3 +714,21 @@ h4{
         font-size: 30px;
         text-align: center;
     }
+
+    @media screen and (max-width: 414px){
+         .form-wrapper {
+            padding: 50px 35px 20px !important;
+        }
+    }
+
+    @media screen and (max-width: 360px){
+        .form-wrapper {
+           padding: 50px 25px 20px !important;
+       }
+   }
+
+   @media screen and (max-width: 320px){
+    .form-wrapper {
+       padding: 50px 13px 20px !important;
+   }
+}   
