@@ -1076,7 +1076,7 @@ myApp.controller('myCtrl', ['$rootScope', '$scope', '$http', 'fileUpload', '$win
   if (valid) {
 
 	var email = document.getElementById("email").value;
-    var reg = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+    var reg = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
     if (reg.test(email)){
 	//   alert("valid");
 	document.getElementById('invalidEmail').style.display = "none";
