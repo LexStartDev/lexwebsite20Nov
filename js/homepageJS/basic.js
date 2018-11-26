@@ -391,24 +391,28 @@ jq(document).ready(function(){
   
   
         jq('#Org_Modal').modal('show')
-  
-        
-  
-  
-  
-  
             var response = response;
             var orgid = response.result.organization_ID;
             var org_name = response.result.organization_NAME;
             var basicPackageObject = { "type": "Package", "package_id": "32904e30-da58-4f1b-b70d-9b37be3d5290", "price": 0, "start_date": new Date(), "status": 1 };
   
-          var dataToPass = {organization_subscription: basicPackageObject}
+          var dataToPass = {
+            organization_subscription: basicPackageObject
+          }
+          jq.ajax({
+            url: 'https://api.lexstart.com/accounts/' + orgid,
+            type: 'POST',
+            contentType: 'application/json',
+            success: function () {
+
             jq.ajax({
               url : 'https://api.lexstart.com/organizations/' + orgid + '/packages',
               type : 'POST',
               data :dataToPass,
              
-              success : function(response) {              
+              success : function(response) {  
+              
+
                   // alert('Package added: '+JSON.stringify(response));
                   // JSON object for weightage
   var categoryDetails = [
@@ -1066,12 +1070,7 @@ jq(document).ready(function(){
                           // alert("Request: "+JSON.stringify(request));
                       }
                    });
-  
-  
-  
-  
-  
-                },
+              },
                 error : function(request,error)
                 {
                     // alert("Request: "+JSON.stringify(request));
@@ -1084,45 +1083,10 @@ jq(document).ready(function(){
               // alert("Request: "+JSON.stringify(request));
           }
        });
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-                  
-              },
+        
+                  }
+                })
+ },
               error : function(error)
               {
                   // alert("Request: "+JSON.stringify(request));
