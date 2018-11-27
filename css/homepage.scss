@@ -38,6 +38,7 @@ div {
     .logo {
         margin: 11px 0 11px 60px;
         width: unset;
+        padding: 0%;
     }
     .collapse {
         .navbar-nav {
@@ -182,13 +183,13 @@ div {
 
 .first {
     background-color: #fff;  
-    .single-item {        
-        height: 683px;
-        
+    // max-height: 100vh;
+    .single-item {          
+        height: 625px;   
         .content {
             > div {
                 max-width: 971px;
-                margin: 153px auto 158px auto;
+                margin: 160px auto 215px auto;
             }
             
            .main-text { 
@@ -213,7 +214,7 @@ div {
                 color: #fff;
             }    
             .btn-div {
-                margin: 50px 0 0 0;
+                margin: 30px 0 0 0;
                 text-align: center;
             }    
         }
@@ -1089,6 +1090,7 @@ div {
 }
 .readinesscheck {
     font-size: 23px;
+    margin: 12px 10px 0;
 }
 }
     .second {
@@ -1161,6 +1163,9 @@ div {
 }
 
 @media screen and (max-width: 414px) {
+    .first .btn-default {
+        margin: 0 0 20px;
+    }
     .second .post-item .col-svg .front {
         width: 350px !important;
     }
@@ -1235,6 +1240,9 @@ div {
     .first .btn-default {
         margin-bottom: 20px;
         margin-right: 0%;
+    }
+    .first .main-text {
+        padding: 0 2px;
     }
 .second {
 .post-item {
@@ -1607,6 +1615,9 @@ width: 100% !important;
     }
     .first .btn-default {
         margin-bottom: 20px;
+    }
+    .first .ir-btn {
+        padding: 20px;
     }
 	.second {
         .post-item {

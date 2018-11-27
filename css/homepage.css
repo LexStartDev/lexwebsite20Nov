@@ -9,7 +9,7 @@ div { margin: 0%; }
 
 /*------------------header--------------------*/
 .navbar { background-color: transparent !important; font-size: 14px; font-weight: bold; padding: 0%; }
-.navbar .logo { margin: 11px 0 11px 60px; width: unset; }
+.navbar .logo { margin: 11px 0 11px 60px; width: unset; padding: 0%; }
 .navbar .collapse .navbar-nav .nav-item a { color: #fff; padding: 25px 0 28px 40px; }
 .navbar .collapse .navbar-nav .col2 a { padding-bottom: 5px; }
 .navbar .collapse .navbar-nav .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; background-color: #fff; }
@@ -19,12 +19,12 @@ div { margin: 0%; }
 
 /*----------------carousel----------------*/
 .first { background-color: #fff; }
-.first .single-item { height: 683px; }
-.first .single-item .content > div { max-width: 971px; margin: 153px auto 158px auto; }
+.first .single-item { height: 625px; }
+.first .single-item .content > div { max-width: 971px; margin: 160px auto 215px auto; }
 .first .single-item .content .main-text { margin: 0%; font-size: 56px; font-weight: 700; text-align: center; color: #fff; }
 .first .single-item .content .readinesscheck { margin: 12px 0 0 0; font-size: 24px; font-weight: 400; text-align: center; color: #fff; }
 .first .single-item .content .protect { margin: 12px 0 0 0; font-size: 24px; font-weight: 400; text-align: center; color: #fff; }
-.first .single-item .content .btn-div { margin: 50px 0 0 0; text-align: center; }
+.first .single-item .content .btn-div { margin: 30px 0 0 0; text-align: center; }
 
 /*-----------------second-------------------*/
 .second { background-color: #fff; }
@@ -158,7 +158,7 @@ div { margin: 0%; }
   .navbar .col2 .dropdown-menu { background-color: #f6f6f6; padding-bottom: 10px; }
   .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; }
   .first .single-item .content .main-text { font-size: 34px; }
-  .first .single-item .content .readinesscheck { font-size: 23px; }
+  .first .single-item .content .readinesscheck { font-size: 23px; margin: 12px 10px 0; }
   .second .heading { margin: 0 auto; text-align: center; }
   .second .post-item .content { padding-left: 70px; padding-right: 70px; }
   .second .post-item .content .row-post1 { padding-left: 0%; }
@@ -174,7 +174,8 @@ div { margin: 0%; }
   .footer .row-footer1 { padding: 0 50px 20px; }
   .footer .row-footer1 .col-footer1 .col-footer { width: 50% !important; padding-right: 40px; }
   .footer .row-footer1 .col-footer1 .col3 { width: 100% !important; padding-right: 0; } }
-@media screen and (max-width: 414px) { .second .post-item .col-svg .front { width: 350px !important; }
+@media screen and (max-width: 414px) { .first .btn-default { margin: 0 0 20px; }
+  .second .post-item .col-svg .front { width: 350px !important; }
   .second .post-item .content { padding-left: 30px; padding-right: 30px; }
   .three .off-item .col1 { margin-left: 10px !important; }
   .three .off-item .col-off { width: 390px !important; margin-left: 10px; }
@@ -192,6 +193,7 @@ div { margin: 0%; }
   .footer .row-footer1 .col-footer1 .col3 { width: 100% !important; padding-right: 0; } }
 @media screen and (max-width: 411px) { .first .single-item .content > div { margin: 100px auto 0 auto; }
   .first .btn-default { margin-bottom: 20px; margin-right: 0%; }
+  .first .main-text { padding: 0 2px; }
   .second .post-item .content { padding-left: 0; padding-right: 0%; }
   .second .post-item .content .col-post { width: 100% !important; padding: 40px 0 0; }
   .second .post-item .content .col-post a { padding-left: 0%; }
@@ -254,6 +256,7 @@ div { margin: 0%; }
   .first .single-item .content .readinesscheck { font-size: 23px; }
   .first .single-item .content > div { margin: 100px auto 0 auto; }
   .first .btn-default { margin-bottom: 20px; }
+  .first .ir-btn { padding: 20px; }
   .second .post-item .content { padding-left: 0; padding-right: 0%; }
   .second .post-item .content .col-post { width: 100%; padding: 40px 0 0; }
   .second .post-item .col-svg .front { width: 280px !important; }

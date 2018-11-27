@@ -25,7 +25,7 @@ input.invalid { border: 1px solid #ff0000 !important; }
 
 .buttons { margin: 0 auto; text-align: center; }
 
-button { margin: 30px 20px 0 0; padding: 16px 54px; border: none; border-radius: 3px; background: #2f76f0; color: #ffffff; font-size: 14px; font-weight: bold; vertical-align: middle; }
+button { margin: 30px 0; padding: 16px 54px; border: none; border-radius: 3px; background: #2f76f0; color: #ffffff; font-size: 14px; font-weight: bold; vertical-align: middle; }
 
 button:hover { opacity: 0.8; }
 
@@ -44,34 +44,24 @@ form { background-color: white; padding: 20px; border-radius: 5px; }
 
 .title { font-size: 24px; font-weight: bold; color: #3675e0; text-align: center; }
 
-@media screen and (max-width: 1440px) { #diligenceForm { width: 50%; margin: 50px auto; }
-  #diligenceForm .org_details { margin: 30px; }
-  #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 145px; } }
-@media screen and (max-width: 1366px) { #diligenceForm #submitBtn { right: 130px; } }
-@media screen and (max-width: 1280px) { #diligenceForm { width: 60%; margin: 20px auto; }
-  #diligenceForm .org_details { margin: 30px; }
-  #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 174px; } }
-@media screen and (max-width: 1024px) { #diligenceForm { width: 80%; margin: 20% auto; }
-  #diligenceForm .org_details { margin: 30px; }
-  #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 200px; } }
-@media screen and (max-width: 768px) { #diligenceForm { width: 80%; margin: 20% auto; }
-  #diligenceForm .org_details { margin: 30px; }
-  #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 99px; } }
-@media screen and (max-width: 640px) { #diligenceForm { width: 70%; margin: 20px auto; }
-  #diligenceForm .org_details { margin: 30px; }
-  #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 14px; } }
-@media screen and (max-width: 414px) { #diligenceForm #submitBtn { margin-top: 0%; margin-right: 30px; } }
-@media screen and (max-width: 411px) { #diligenceForm #submitBtn { margin-right: 30px; } }
-@media screen and (max-width: 375px) { #diligenceForm { width: 90%; margin: 20px; }
-  #diligenceForm .org_details { margin: 10px; }
-  #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
-  #diligenceForm #submitBtn { position: unset; float: unset; margin: 0 auto; text-align: center; } }
-@media screen and (max-width: 360px) { #diligenceForm { width: 90%; margin: 20px; }
-  #diligenceForm .org_details { margin: 10px; }
-  #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
-  #diligenceForm #submitBtn { position: unset; float: unset; margin: 0 auto; text-align: center; } }
+@media screen and (max-width: 1440px) { #templateForm { width: 50%; margin: 50px auto; }
+  #templateForm .org_details { margin: 30px; }
+  #templateForm .org_details #f_name, #templateForm .org_details #email { width: 100%; } }
+@media screen and (max-width: 1280px) { #templateForm { width: 60%; margin: 20px auto; }
+  #templateForm .org_details { margin: 30px; }
+  #templateForm .org_details #f_name, #templateForm .org_details #email { width: 100%; } }
+@media screen and (max-width: 1024px) { #templateForm { width: 80%; margin: 20% auto; }
+  #templateForm .org_details { margin: 30px; }
+  #templateForm .org_details #f_name, #templateForm .org_details #email { width: 100%; } }
+@media screen and (max-width: 768px) { #templateForm { width: 80%; margin: 20% auto; }
+  #templateForm .org_details { margin: 30px; }
+  #templateForm .org_details #f_name, #templateForm .org_details #email { width: 100%; } }
+@media screen and (max-width: 640px) { #templateForm { width: 70%; margin: 20px auto; }
+  #templateForm .org_details { margin: 30px; }
+  #templateForm .org_details #f_name, #templateForm .org_details #email { width: 100%; } }
+@media screen and (max-width: 375px) { #templateForm { width: 90%; margin: 20px; }
+  #templateForm .org_details { margin: 10px; }
+  #templateForm .org_details #f_name, #templateForm .org_details #email { width: 100%; } }
+@media screen and (max-width: 360px) { #templateForm { width: 90%; margin: 20px; }
+  #templateForm .org_details { margin: 10px; }
+  #templateForm .org_details #f_name, #templateForm .org_details #email { width: 100%; } }

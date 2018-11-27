@@ -4,7 +4,7 @@
                     arrows: false,
                     // prevArrow: string(<button type="button" class="slick-prev">Previous</button>),
                     // nextArrow: string(<button type="button" class="slick-next">Next</button>),
-                    autoplay: true,
+                    autoplay: false,
                     autoplaySpeed: 2000, 
                     infinite: true, 
                     swipe: true,
