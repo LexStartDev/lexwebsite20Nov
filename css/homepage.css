@@ -40,6 +40,7 @@ div { margin: 0%; }
 .first .first-container .version-tag .beta-v .drop .dropdown-menu { left: -60px !important; top: 18px !important; padding: 0 0 20px; }
 .first .first-container .version-tag .beta-v .drop .dropdown-menu .dropdown-item { padding: 20px 0 0 20px; font-weight: 700; }
 .first .first-container .version-tag .beta-v .drop .dropdown-menu .dropdown-item:hover { color: #2f76f0; }
+.first .first-container .version-tag .beta-v .drop .dropdown-menu .dropdown-item:focus, .first .first-container .version-tag .beta-v .drop .dropdown-menu .dropdown-item:active { background-color: unset; }
 .first .first-container .version-tag .beta-v .drop .dropdown-menu::before { content: url(/images/Arrow.svg); background-repeat: no-repeat; position: absolute; top: -16px; right: 25px; z-index: -2; }
 .first .first-container .single-item { vertical-align: bottom; height: 550px; width: 100%; }
 .first .first-container .single-item .content > div { max-width: 971px; margin: 68px auto 215px auto; }

@@ -300,6 +300,10 @@ div {
                     .dropdown-item:hover {
                         color: #2f76f0;
                     }
+                    .dropdown-item:focus,
+                    .dropdown-item:active {
+                        background-color: unset;
+                    }
                 }
                 .drop .dropdown-menu::before {
                     content:url(/images/Arrow.svg);
