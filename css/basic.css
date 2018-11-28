@@ -58,6 +58,7 @@ button:hover { opacity: 0.8; }
 form { background-color: white; padding: 20px; border-radius: 5px; }
 
 .questions { font-size: 18px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+.questions .star { color: #ff0000; }
 
 .selectCompany { font-size: 15px; }
 

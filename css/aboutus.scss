@@ -52,9 +52,16 @@ div {
                     padding-bottom: 5px;
                 }
                 .dropdown-menu {
-                    // height: 60px;
+                    padding: 0%;
+                    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.09);
+                    border-radius: unset;
+                    top: 120%;
+                    left: 10px;
+                    border: none;
+                    min-width: unset;
                      a {
-                         padding: 10px 30px;
+                    padding: 20px 43px 20px 20px;
+                    width: fit-content;
                     color: #000;
                     font-size: 14px;
                     font-weight: bold;
@@ -67,6 +74,14 @@ div {
                 a:focus {
                     color: #2f76f0;
                 }
+                }
+                .dropdown-menu::before {
+                    content:url(/lexstart/images/Arrow.svg);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: -20px;
+                    right: 35px;
+                    z-index: -2;
                 }
                 }                 
         }

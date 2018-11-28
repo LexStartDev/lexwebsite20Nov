@@ -75,10 +75,10 @@ jq(document).ready(function(){
                         console.log("test"+JSON.stringify(response)); 
                         var orgid = response.result.organization_ID;
          
-                            var reqst = {
-                                email: document.getElementById('email').value,
-                                name: document.getElementById("f_name").value
-                            };
+                            // var reqst = {
+                            //     email: document.getElementById('email').value,
+                            //     name: document.getElementById("f_name").value
+                            // };
                         // jq.ajax({
                 
                         //     url : 'https://api.lexstart.com/mailtriggerforbasiclogin',

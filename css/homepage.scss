@@ -55,13 +55,30 @@ div {
                 }
                 .dropdown-menu {
                     // height: 60px;
+                    padding: 0%;
+                    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.09);
+                    border-radius: unset;
+                    top: 120%;
+                    left: 10px;
+                    border: none;
+                    min-width: unset;
                      a {
-                         padding: 10px 30px;
+                    padding: 20px 43px 20px 20px;
+                    width: fit-content;
                     color: #2f76f0;
                     font-size: 14px;
                     font-weight: bold;
                     background-color: #fff;
                 }
+                }
+                .dropdown-menu::before {
+                    content:url(/lexstart/images/Arrow.svg);
+                    background-repeat: no-repeat;
+                    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.03);
+                    position: absolute;
+                    top: -20px;
+                    right: 35px;
+                    z-index: -2;
                 }
             }                 
         }
@@ -236,6 +253,7 @@ div {
             width: 100%;
             // display: block;
             .beta-v {
+                padding: 12px 0 13px 0;
                 margin-top: 100px;
                 float: right;
                 background-color: #fff;
@@ -244,11 +262,13 @@ div {
                 border-left: 2px solid #f0662f;
                 box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.29);
                 .beta {
-                    padding: 17px 0 19px 16px;
+                    padding: 6px 0 7px 16px;
                     margin: 0%;
                     font-size: 16px;    
                     font-weight: bold;
                     color: #2f76f0;
+                    // width: 55%;
+                    float: left;
                     span {
                         font-size: 14px;
                         font-weight: bold;
@@ -256,15 +276,38 @@ div {
                         color: #132149;
                         padding: 0 10px 0 5px;
                     }
-                    a {
-                        color: #fff;
-                        text-transform: uppercase;
-                        padding: 9px 15px 6px;
-                        font-size: 12px;
-                        border-radius: 15px;
-                        background-color: #f0662f;
-                        margin-right: 15px;
+                }
+                .drop .drop-a {
+                    border: none !important;
+                    box-shadow: unset;
+                    font-style: normal;
+                    color: #fff;
+                    text-transform: uppercase;
+                    padding: 9px 15px 6px;
+                    font-size: 12px;
+                    border-radius: 15px;
+                    background-color: #f0662f;
+                    margin-right: 15px;
+                }
+                .drop .dropdown-menu {
+                    left: -60px !important;
+                    top: 18px !important;
+                    padding: 0 0 20px;
+                    .dropdown-item {
+                        padding: 20px 0 0 20px;
+                        font-weight: 700;
                     }
+                    .dropdown-item:hover {
+                        color: #2f76f0;
+                    }
+                }
+                .drop .dropdown-menu::before {
+                    content:url(/lexstart/images/Arrow.svg);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: -16px;
+                    right: 25px;
+                    z-index: -2;
                 }
             }
         }
