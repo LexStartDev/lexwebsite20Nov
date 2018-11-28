@@ -14,7 +14,7 @@ div { margin: 0%; }
 .navbar .collapse .navbar-nav .col2 a { padding-bottom: 5px; }
 .navbar .collapse .navbar-nav .col2 .dropdown-menu { padding: 0%; box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.09); border-radius: unset; top: 120%; left: 10px; border: none; min-width: unset; }
 .navbar .collapse .navbar-nav .col2 .dropdown-menu a { padding: 20px 43px 20px 20px; width: fit-content; color: #2f76f0; font-size: 14px; font-weight: bold; background-color: #fff; }
-.navbar .collapse .navbar-nav .col2 .dropdown-menu::before { content: url(/lexstart/images/Arrow.svg); background-repeat: no-repeat; box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.03); position: absolute; top: -20px; right: 35px; z-index: -2; }
+.navbar .collapse .navbar-nav .col2 .dropdown-menu::before { content: url(/images/Arrow.svg); background-repeat: no-repeat; box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.03); position: absolute; top: -20px; right: 35px; z-index: -2; }
 .navbar .collapse .form-inline { background-color: transparent; padding: 0%; }
 .navbar .collapse .form-inline .nav-item a { color: #fff; padding: 25px 0 28px 40px; }
 .navbar .collapse .form-inline .nav-item .signup { padding: 13px 42px; border-radius: 3px; border: none; color: #2f76f0; font-size: 14px; font-weight: bold; font-family: lato; margin: 0 60px 0 40px; float: left; background-color: #fff; }
@@ -40,7 +40,7 @@ div { margin: 0%; }
 .first .first-container .version-tag .beta-v .drop .dropdown-menu { left: -60px !important; top: 18px !important; padding: 0 0 20px; }
 .first .first-container .version-tag .beta-v .drop .dropdown-menu .dropdown-item { padding: 20px 0 0 20px; font-weight: 700; }
 .first .first-container .version-tag .beta-v .drop .dropdown-menu .dropdown-item:hover { color: #2f76f0; }
-.first .first-container .version-tag .beta-v .drop .dropdown-menu::before { content: url(/lexstart/images/Arrow.svg); background-repeat: no-repeat; position: absolute; top: -16px; right: 25px; z-index: -2; }
+.first .first-container .version-tag .beta-v .drop .dropdown-menu::before { content: url(/images/Arrow.svg); background-repeat: no-repeat; position: absolute; top: -16px; right: 25px; z-index: -2; }
 .first .first-container .single-item { vertical-align: bottom; height: 550px; width: 100%; }
 .first .first-container .single-item .content > div { max-width: 971px; margin: 68px auto 215px auto; }
 .first .first-container .single-item .content .main-text { margin: 0%; font-size: 56px; font-weight: 700; text-align: center; color: #fff; }
