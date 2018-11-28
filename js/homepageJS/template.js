@@ -79,25 +79,25 @@ jq(document).ready(function(){
                                 email: document.getElementById('email').value,
                                 name: document.getElementById("f_name").value
                             };
-                        jq.ajax({
+                        // jq.ajax({
                 
-                            url : 'https://api.lexstart.com/mailtriggerforbasiclogin',
-                            type : 'POST',
-                            data : reqst,
-                            success : function(data) {
-                                jq.ajax({
-                                    url: 'https://api.lexstart.com/accounts/' + orgid,
-                                    type: 'POST',
-                                    contentType: 'application/json',
-                                    success: function () {
-                                        }})
-                                // alert('mail sent to client: '+ data);
-                            },
-                            error : function(request,error)
-                            {
-                                // alert("Request: "+JSON.stringify(request));
-                            }
-                        });
+                        //     url : 'https://api.lexstart.com/mailtriggerforbasiclogin',
+                        //     type : 'POST',
+                        //     data : reqst,
+                        //     success : function(data) {
+                        //         jq.ajax({
+                        //             url: 'https://api.lexstart.com/accounts/' + orgid,
+                        //             type: 'POST',
+                        //             contentType: 'application/json',
+                        //             success: function () {
+                        //                 }})
+                        //         // alert('mail sent to client: '+ data);
+                        //     },
+                        //     error : function(request,error)
+                        //     {
+                        //         // alert("Request: "+JSON.stringify(request));
+                        //     }
+                        // });
 
                         jq('#Org_Modal').modal('show')
                         document.getElementById("templateForm").reset();

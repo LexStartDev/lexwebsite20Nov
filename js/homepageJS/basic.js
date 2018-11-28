@@ -373,24 +373,24 @@ jq(document).ready(function(){
 
             // alert('Organization created: '+ JSON.stringify(response));
   // modal for orgnization
-              var reqst = {
-                email: document.getElementById('email').value,
-                name: document.getElementById("f_name").value
-              };
+          //     var reqst = {
+          //       email: document.getElementById('email').value,
+          //       name: document.getElementById("f_name").value
+          //     };
   
-          jq.ajax({
+          // jq.ajax({
   
-            url : 'https://api.lexstart.com/mailtriggerforbasiclogin',
-            type : 'POST',
-            data : reqst,
-            success : function(data) {
-                // alert('mail sent to client: '+ data);
-            },
-            error : function(request,error)
-            {
-                // alert("Request: "+JSON.stringify(request));
-            }
-          });
+          //   url : 'https://api.lexstart.com/mailtriggerforbasiclogin',
+          //   type : 'POST',
+          //   data : reqst,
+          //   success : function(data) {
+          //       // alert('mail sent to client: '+ data);
+          //   },
+          //   error : function(request,error)
+          //   {
+          //       // alert("Request: "+JSON.stringify(request));
+          //   }
+          // });
   
   
         jq('#Org_Modal').modal('show')
