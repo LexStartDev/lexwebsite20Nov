@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Pre</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lexstart_homepage_UI_v5" transform="translate(-60.000000, -324.000000)">
+            <g id="Pre" transform="translate(84.000000, 348.000000) scale(-1, 1) translate(-84.000000, -348.000000) translate(60.000000, 324.000000)">
+                <circle id="Oval-3" fill="#F2F2F2" cx="24" cy="24" r="24"></circle>
+                <path d="M28.9509343,24.9504987 L20.6952406,33.2059374 C20.1700788,33.7313542 19.3186189,33.7313542 18.793712,33.2059374 C18.2687627,32.680988 18.2687627,31.8295706 18.793712,31.3046637 L26.0987263,23.9998619 L18.7939245,16.695315 C18.2689751,16.1701532 18.2689751,15.3188208 18.7939245,14.7938714 C19.3188739,14.2687095 20.1702913,14.2687095 20.6954531,14.7938714 L28.9511467,23.0494375 C29.2136214,23.3120397 29.34471,23.6558446 29.34471,23.9998194 C29.34471,24.3439642 29.2133665,24.688024 28.9509343,24.9504987 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -23,7 +23,7 @@ div {
 /*---------------nav---------------*/
 
 .navbar {
-    background-color: transparent !important;
+    background-color: #fff !important;
     font-size: 14px;
     font-weight: bold;
     padding: 0%;
@@ -36,8 +36,15 @@ div {
         .navbar-nav {
                 .nav-item {
                     a {
-                    color: #2f76f0;
+                    color: #000;
                     padding: 25px 0 28px 40px;
+                }
+                a:hover {
+                    color: #2f76f0;
+                }
+                a:active,
+                a:focus {
+                    color: #2f76f0;
                 }
             }
             .col2 {
@@ -48,10 +55,17 @@ div {
                     // height: 60px;
                      a {
                          padding: 10px 30px;
-                    color: #2f76f0;
+                    color: #000;
                     font-size: 14px;
                     font-weight: bold;
                     background-color: #fff;
+                }
+                a:hover {
+                    color: #2f76f0;
+                }
+                a:active,
+                a:focus {
+                    color: #2f76f0;
                 }
                 }
                 }                 
@@ -61,8 +75,15 @@ div {
             padding: 0%;
             .nav-item {
                 a {
-                color: #2f76f0;
+                color: #000;
                 padding: 25px 0 28px 40px;
+            }
+            a:hover {
+                color: #2f76f0;
+            }
+            a:active,
+            a:focus {
+                color: #2f76f0;
             }
             .signup {     
                 text-decoration: none;               
@@ -76,7 +97,9 @@ div {
                 margin: 0 60px 0 40px;
                 float: left;
                 background-color: #2f76f0; 
-
+            }
+            .signup:hover {
+                color: #fff;
             }
         }
     }
@@ -441,7 +464,7 @@ div {
         margin-right: 40px;
     }
     .show  {
-        background-color: #2f76f0;;
+        background-color: #fff;;
         padding-bottom: 40px;
     }
     .collapse {
@@ -450,9 +473,16 @@ div {
         }
         .navbar-nav {
         padding-left: 0%;
-        .nav-item a {
-            color: #fff;
+        .nav-item { 
+            a {
+            color: #000;
         }
+        a:hover,
+        a:focus,
+        a:active {
+            color: #2f76f0;
+        }
+    }
     }
 }
     .col2 {
@@ -461,19 +491,34 @@ div {
             padding-bottom: 10px;
              a {
                 padding: 10px 30px;
-                color: #2f76f0;
+                color: #000000;
                 font-size: 14px;
                 font-weight: bold;
+        }
+        a:hover,
+        a:focus,
+        a:active {
+            color: #2f76f0;
         }
         }
     }
     .collapse .form-inline .nav-item{
         a {
-        color: #fff;
+        color: #000;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+        color: #2f76f0;
     }
     .signup {
-        background-color: #fff;
-        color: #2f76f0;
+        background-color: #2f76f0;
+        color: #fff;
+    }
+    .signup:hover,
+    .signup:focus,
+    .signup:active {
+        color: #fff;
     }
 }
 }
@@ -506,14 +551,21 @@ div {
         margin-right: 40px;
     }
     .show  {
-        background-color: #2f76f0;
+        background-color: #fff;
         padding-bottom: 40px;
     }
     .collapse .navbar-nav {
         padding-left: 0%;
-        .nav-item a {
-            color: #fff;
+        .nav-item { 
+            a {
+            color: #000;
         }
+        a:hover,
+        a:focus,
+        a:active {
+            color: #2f76f0;
+        }
+    }
     }
     .col2 {
         .dropdown-menu {
@@ -521,18 +573,33 @@ div {
             padding-bottom: 10px;
              a {
                 padding: 10px 30px;
-                color: #2f76f0;
+                color: #000;
                 font-size: 14px;
                 font-weight: bold;
+        }
+        a:hover,
+        a:focus,
+        a:active {
+            color: #2f76f0;
         }
         }
     }
     .collapse .form-inline .nav-item{ a {
-        color: #fff;
+        color: #000;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+        color: #2f76f0;
     }
     .signup {
-        background-color: #fff;
-        color: #2f76f0;
+        background-color: #2f76f0;
+        color: #fff;
+    }
+    .signup:hover,
+    .signup:focus,
+    .signup:active {
+        color: #fff;
     }
 }
 }
@@ -563,14 +630,23 @@ div {
         margin-right: 40px;
     }
     .show  {
-        background-color: #2f76f0;
+        background-color: #fff;
         padding-bottom: 40px;
     }
     .collapse .navbar-nav {
         padding-left: 0%;
-        .nav-item a {
-            color: #fff;
+        .nav-item {
+            a {
+            color: #000;
         }
+        a:hover {
+            color: #2f76f0 !important;
+        }
+        a:focus,
+        a:active {
+            color: #2f76f0;
+        }
+    }
     }
     .col2 {
         .dropdown-menu {
@@ -578,21 +654,43 @@ div {
             padding-bottom: 10px;
              a {
                 padding: 10px 30px;
-                color: #2f76f0;
+                color: #000;
                 font-size: 14px;
                 font-weight: bold;
+        }
+        a:hover,
+        a:focus,
+        a:active {
+            color: #2f76f0;
         }
         }
     }
     .collapse .form-inline .nav-item { a {
-        color: #fff;
+        color: #000;
     }
-    .signup {
-        background-color: #fff;
+    a:hover,
+    a:focus,
+    a:active {
         color: #2f76f0;
     }
+    .signup {
+        background-color: #2f76f0;
+        color: #fff;
+    }
+    .signup:hover,
+    .signup:focus,
+    .signup:active {
+        color: #fff;
+    }
 }
 }
+.first .content .col-svg div {
+    width: 100%;
+}
+.first .content .col-svg {
+    padding-right: 0%;
+}
+
     .first .content {
         .col-svg .front {
             width: 100%;
@@ -624,20 +722,29 @@ div {
 }
 
 @media screen and (max-width: 480px) {
+    .first .content .col-svg div {
+        width: 100%;
+    }   
     .navbar {
         .navbar-toggler {
         border-color: #2f76f0;
         margin-right: 40px;
     }
     .show  {
-        background-color: #2f76f0;
+        background-color: #fff;
         padding-bottom: 40px;
     }
     .collapse .navbar-nav {
         padding-left: 0%;
-        .nav-item a {
-            color: #fff;
-            
+        .nav-item {
+            a {
+            color: #000;
+            }
+            a:hover,
+            a:focus,
+            a:active {
+                color: #2f76f0;
+            }
         }
     }
     .col2 {
@@ -646,18 +753,33 @@ div {
             padding-bottom: 10px;
              a {
                 padding: 10px 30px;
-                color: #fff;
+                color: #000;
                 font-size: 14px;
                 font-weight: bold;
-        }        
+        }    
+        a:hover,
+        a:focus,
+        a:active {
+            color: #2f76f0;
+        }    
         }
     }
     .collapse .form-inline .nav-item{ a {
-        color: #fff;
+        color: #000;
+    }
+    a:hover,
+    a:focus,
+    a:active {
+        color: #2f76f0;
     }
     .signup {
-        background-color: #fff;
-        color: #2f76f0;
+        background-color: #2f76f0;
+        color: #fff;
+    }
+    .signup:hover,
+    .signup:focus,
+    .signup:active {
+        color: #fff;
     }
 }
 
@@ -681,6 +803,9 @@ div {
 }
 
 @media screen and (max-width: 414px) {
+    .first .content .col-svg div {
+        width: 100%;
+    }   
     .first .content {
         .col-svg {
             padding-right: 0%;
@@ -697,6 +822,9 @@ div {
 }
 
 @media screen and (max-width: 411px) {
+    .first .content .col-svg div {
+        width: 100%;
+    }   
     .first .content {
         .col-svg {
             padding-right: 0%;
@@ -713,6 +841,9 @@ div {
 }
 
 @media screen and (max-width: 360px) {
+    .first .content .col-svg div {
+        width: 100%;
+    }   
     .first .content {
         .col-svg {
             padding-right: 0%;
@@ -743,6 +874,9 @@ div {
 }
 
 @media screen and (max-width: 320px) {
+    .first .content .col-svg div {
+        width: 100%;
+    }   
     .first .content {
         .col-svg {
             padding-right: 0%;

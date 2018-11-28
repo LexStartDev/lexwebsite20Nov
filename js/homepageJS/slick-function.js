@@ -1,7 +1,7 @@
     $(document).ready(function(){
                 $('.single-item').slick({
                     dots: true,
-                    arrows: false,
+                    arrows: true,
                     // prevArrow: string(<button type="button" class="slick-prev">Previous</button>),
                     // nextArrow: string(<button type="button" class="slick-next">Next</button>),
                     autoplay: false,

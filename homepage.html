@@ -28,7 +28,7 @@
         <body>
         <section class="First" style="background: url('images/Home_Page_Icons/Banner_.jpg'); background-repeat: no-repeat; background-position: center bottom; background-size: cover;">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light fixed-top" id="change">
                     <a class="navbar-brand logo" href="#"><img src="/images/Home_Page_Icons/Lex_head_logo.svg" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -71,9 +71,14 @@
                       </form>
                     </div>
                   </nav>
-            
-            <div class="single-item" style="overflow: hidden !important;">
-                        <div class="content">                              
+            <div class="first-container">
+             <div class="version-tag">  
+            <div class="beta-v top">
+                <p class="beta">Beta <span>Version in out</span><a>check now</a></p>
+            </div>
+            </div>
+            <div class="single-item bottom" style="overflow: hidden !important;">
+                        <div class="content" id="first-content">                              
                            <div> 
                             <p class="main-text">Keep your promise to your employees, issue <span>ESOP</span>s now!</p>
                                 <div class="btn-div clearfix">
@@ -121,6 +126,7 @@
                             </div>   
                         </div>                        
             </div>     
+            </div>  
             </section>
 
             <section class="second">                
@@ -180,7 +186,7 @@
                    <div class="content">
                        <div class="row-post1 clearfix">
                                <div class="col-svg">
-                                       <div><img class="front" src="/images/Home_Page_Icons/Valuation.jpg" alt=""></div>
+                                       <div><img class="front val-img" src="/images/Home_Page_Icons/Valuation.jpg" alt=""></div>
                                    <svg class="front behind"><rect></rect></svg>
                                </div>
                                <div class="col-post">
@@ -392,6 +398,7 @@
 
                    
             <script type="text/javascript" src="js/homepageJS/jquery-3.3.1.js"></script>
+            <script type="text/javascript" src="js/homepageJS/global.js"></script>
             <script type="text/javascript" src="js/homepageJS/slick.js"></script>
             <script type="text/javascript" src="js/homepageJS/slick-function.js"></Script>                
             <script type="text/javascript" src="js/bootstrap.min.js"></Script>

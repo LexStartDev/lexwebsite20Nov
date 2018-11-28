@@ -194,6 +194,39 @@
 //     }
 // }
 
+.first .single-item .slick-next
+// .first .single-item .slick-prev 
+{    
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 29%;
+    right: 50px;
+    display: block;
+    &:before {        
+        background: url(/lexstart/images/firstNext.svg) no-repeat;
+        content: '' !important;
+    display: block;
+    padding: 21px;
+    }
+}
+
+
+.first .single-item .slick-prev {
+    left: 50px;
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 29%;
+    display: block;
+    &:before {        
+        background: url(/lexstart/images/firstPre.svg) no-repeat;
+        content: '' !important;
+    display: block;
+    padding: 21px;
+    }
+}
+
 
 .second .slick-next, 
 .second .slick-prev
@@ -408,6 +441,10 @@
     // .second .slick-prev {
     //     bottom: 170px;
     // }
+    .slick-arrow:before {
+        width: 50px;
+        height: 50px;
+    }
     .second .slick-prev {
         left: 800px;
     }

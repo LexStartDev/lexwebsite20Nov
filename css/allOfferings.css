@@ -38,16 +38,25 @@ div { margin: 0%; }
 .nav-tabs > li > a.active, .nav-tabs > li > a:focus { border-bottom: 3px solid #000000; color: #000000; }
 
 /*---------------nav---------------*/
-.navbar { background-color: transparent !important; font-size: 14px; font-weight: bold; padding: 0%; margin: 0%; }
+.navbar { background-color: #fff !important; font-size: 14px; font-weight: bold; padding: 0%; margin: 0%; }
 .navbar .logo { margin: 11px 0 11px 60px; width: unset; }
-.navbar .collapse .navbar-nav .nav-item a { color: #2f76f0; padding: 25px 0 28px 40px; }
+.navbar .collapse .navbar-nav .nav-item a { color: #000; padding: 25px 0 28px 40px; }
+.navbar .collapse .navbar-nav .nav-item a:hover { color: #2f76f0; }
+.navbar .collapse .navbar-nav .nav-item a.active, .navbar .collapse .navbar-nav .nav-item a:focus { color: #2f76f0; }
 .navbar .collapse .navbar-nav .col2 a { padding-bottom: 5px; }
-.navbar .collapse .navbar-nav .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; background-color: #fff; }
+.navbar .collapse .navbar-nav .col2 .dropdown-menu a { padding: 10px 30px; color: #000; font-size: 14px; font-weight: bold; background-color: #fff; }
+.navbar .collapse .navbar-nav .col2 .dropdown-menu a:hover { color: #2f76f0; }
+.navbar .collapse .navbar-nav .col2 .dropdown-menu a:active, .navbar .collapse .navbar-nav .col2 .dropdown-menu a:focus { color: #2f76f0; }
 .navbar .collapse .form-inline { background-color: transparent !important; padding: 0%; }
-.navbar .collapse .form-inline .nav-item a { color: #2f76f0; padding: 25px 0 28px 40px; }
+.navbar .collapse .form-inline .nav-item a { color: #000; padding: 25px 0 28px 40px; }
+.navbar .collapse .form-inline .nav-item a:hover { color: #2f76f0; }
+.navbar .collapse .form-inline .nav-item a:active, .navbar .collapse .form-inline .nav-item a:focus { color: #2f76f0; }
 .navbar .collapse .form-inline .nav-item .signup { padding: 13px 42px; border-radius: 3px; border: none; color: #fff; font-size: 14px; font-weight: bold; font-family: lato; margin: 0 60px 0 40px; float: left; background-color: #2f76f0; }
+.navbar .collapse .form-inline .nav-item .signup:hover { color: #fff; }
 
 /*----------------------Offerings--------------------------*/
+.page .first-pack { padding-top: 140px !important; }
+
 .page .package { background-color: #fff; display: block; padding: 70px 0 70px 179px; }
 .page .package .details { float: left; padding: 0 0 0 100px; }
 
@@ -165,14 +174,18 @@ div { margin: 0%; }
   .footer .row-footer1 .col-footer1 .col3 { width: 40%; }
   .footer .row-footer1 .col-footer2 { width: 100%; margin: 0 auto; text-align: center; } }
 @media screen and (max-width: 991px) { .navbar .navbar-toggler { border-color: #2f76f0; margin-right: 40px; }
-  .navbar .show { background-color: #2f76f0; padding-bottom: 40px; }
+  .navbar .show { background-color: #fff; padding-bottom: 40px; }
   .navbar .collapse .form-inline { display: block; }
   .navbar .collapse .navbar-nav { padding-left: 0%; }
-  .navbar .collapse .navbar-nav .nav-item a { color: #fff; }
+  .navbar .collapse .navbar-nav .nav-item a { color: #000; }
+  .navbar .collapse .navbar-nav .nav-item a:hover, .navbar .collapse .navbar-nav .nav-item a:focus, .navbar .collapse .navbar-nav .nav-item a:active { color: #2f76f0; }
   .navbar .col2 .dropdown-menu { background-color: #f6f6f6; padding-bottom: 10px; }
-  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; }
-  .navbar .collapse .form-inline .nav-item a { color: #fff; }
-  .navbar .collapse .form-inline .nav-item .signup { background-color: #fff; color: #2f76f0; }
+  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #000; font-size: 14px; font-weight: bold; }
+  .navbar .col2 .dropdown-menu a:hover, .navbar .col2 .dropdown-menu a:focus, .navbar .col2 .dropdown-menu a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item a { color: #000; }
+  .navbar .collapse .form-inline .nav-item a:hover, .navbar .collapse .form-inline .nav-item a:focus, .navbar .collapse .form-inline .nav-item a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item .signup { background-color: #2f76f0; color: #fff; }
+  .navbar .collapse .form-inline .nav-item .signup:hover, .navbar .collapse .form-inline .nav-item .signup:focus, .navbar .collapse .form-inline .nav-item .signup:active { color: #fff; }
   .page .package { padding: 70px 30px; }
   .page .package .second .details { width: 47%; padding-right: 0; }
   .page .package .second .img { padding-right: 0; }
@@ -182,13 +195,17 @@ div { margin: 0%; }
   .footer .row-footer1 .col-footer1 .col3 { width: 40%; }
   .footer .row-footer1 .col-footer2 { width: 100%; margin: 0 auto; text-align: center; } }
 @media screen and (max-width: 768px) { .navbar .navbar-toggler { border-color: #2f76f0; margin-right: 40px; }
-  .navbar .show { background-color: #2f76f0; padding-bottom: 40px; }
+  .navbar .show { background-color: #fff; padding-bottom: 40px; }
   .navbar .collapse .navbar-nav { padding-left: 0%; }
-  .navbar .collapse .navbar-nav .nav-item a { color: #fff; }
+  .navbar .collapse .navbar-nav .nav-item a { color: #000; }
+  .navbar .collapse .navbar-nav .nav-item a:hover, .navbar .collapse .navbar-nav .nav-item a:focus, .navbar .collapse .navbar-nav .nav-item a:active { color: #2f76f0; }
   .navbar .col2 .dropdown-menu { background-color: #f6f6f6; padding-bottom: 10px; }
-  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; }
-  .navbar .collapse .form-inline .nav-item a { color: #fff; }
-  .navbar .collapse .form-inline .nav-item .signup { background-color: #fff; color: #2f76f0; }
+  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #000; font-size: 14px; font-weight: bold; }
+  .navbar .col2 .dropdown-menu a:hover, .navbar .col2 .dropdown-menu a:focus, .navbar .col2 .dropdown-menu a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item a { color: #000; }
+  .navbar .collapse .form-inline .nav-item a:hover, .navbar .collapse .form-inline .nav-item a:focus, .navbar .collapse .form-inline .nav-item a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item .signup { background-color: #2f76f0; color: #fff; }
+  .navbar .collapse .form-inline .nav-item .signup:hover, .navbar .collapse .form-inline .nav-item .signup:focus, .navbar .collapse .form-inline .nav-item .signup:active { color: #fff; }
   .page .package { padding: 70px 35px 0; }
   .page .package .img1 img, .page .package .img .img2 { width: 600px; height: 380px; }
   .page .package .first .img, .page .package .first2 .img { padding-left: 40px; }
@@ -199,13 +216,17 @@ div { margin: 0%; }
   .four .row-cust { padding: 20px; }
   .footer .row-footer1 { padding: 60px 30px 50px; } }
 @media screen and (max-width: 640px) { .navbar .navbar-toggler { border-color: #2f76f0; margin-right: 40px; }
-  .navbar .show { background-color: #2f76f0; padding-bottom: 40px; }
+  .navbar .show { background-color: #fff; padding-bottom: 40px; }
   .navbar .collapse .navbar-nav { padding-left: 0%; }
-  .navbar .collapse .navbar-nav .nav-item a { color: #fff; }
+  .navbar .collapse .navbar-nav .nav-item a { color: #000; }
+  .navbar .collapse .navbar-nav .nav-item a:hover, .navbar .collapse .navbar-nav .nav-item a:focus, .navbar .collapse .navbar-nav .nav-item a:active { color: #2f76f0; }
   .navbar .col2 .dropdown-menu { background-color: #f6f6f6; padding-bottom: 10px; }
-  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; }
-  .navbar .collapse .form-inline .nav-item a { color: #fff; }
-  .navbar .collapse .form-inline .nav-item .signup { background-color: #fff; color: #2f76f0; }
+  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #000; font-size: 14px; font-weight: bold; }
+  .navbar .col2 .dropdown-menu a:hover, .navbar .col2 .dropdown-menu a:focus, .navbar .col2 .dropdown-menu a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item a { color: #000; }
+  .navbar .collapse .form-inline .nav-item a:hover, .navbar .collapse .form-inline .nav-item a:focus, .navbar .collapse .form-inline .nav-item a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item .signup { background-color: #2f76f0; color: #fff; }
+  .navbar .collapse .form-inline .nav-item .signup:hover, .navbar .collapse .form-inline .nav-item .signup:focus, .navbar .collapse .form-inline .nav-item .signup:active { color: #fff; }
   .nav-tabs > li > a { padding-right: 2px; }
   .container { max-width: 555px; }
   .page .package { padding: 70px 13px 0; }
@@ -216,13 +237,17 @@ div { margin: 0%; }
   .footer .row-footer1 .col-footer1 .col-footer { width: 50% !important; padding-right: 40px; }
   .footer .row-footer1 .col-footer1 .col3 { width: 100% !important; padding-right: 0; } }
 @media screen and (max-width: 480px) { .navbar .navbar-toggler { border-color: #2f76f0; margin-right: 40px; }
-  .navbar .show { background-color: #2f76f0; padding-bottom: 40px; }
+  .navbar .show { background-color: #fff; padding-bottom: 40px; }
   .navbar .collapse .navbar-nav { padding-left: 0%; }
-  .navbar .collapse .navbar-nav .nav-item a { color: #fff; }
+  .navbar .collapse .navbar-nav .nav-item a { color: #000; }
+  .navbar .collapse .navbar-nav .nav-item a:hover, .navbar .collapse .navbar-nav .nav-item a:focus, .navbar .collapse .navbar-nav .nav-item a:active { color: #2f76f0; }
   .navbar .col2 .dropdown-menu { background-color: #f6f6f6; padding-bottom: 10px; }
-  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #fff; font-size: 14px; font-weight: bold; }
-  .navbar .collapse .form-inline .nav-item a { color: #fff; }
-  .navbar .collapse .form-inline .nav-item .signup { background-color: #fff; color: #2f76f0; }
+  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #000; font-size: 14px; font-weight: bold; }
+  .navbar .col2 .dropdown-menu a:hover, .navbar .col2 .dropdown-menu a:focus, .navbar .col2 .dropdown-menu a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item a { color: #000; }
+  .navbar .collapse .form-inline .nav-item a:hover, .navbar .collapse .form-inline .nav-item a:focus, .navbar .collapse .form-inline .nav-item a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item .signup { background-color: #2f76f0; color: #fff; }
+  .navbar .collapse .form-inline .nav-item .signup:hover, .navbar .collapse .form-inline .nav-item .signup:focus, .navbar .collapse .form-inline .nav-item .signup:active { color: #fff; }
   .page .package { padding: 70px 15px 0; }
   .page .package .first .panel-body ul { width: 55%; }
   .page .package .first .nav-tabs .com { margin-right: 20px; }

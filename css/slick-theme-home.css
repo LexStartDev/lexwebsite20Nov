@@ -21,6 +21,12 @@
 
 [dir='rtl'] .prev:before { content: 'ΓåÆ'; }
 
+.first .single-item .slick-next  { font-size: 0; line-height: 0; position: absolute; top: 29%; right: 50px; display: block; }
+.first .single-item .slick-next:before  { background: url(/lexstart/images/firstNext.svg) no-repeat; content: '' !important; display: block; padding: 21px; }
+
+.first .single-item .slick-prev { left: 50px; font-size: 0; line-height: 0; position: absolute; top: 29%; display: block; }
+.first .single-item .slick-prev:before { background: url(/lexstart/images/firstPre.svg) no-repeat; content: '' !important; display: block; padding: 21px; }
+
 .second .slick-next, .second .slick-prev { margin: 0%; font-size: 0; position: absolute; right: 120px; bottom: 30px; height: 42px !important; width: 42px !important; background: url(/images/Home_Page_Icons/Next.svg) no-repeat; }
 .second .slick-next:before, .second .slick-prev:before { display: none; }
 
@@ -55,7 +61,8 @@
 
 @media screen and (max-width: 1280px) { .second .slick-prev { left: 1040px; }
   .four .cust-item .slick-prev { left: 919px; } }
-@media screen and (max-width: 1024px) { .second .slick-prev { left: 800px; }
+@media screen and (max-width: 1024px) { .slick-arrow:before { width: 50px; height: 50px; }
+  .second .slick-prev { left: 800px; }
   .three .off-item .col1 { margin-left: 45px; }
   .four .cust-item .slick-prev { left: 830px; }
   .four .cust-item .slick-next { right: 100px; } }

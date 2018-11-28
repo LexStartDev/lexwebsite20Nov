@@ -7,14 +7,21 @@ html, body { margin: 0%; padding: 0; font-family: Lato; position: relative; over
 div { margin: 0%; }
 
 /*---------------nav---------------*/
-.navbar { background-color: transparent !important; font-size: 14px; font-weight: bold; padding: 0%; margin: 0%; }
+.navbar { background-color: #fff !important; font-size: 14px; font-weight: bold; padding: 0%; margin: 0%; }
 .navbar .logo { margin: 11px 0 11px 60px; width: unset; }
-.navbar .collapse .navbar-nav .nav-item a { color: #2f76f0; padding: 25px 0 28px 40px; }
+.navbar .collapse .navbar-nav .nav-item a { color: #000; padding: 25px 0 28px 40px; }
+.navbar .collapse .navbar-nav .nav-item a:hover { color: #2f76f0; }
+.navbar .collapse .navbar-nav .nav-item a:active, .navbar .collapse .navbar-nav .nav-item a:focus { color: #2f76f0; }
 .navbar .collapse .navbar-nav .col2 a { padding-bottom: 5px; }
-.navbar .collapse .navbar-nav .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; background-color: #fff; }
+.navbar .collapse .navbar-nav .col2 .dropdown-menu a { padding: 10px 30px; color: #000; font-size: 14px; font-weight: bold; background-color: #fff; }
+.navbar .collapse .navbar-nav .col2 .dropdown-menu a:hover { color: #2f76f0; }
+.navbar .collapse .navbar-nav .col2 .dropdown-menu a:active, .navbar .collapse .navbar-nav .col2 .dropdown-menu a:focus { color: #2f76f0; }
 .navbar .collapse .form-inline { background-color: transparent !important; padding: 0%; }
-.navbar .collapse .form-inline .nav-item a { color: #2f76f0; padding: 25px 0 28px 40px; }
+.navbar .collapse .form-inline .nav-item a { color: #000; padding: 25px 0 28px 40px; }
+.navbar .collapse .form-inline .nav-item a:hover { color: #2f76f0; }
+.navbar .collapse .form-inline .nav-item a:active, .navbar .collapse .form-inline .nav-item a:focus { color: #2f76f0; }
 .navbar .collapse .form-inline .nav-item .signup { text-decoration: none; padding: 13px 42px; border-radius: 3px; border: none; color: #fff; font-size: 14px; font-weight: bold; font-family: lato; margin: 0 60px 0 40px; float: left; background-color: #2f76f0; }
+.navbar .collapse .form-inline .nav-item .signup:hover { color: #fff; }
 
 /*----------------------------page----------------------------*/
 .first { background-color: #fff; padding-bottom: 101px; }
@@ -89,68 +96,92 @@ div { margin: 0%; }
   .footer .row-footer1 .col-footer1 .col3 { width: 40%; }
   .footer .row-footer1 .col-footer2 { width: 100%; margin: 0 auto; text-align: center; } }
 @media screen and (max-width: 991px) { .navbar .navbar-toggler { border-color: #2f76f0; margin-right: 40px; }
-  .navbar .show { background-color: #2f76f0; padding-bottom: 40px; }
+  .navbar .show { background-color: #fff; padding-bottom: 40px; }
   .navbar .collapse .form-inline { display: block; }
   .navbar .collapse .navbar-nav { padding-left: 0%; }
-  .navbar .collapse .navbar-nav .nav-item a { color: #fff; }
+  .navbar .collapse .navbar-nav .nav-item a { color: #000; }
+  .navbar .collapse .navbar-nav .nav-item a:hover, .navbar .collapse .navbar-nav .nav-item a:focus, .navbar .collapse .navbar-nav .nav-item a:active { color: #2f76f0; }
   .navbar .col2 .dropdown-menu { background-color: #f6f6f6; padding-bottom: 10px; }
-  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; }
-  .navbar .collapse .form-inline .nav-item a { color: #fff; }
-  .navbar .collapse .form-inline .nav-item .signup { background-color: #fff; color: #2f76f0; } }
+  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #000000; font-size: 14px; font-weight: bold; }
+  .navbar .col2 .dropdown-menu a:hover, .navbar .col2 .dropdown-menu a:focus, .navbar .col2 .dropdown-menu a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item a { color: #000; }
+  .navbar .collapse .form-inline .nav-item a:hover, .navbar .collapse .form-inline .nav-item a:focus, .navbar .collapse .form-inline .nav-item a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item .signup { background-color: #2f76f0; color: #fff; }
+  .navbar .collapse .form-inline .nav-item .signup:hover, .navbar .collapse .form-inline .nav-item .signup:focus, .navbar .collapse .form-inline .nav-item .signup:active { color: #fff; } }
 @media screen and (max-width: 768px) { .navbar .navbar-toggler { border-color: #2f76f0; margin-right: 40px; }
-  .navbar .show { background-color: #2f76f0; padding-bottom: 40px; }
+  .navbar .show { background-color: #fff; padding-bottom: 40px; }
   .navbar .collapse .navbar-nav { padding-left: 0%; }
-  .navbar .collapse .navbar-nav .nav-item a { color: #fff; }
+  .navbar .collapse .navbar-nav .nav-item a { color: #000; }
+  .navbar .collapse .navbar-nav .nav-item a:hover, .navbar .collapse .navbar-nav .nav-item a:focus, .navbar .collapse .navbar-nav .nav-item a:active { color: #2f76f0; }
   .navbar .col2 .dropdown-menu { background-color: #f6f6f6; padding-bottom: 10px; }
-  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; }
-  .navbar .collapse .form-inline .nav-item a { color: #fff; }
-  .navbar .collapse .form-inline .nav-item .signup { background-color: #fff; color: #2f76f0; }
+  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #000; font-size: 14px; font-weight: bold; }
+  .navbar .col2 .dropdown-menu a:hover, .navbar .col2 .dropdown-menu a:focus, .navbar .col2 .dropdown-menu a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item a { color: #000; }
+  .navbar .collapse .form-inline .nav-item a:hover, .navbar .collapse .form-inline .nav-item a:focus, .navbar .collapse .form-inline .nav-item a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item .signup { background-color: #2f76f0; color: #fff; }
+  .navbar .collapse .form-inline .nav-item .signup:hover, .navbar .collapse .form-inline .nav-item .signup:focus, .navbar .collapse .form-inline .nav-item .signup:active { color: #fff; }
   .first .content { padding: 0 50px; }
   .first .content .col-svg { width: 100%; }
   .first .content .col-post { width: 100%; }
   .first .content .row-post1 { padding-left: 10px; padding-right: 0%; }
   .footer .row-footer1 { padding: 60px 30px 50px; } }
 @media screen and (max-width: 640px) { .navbar .navbar-toggler { border-color: #2f76f0; margin-right: 40px; }
-  .navbar .show { background-color: #2f76f0; padding-bottom: 40px; }
+  .navbar .show { background-color: #fff; padding-bottom: 40px; }
   .navbar .collapse .navbar-nav { padding-left: 0%; }
-  .navbar .collapse .navbar-nav .nav-item a { color: #fff; }
+  .navbar .collapse .navbar-nav .nav-item a { color: #000; }
+  .navbar .collapse .navbar-nav .nav-item a:hover { color: #2f76f0 !important; }
+  .navbar .collapse .navbar-nav .nav-item a:focus, .navbar .collapse .navbar-nav .nav-item a:active { color: #2f76f0; }
   .navbar .col2 .dropdown-menu { background-color: #f6f6f6; padding-bottom: 10px; }
-  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #2f76f0; font-size: 14px; font-weight: bold; }
-  .navbar .collapse .form-inline .nav-item a { color: #fff; }
-  .navbar .collapse .form-inline .nav-item .signup { background-color: #fff; color: #2f76f0; }
+  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #000; font-size: 14px; font-weight: bold; }
+  .navbar .col2 .dropdown-menu a:hover, .navbar .col2 .dropdown-menu a:focus, .navbar .col2 .dropdown-menu a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item a { color: #000; }
+  .navbar .collapse .form-inline .nav-item a:hover, .navbar .collapse .form-inline .nav-item a:focus, .navbar .collapse .form-inline .nav-item a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item .signup { background-color: #2f76f0; color: #fff; }
+  .navbar .collapse .form-inline .nav-item .signup:hover, .navbar .collapse .form-inline .nav-item .signup:focus, .navbar .collapse .form-inline .nav-item .signup:active { color: #fff; }
+  .first .content .col-svg div { width: 100%; }
+  .first .content .col-svg { padding-right: 0%; }
   .first .content .col-svg .front { width: 100%; height: auto; }
   .first .content .col-svg .front.behind { width: 100%; height: 100%; }
   .first .content .col-post { width: 100%; }
   .footer .row-footer1 { padding: 0 50px 20px; }
   .footer .row-footer1 .col-footer1 .col-footer { width: 50% !important; padding-right: 40px; }
   .footer .row-footer1 .col-footer1 .col3 { width: 100% !important; padding-right: 0; } }
-@media screen and (max-width: 480px) { .navbar .navbar-toggler { border-color: #2f76f0; margin-right: 40px; }
-  .navbar .show { background-color: #2f76f0; padding-bottom: 40px; }
+@media screen and (max-width: 480px) { .first .content .col-svg div { width: 100%; }
+  .navbar .navbar-toggler { border-color: #2f76f0; margin-right: 40px; }
+  .navbar .show { background-color: #fff; padding-bottom: 40px; }
   .navbar .collapse .navbar-nav { padding-left: 0%; }
-  .navbar .collapse .navbar-nav .nav-item a { color: #fff; }
+  .navbar .collapse .navbar-nav .nav-item a { color: #000; }
+  .navbar .collapse .navbar-nav .nav-item a:hover, .navbar .collapse .navbar-nav .nav-item a:focus, .navbar .collapse .navbar-nav .nav-item a:active { color: #2f76f0; }
   .navbar .col2 .dropdown-menu { background-color: #f6f6f6; padding-bottom: 10px; }
-  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #fff; font-size: 14px; font-weight: bold; }
-  .navbar .collapse .form-inline .nav-item a { color: #fff; }
-  .navbar .collapse .form-inline .nav-item .signup { background-color: #fff; color: #2f76f0; }
+  .navbar .col2 .dropdown-menu a { padding: 10px 30px; color: #000; font-size: 14px; font-weight: bold; }
+  .navbar .col2 .dropdown-menu a:hover, .navbar .col2 .dropdown-menu a:focus, .navbar .col2 .dropdown-menu a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item a { color: #000; }
+  .navbar .collapse .form-inline .nav-item a:hover, .navbar .collapse .form-inline .nav-item a:focus, .navbar .collapse .form-inline .nav-item a:active { color: #2f76f0; }
+  .navbar .collapse .form-inline .nav-item .signup { background-color: #2f76f0; color: #fff; }
+  .navbar .collapse .form-inline .nav-item .signup:hover, .navbar .collapse .form-inline .nav-item .signup:focus, .navbar .collapse .form-inline .nav-item .signup:active { color: #fff; }
   .footer .row-footer1 { padding: 0 30px 20px 30px; }
   .footer .row-footer1 .col-footer1 .col-footer { width: 50% !important; padding-right: 40px; }
   .footer .row-footer1 .col-footer1 .col3 { width: 100% !important; padding-right: 0; } }
-@media screen and (max-width: 414px) { .first .content { padding: 0 20px; }
+@media screen and (max-width: 414px) { .first .content .col-svg div { width: 100%; }
+  .first .content { padding: 0 20px; }
   .first .content .col-svg { padding-right: 0%; }
   .first .content .col-post { width: 100%; }
   .first .content .row-post1 { padding-left: 10px; padding-right: 0%; } }
-@media screen and (max-width: 411px) { .first .content { padding: 0 20px; }
+@media screen and (max-width: 411px) { .first .content .col-svg div { width: 100%; }
+  .first .content { padding: 0 20px; }
   .first .content .col-svg { padding-right: 0%; }
   .first .content .col-post { width: 100%; }
   .first .content .row-post1 { padding-left: 10px; padding-right: 10px; } }
-@media screen and (max-width: 360px) { .first .content { padding: 0 20px; }
+@media screen and (max-width: 360px) { .first .content .col-svg div { width: 100%; }
+  .first .content { padding: 0 20px; }
   .first .content .col-svg { padding-right: 0%; }
   .first .content .col-post { width: 100%; }
   .first .content .row-post1 { padding-left: 10px; }
   .footer .row-footer1 { padding: 0 30px 20px 30px; }
   .footer .row-footer1 .col-footer1 .col-footer { width: 50% !important; padding-right: 40px; }
   .footer .row-footer1 .col-footer1 .col3 { width: 100% !important; padding-right: 0; } }
-@media screen and (max-width: 320px) { .first .content { padding: 0 20px; }
+@media screen and (max-width: 320px) { .first .content .col-svg div { width: 100%; }
+  .first .content { padding: 0 20px; }
   .first .content .col-svg { padding-right: 0%; }
   .first .content .col-post { width: 100%; }
   .first .content .row-post1 { padding: 30px 0 0 10px; }
