@@ -40,6 +40,7 @@
    </div> 
 
   <div class="tab">
+        <p class="pageNo">1/6</p>
       <p class="questions">1. What kind of an entity have you formed?<span class="star">&nbsp;*</span></p>   
       <div class="clerafix option-wrapper">
         <label class="radioWrapper">LLP
@@ -80,6 +81,7 @@
             <span class="checkmark"></span>
         </label>
         <div id="ifNotExecuted"  style="font-size:12px;margin-left:40px;">
+                <p class="error" id="ifnotq2">If not, Please select one of the below options</p>
             <label class="radioWrapper">Neither employees nor founder
                 <input type="radio" name="ifNo" id="q2_b1"  value="Neither Employees nor Founders"  oninput="this.className = ''" >
                 <span class="checkmark"></span>
@@ -92,6 +94,7 @@
                 <input type="radio" name="ifNo" id="q2_b3"  value="Only founders not employees" oninput="this.className = ''" >
                 <span class="checkmark"></span>
             </label>
+            
         </div>
         <label class="radioWrapper" >I don't know
             <input type="radio" name="question2" id="q2_idk"  value="I dont know" oninput="this.className = ''"  >
@@ -103,6 +106,7 @@
   </div>
 
   <div class="tab">
+        <p class="pageNo">2/6</p>
       <p class="questions">3. Is your brand name and logo registered?<span class="star">&nbsp;*</span></p>
       <div class="clerafix option-wrapper">
           <label class="radioWrapper">Yes
@@ -114,6 +118,7 @@
               <span class="checkmark"></span>
           </label>
           <div id="ifNot"  style="font-size:12px;margin-left:15px;">
+                <p class="error" id="ifnotq3">If not, Please select one of the below options</p>     
               <label class="radioWrapper">Neither brand name nor logo
                   <input type="radio" name="ifNot" id="q3_b1"  value="Neither brand name nor logo">
                   <span class="checkmark"></span>
@@ -125,7 +130,8 @@
               <label class="radioWrapper">Only logo not brand name
                   <input type="radio" name="ifNot" id="q3_b3"  value="Only logo not brand name">
                   <span class="checkmark"></span>
-              </label>                                
+              </label>    
+                                     
           </div>
       </div>
     <!-- <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
@@ -156,6 +162,7 @@
   </div>
 
   <div class="tab">
+        <p class="pageNo">3/6</p>
       <p class="questions">5. Do you have a Terms of Service and Privacy Policy on your website?<span class="star">&nbsp;*</span></p>
       <div class="clerafix option-wrapper">
           <label class="radioWrapper">Yes
@@ -173,7 +180,8 @@
       </div>
       <div id="question5b" >
           <p class="questions">   Do you want us to review Terms of Service and Privacy Policy on your website?<span class="star">&nbsp;*</span></p>
-          <div class="clerafix ">
+          <div class="clerafix option-wrapper">
+                <p class="error" id="ifyesq5">If yes, Please select one of the below options</p>  
               <label class="radioWrapper">Yes
                   <input type="radio" name="question5a" id="q5_b1"  value="yes">
                   <span class="checkmark"></span>
@@ -182,6 +190,7 @@
                   <input type="radio" name="question5a" id="q5_b2"  value="no">
                   <span class="checkmark"></span>
               </label>
+              
           </div>                            
       </div>
     <!-- <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
@@ -191,7 +200,9 @@
     <!-- <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
     <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p> -->
   </div>
+
   <div class="tab">
+        <p class="pageNo">4/6</p>
       <p class="questions">6. Do you have contracts in place with all your vendors and customers?<span class="star">&nbsp;*</span></p>
       <div class="clerafix option-wrapper">
           <label class="radioWrapper">Yes
@@ -209,7 +220,8 @@
       </div>
       <div id="question6b" >
           <p class="questions">   Do you want us to review contracts with vendors or customers?<span class="star">&nbsp;*</span></p>
-          <div class="clerafix ">
+          <div class="clerafix option-wrapper">
+                <p class="error" id="ifyesq6">If yes, Please select one of the below options</p>  
               <label class="radioWrapper">Yes
                   <input type="radio" name="question6a" id="q6_b1"  value="yes">
                   <span class="checkmark"></span>
@@ -218,12 +230,15 @@
                   <input type="radio" name="question6a" id="q6_b2"  value="no">
                   <span class="checkmark"></span>
               </label>
+              
           </div>
       </div>
     <!-- <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
     <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p> -->
   </div>
+
   <div class="tab">
+        <p class="pageNo">5/6</p>
       <p class="questions">7. Do you have all your compliance filings, board meetings up to date?<span class="star">&nbsp;*</span></p>
       <div class="clerafix option-wrapper">
           <label class="radioWrapper">Yes
@@ -240,7 +255,9 @@
           </label>
       </div>
   </div>
+
   <div class="tab">
+        <p class="pageNo">6/6</p>
       <p class="questions">8. Have you ever taken money in a form other than equity or revenues from friends, family, advisors
           etc.?<span class="star">&nbsp;*</span>
       </p>
@@ -256,7 +273,8 @@
       </div>
       <div id="ifYesTaken" >
           <p class="questions">In what form was the money taken ?<span class="star">&nbsp;*</span></p>
-          <div class="clerafix ">
+          <div class="clerafix  option-wrapper">
+                <p class="error" id="ifyesq8">If yes, Please select one of the below options</p>  
               <label class="radioWrapper">Loan
                   <input type="radio" id="q8_b1" name="ifTaken"  value="loan">
                   <span class="checkmark"></span>
@@ -269,11 +287,13 @@
                   <input type="radio" id="q8_b3" name="ifTaken" value="convertible note">
                   <span class="checkmark"></span>
               </label>
+              
           </div>
       </div>
       <div id="question8c">
           <p class="questions">Have you followed compliance &amp; made requisite filings ?<span class="star">&nbsp;*</span></p>
-          <div class="clerafix ">
+          <div class="clerafix  option-wrapper">
+                <p class="error" id="ifyesq8c">Please select one of the below options</p>  
               <label class="radioWrapper">Yes
                   <input type="radio" id="q8_c1" name="question8c" value="yes">
                   <span class="checkmark"></span>
@@ -286,6 +306,7 @@
                   <input type="radio" id="q8_c3" name="question8c"  value="maybe" >
                   <span class="checkmark"></span>
               </label>
+              
           </div>
       </div>
   </div>

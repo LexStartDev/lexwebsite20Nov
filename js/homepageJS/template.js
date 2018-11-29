@@ -57,6 +57,7 @@ jq(document).ready(function(){
             type : 'POST',
             data : req,
             success : function(data) {
+                document.getElementById("email_exists").style.display = "none";
           // ... the form gets submitted:
                 // document.getElementById("templateForm").submit();   
 
@@ -73,7 +74,7 @@ jq(document).ready(function(){
                     success : function(response) {              
                         // alert('Organization created: '+ JSON.stringify(response));
                         console.log("test"+JSON.stringify(response)); 
-                        var orgid = response.result.organization_ID;
+                        // var orgid = response.result.organization_ID;
          
                             // var reqst = {
                             //     email: document.getElementById('email').value,
@@ -104,6 +105,7 @@ jq(document).ready(function(){
                     },
                     error : function(request,error)
                     {
+
                         // alert("Request: "+JSON.stringify(request));
                         // alert("Error while creating an organization: "+JSON.stringify(error));
                         return false;
@@ -111,8 +113,9 @@ jq(document).ready(function(){
                 });
          },
          error : function(request,error) {
+            document.getElementById("email_exists").style.display = "block";
             //  alert("Request: "+JSON.stringify(request));
-             jq('#exampleModal').modal('show')
+            //  jq('#exampleModal').modal('show')
               return false;
          }
         });

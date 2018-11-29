@@ -10,13 +10,15 @@ body { background-color: #fff; font-family: lato; }
 
 .logo { margin: 0%; width: 111px; height: 36px; font-size: 30px; font-weight: bold; text-align: center; color: #000000; text-decoration: none; }
 
-#diligenceForm { /* border: 1px solid #000000; */ border-radius: 5px; margin: 50px auto 0; /* padding: 40px; */ width: 50%; border-radius: 6px; background-color: #ffffff; box-shadow: 0 1px 3px 1px rgba(209, 207, 207, 0.05), 0 2px 8px 4px rgba(53, 53, 53, 0.06); border: 1px solid #eee; }
+#diligenceForm { /* border: 1px solid #000000; */ border-radius: 5px; margin: 50px auto 0; padding: 40px; width: 500px; border-radius: 6px; background-color: #ffffff; box-shadow: 0 1px 3px 1px rgba(209, 207, 207, 0.05), 0 2px 8px 4px rgba(53, 53, 53, 0.06); border: 1px solid #eee; }
 
-.org_details { text-align: left; margin-left: 80px; }
+.org_details { text-align: left; width: 240px; margin: 0 auto; }
 
 input[type=text]::placeholder, input[type=email]::placeholder { font-size: 16px; color: #aaaaaa; }
 
-#f_name, #email { width: 80%; border-radius: 2px; background-color: #ffffff; border: solid 1px #dedede; padding: 16px 0 15px 15px; font-size: 16px; }
+#f_name, #email { width: 240px; margin-bottom: 10px; border-radius: 2px; background-color: #ffffff; border: solid 1px #dedede; padding: 16px 0 15px 15px; font-size: 16px; }
+
+#email { margin-bottom: 0%; }
 
 .first_name, .email { font-size: 16px; font-weight: bold; }
 
@@ -25,12 +27,15 @@ input.invalid { border: 1px solid #ff0000 !important; }
 
 #error { display: none; font-size: 16px; color: #ff0000; }
 
+.error { display: none; font-size: 16px; color: #ff0000; }
+
 #email_exists { display: none; font-size: 16px; color: #ff0000; }
 
 .signin_link { color: #2069e7; text-decoration: underline; font-weight: bold; }
 
 /* Hide all steps by default: */
 .tab { display: none; }
+.tab .pageNo { margin: 0 auto; text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 40px; color: #b7b7b7; }
 
 .buttons { margin: 0 auto; text-align: center; }
 
@@ -40,7 +45,7 @@ button:hover { opacity: 0.8; }
 
 #prevBtn { color: #2f76f0; font-size: 14px; font-weight: bold; border-radius: 3px; border: solid 1px #2f76f0; background-color: #ffffff; }
 
-#submitBtn { float: right; position: relative; right: 134px; }
+#submitBtn { float: right; position: relative; right: 30px; }
 
 .modal .modal-content { padding: 30px; }
 .modal .modal-header { border-bottom: none; }
@@ -57,7 +62,7 @@ button:hover { opacity: 0.8; }
 
 form { background-color: white; padding: 20px; border-radius: 5px; }
 
-.questions { font-size: 18px; font-weight: bold; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #000000; }
+.questions { font-size: 18px; line-height: 1.6; font-weight: bold; font-style: normal; font-stretch: normal; letter-spacing: normal; color: #000000; }
 .questions .star { color: #ff0000; }
 
 .selectCompany { font-size: 15px; }
@@ -66,11 +71,11 @@ form { background-color: white; padding: 20px; border-radius: 5px; }
 
 .group { margin: 40px; }
 
-.title { font-size: 24px; font-weight: bold; color: #3675e0; text-align: center; }
+.title { line-height: 1.6; font-size: 24px; font-weight: bold; color: #000; text-align: center; }
 
 .radioWrapper { margin: 18px 0; font-size: 16px; color: #585858; font-weight: 600; display: block; position: relative; padding-left: 30px; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 
-.option-wrapper { margin-left: 15px; }
+.option-wrapper { margin: 0 0 30px 15px; }
 
 /* Hide the browser's default checkbox */
 .radioWrapper input { position: absolute; opacity: 0; cursor: pointer; }
@@ -100,47 +105,36 @@ form { background-color: white; padding: 20px; border-radius: 5px; }
 
 .next_btn { margin-left: 10px; }
 
-.error { font-size: 13px; color: red; display: none; }
-
-@media screen and (max-width: 1440px) { #diligenceForm { width: 50%; margin: 50px auto; }
-  #diligenceForm .org_details { margin: 30px; }
+@media screen and (max-width: 1440px) { #diligenceForm { margin: 50px auto; }
   #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
   #diligenceForm #prevBtn { margin-right: 10px; margin-bottom: 20px; }
-  #diligenceForm #nextBtn { margin-top: 10px; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 145px; } }
-@media screen and (max-width: 1366px) { #diligenceForm #submitBtn { right: 130px; } }
-@media screen and (max-width: 1280px) { #diligenceForm { width: 60%; margin: 20px auto; }
-  #diligenceForm .org_details { margin: 30px; }
+  #diligenceForm #nextBtn { margin-top: 10px; } }
+@media screen and (max-width: 1280px) { #diligenceForm { margin: 20px auto; }
   #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
   #diligenceForm #prevBtn { margin-right: 10px; margin-bottom: 20px; }
-  #diligenceForm #nextBtn { margin-top: 10px; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 174px; } }
-@media screen and (max-width: 1024px) { #diligenceForm { width: 80%; margin: 20% auto; }
-  #diligenceForm .org_details { margin: 30px; }
+  #diligenceForm #nextBtn { margin-top: 10px; margin-right: 0%; } }
+@media screen and (max-width: 1024px) { #diligenceForm { margin: 20% auto; }
   #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
   #diligenceForm #prevBtn { margin-right: 10px; margin-bottom: 20px; }
-  #diligenceForm #nextBtn { margin-top: 10px; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 200px; } }
+  #diligenceForm #nextBtn { margin-top: 10px; } }
 @media screen and (max-width: 768px) { #diligenceForm { width: 80%; margin: 20% auto; }
-  #diligenceForm .org_details { margin: 30px; }
   #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
   #diligenceForm #prevBtn { margin-right: 10px; margin-bottom: 20px; }
   #diligenceForm #nextBtn { margin-top: 10px; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 99px; } }
+  #diligenceForm #submitBtn { position: relative; float: right; right: 80px; } }
 @media screen and (max-width: 640px) { #diligenceForm { width: 70%; margin: 20px auto; }
-  #diligenceForm .org_details { margin: 30px; }
+  #diligenceForm .group { margin: 0%; }
   #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
   #diligenceForm #prevBtn { margin-right: 10px; margin-bottom: 20px; }
   #diligenceForm #nextBtn { margin-top: 10px; }
-  #diligenceForm #submitBtn { position: relative; float: right; right: 14px; } }
+  #diligenceForm #submitBtn { position: relative; float: right; right: 8px; } }
 @media screen and (max-width: 414px) { #diligenceForm #prevBtn { margin-right: 10px; margin-bottom: 20px; }
   #diligenceForm #nextBtn { margin: 0 auto; }
-  #diligenceForm #submitBtn { margin-top: 0%; margin-right: 30px; } }
+  #diligenceForm #submitBtn { margin-top: 0%; margin-right: 23px; } }
 @media screen and (max-width: 411px) { #diligenceForm #prevBtn { margin-right: 10px; margin-block-end: 20px; }
   #diligenceForm #nextBtn { margin: 0 auto; }
-  #diligenceForm #submitBtn { margin-right: 30px; } }
+  #diligenceForm #submitBtn { margin-right: 23px; } }
 @media screen and (max-width: 375px) { #diligenceForm { width: 90%; margin: 20px; }
-  #diligenceForm .org_details { margin: 10px; }
   #diligenceForm .org_details #f_name, #diligenceForm .org_details #email { width: 100%; }
   #diligenceForm #prevBtn { margin-right: 0%; margin-bottom: 20px; }
   #diligenceForm #nextBtn { margin-top: 0%; margin-right: 0%; }
@@ -151,3 +145,5 @@ form { background-color: white; padding: 20px; border-radius: 5px; }
   #diligenceForm #prevBtn { margin-right: 0%; margin-bottom: 20px; }
   #diligenceForm #nextBtn { margin-top: 0%; margin-right: 0%; }
   #diligenceForm #submitBtn { position: unset; float: unset; margin: 0 auto; text-align: center; } }
+@media screen and (max-width: 320px) { #diligenceForm { width: 90%; margin: 20px auto; }
+  #diligenceForm .org_details { width: unset; } }

@@ -62,7 +62,7 @@
   .main-navigation > ul ul ul a { padding: 0.7rem 2.2rem !important; }
   .main-navigation .menu-item-has-children > a:after { content: "\f132"; font-family: dashicons; color: currentColor; border: none; position: absolute; right: 10px; }
   .main-navigation .menu-item-has-children a.special:after { content: "\f460" !important; } }
-body { background-color: #f1f1f1; color: #4d4d4d; font-size: 12px; font-family: 'Open Sans', sans-serif; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.2; word-break: break-word; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { background-color: #f1f1f1; color: #4d4d4d; font-size: 12px; font-family: lato; font-weight: normal; font-style: normal; font-stretch: normal; line-height: 1.2; word-break: break-word; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 a { color: #4d4d4d; text-decoration: none; }
 

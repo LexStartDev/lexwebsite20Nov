@@ -29,21 +29,120 @@ function showTab(n) {
 }
 
 
+
+
+var optionclickq2 = document.getElementById('q2_b1');
+optionclickq2.onclick = ifnoterrq2;
+
+
+var optionclickq2 = document.getElementById('q2_b2');
+optionclickq2.onclick = ifnoterrq2;
+
+
+var optionclickq2 = document.getElementById('q2_b3');
+optionclickq2.onclick = ifnoterrq2;
+
+function ifnoterrq2() {
+  document.getElementById("ifnotq2").style.display = "none";
+}
+
+
+
+var optionclickq3 = document.getElementById('q3_b1');
+optionclickq3.onclick = ifnoterrq3;
+
+
+var optionclickq3 = document.getElementById('q3_b2');
+optionclickq3.onclick = ifnoterrq3;
+
+
+var optionclickq3 = document.getElementById('q3_b3');
+optionclickq3.onclick = ifnoterrq3;
+
+function ifnoterrq3() {
+  document.getElementById("ifnotq3").style.display = "none";
+}
+
+
+var optionclickq5 = document.getElementById('q5_b1');
+optionclickq5.onclick = ifyeserrq5;
+
+
+var optionclickq5 = document.getElementById('q5_b2');
+optionclickq5.onclick = ifyeserrq5;
+
+
+function ifyeserrq5() {
+  document.getElementById("ifyesq5").style.display = "none";
+}
+
+
+
+
+var optionclickq6 = document.getElementById('q6_b1');
+optionclickq6.onclick = ifnoterrq6;
+
+
+var optionclickq6 = document.getElementById('q6_b2');
+optionclickq6.onclick = ifnoterrq6;
+
+
+function ifnoterrq6() {
+  document.getElementById("ifyesq6").style.display = "none";
+}
+
+
+// var optionclickq8b = document.getElementById('q8_b1');
+// optionclickq8b.onclick = ifyeserrq8b;
+
+
+// var optionclickq8b = document.getElementById('q8_b2');
+// optionclickq8b.onclick = ifyeserrq8b;
+
+
+// var optionclickq8b = document.getElementById('q8_b3');
+// optionclickq8b.onclick = ifyeserrq8b;
+
+// function ifyeserrq8b() {
+//   document.getElementById("ifyesq8").style.display = "none";
+// }
+
+
+
+var optionclickq8c = document.getElementById('q8_c1');
+optionclickq8c.onclick = ifyeserrq8c;
+
+
+var optionclickq8c = document.getElementById('q8_c2');
+optionclickq8c.onclick = ifyeserrq8c;
+
+
+var optionclickq8c = document.getElementById('q8_c3');
+optionclickq8c.onclick = ifyeserrq8c;
+
+function ifyeserrq8c() {
+  document.getElementById("ifyesq8c").style.display = "none";
+}
+
+
 function nextPrev(n) {
 
 
   if (document.getElementById('q2_no').checked){
     if (!document.getElementById('q2_b1').checked  && !document.getElementById('q2_b2').checked && !document.getElementById('q2_b3').checked){
       // alert("If not, Please select one of the following option");
-      jq('#ifNotModal').modal('show')
+      // jq('#ifNotModal').modal('show')
+      document.getElementById("ifnotq2").style.display = "block";
       return false;
     }
+
   }
 
   if (document.getElementById('q3_no').checked){
     if (!document.getElementById('q3_b1').checked  && !document.getElementById('q3_b2').checked && !document.getElementById('q3_b3').checked){
       // alert("If not, Please select one of the following option");
-      jq('#ifNotModal').modal('show')
+      // jq('#ifNotModal').modal('show')
+      document.getElementById("ifnotq3").style.display = "block";
       return false;
     }
   }
@@ -51,7 +150,8 @@ function nextPrev(n) {
   if (document.getElementById('q5_1').checked){
     if (!document.getElementById('q5_b1').checked  && !document.getElementById('q5_b2').checked){
       // alert("If Yes, Please select one of the following option");
-      jq('#ifYesModal').modal('show')
+      // jq('#ifYesModal').modal('show')
+      document.getElementById("ifyesq5").style.display = "block";
       return false;
     }
   }
@@ -59,7 +159,8 @@ function nextPrev(n) {
   if (document.getElementById('q6_1').checked){
     if (!document.getElementById('q6_b1').checked  && !document.getElementById('q6_b2').checked){
       // alert("If Yes, Please select one of the following option");
-      jq('#ifYesModal').modal('show')
+      // jq('#ifYesModal').modal('show')
+      document.getElementById("ifyesq6").style.display = "block";
       return false;
     }
   }
@@ -235,6 +336,9 @@ var optionclickYes8 = document.getElementById('q8_b3');
 optionclickYes8.onclick = showYes8c;
 
 function showYes8c() {
+
+      document.getElementById("ifyesq8").style.display = "none";
+     
 document.getElementById('question8c').style.display="block"; 
 }
 
@@ -308,14 +412,16 @@ jq(document).ready(function(){
     if (document.getElementById('q8_1').checked){
       if (!document.getElementById('q8_b1').checked  && !document.getElementById('q8_b2').checked && !document.getElementById('q8_b3').checked){
         // alert("If Yes, Please select one of the following option");
-        jq('#ifYesModal').modal('show')
+        // jq('#ifYesModal').modal('show')
+        document.getElementById("ifyesq8").style.display = "block";
         return false;
       }
-  
+
      if(document.getElementById('q8_b1').checked  || document.getElementById('q8_b2').checked || document.getElementById('q8_b3').checked) {
       if (!document.getElementById('q8_c1').checked  && !document.getElementById('q8_c2').checked && !document.getElementById('q8_c3').checked){
         // alert("Please select one of the following option");
-        jq('#ifYesModal').modal('show')
+        // jq('#ifYesModal').modal('show')
+        document.getElementById("ifyesq8c").style.display = "block";
         return false;
       }
     }
