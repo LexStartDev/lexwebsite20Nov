@@ -1082,10 +1082,10 @@ div {
         border-color: #ffffff;
         margin-right: 40px;
     }
-     .show  {
+     .navbar-collapse {&.show  {
         background-color: #2f76f0;
         padding-bottom: 40px;
-        
+     }
     }
      &.scrolled .show {
         background-color: #fff;
@@ -1153,9 +1153,10 @@ div {
         border-color: #ffffff;
         margin-right: 40px;
     }
-    .show  {
+    .navbar-collapse {&.show  {
         background-color: #2f76f0;
         padding-bottom: 40px;
+     }
     }
     &.scrolled .show {
         background-color: #fff;
@@ -1214,9 +1215,10 @@ div {
         border-color: #ffffff;
         margin-right: 40px;
     }
-    .show  {
+    .navbar-collapse {&.show  {
         background-color: #2f76f0;
         padding-bottom: 40px;
+     }
     }
     &.scrolled .show {
         background-color: #fff;
