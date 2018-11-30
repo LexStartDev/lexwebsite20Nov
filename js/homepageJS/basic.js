@@ -1048,7 +1048,7 @@ jq(document).ready(function(){
             dueDilObj.heading = "Update compliance and filings for company";
             actions.push(dueDilObj);
         }
-        console.log("Actions generated " + JSON.stringify(actions));
+        // console.log("Actions generated " + JSON.stringify(actions));
         // console.log("Categories available " + JSON.stringify(categoryDetails));
   
         var finalArray = categoryDetails;
@@ -1108,15 +1108,15 @@ jq(document).ready(function(){
                 finaldata.push(data);
             }
         }
-        console.log("Final lexscore is: " +finalLexscore);
-        // console.log("Final data: " + JSON.stringify(finaldata));
+        // alert("Final lexscore is: " +finalLexscore);
+        // alert("Final data: " + JSON.stringify(finaldata));
   
         jq.ajax({
           url : 'https://api.lexstart.com/organizations/createDemoActionList',
           type : 'POST',
           data : {actions: actions},
           success : function(data) {
-              // alert('actions generated succesfully: '+data);
+              // alert('actions generated succesfully: '+ JSON.stringify(data));
   
               var data;
               var temp_categorized_score = [];
@@ -1140,7 +1140,7 @@ jq(document).ready(function(){
                 type : 'POST',
                 data : saveToLexScore,
                 success : function(scoreResult) {
-                    // alert('Score saved : '+scoreResult);
+                    // alert('Score saved : '+ JSON.stringify(scoreResult));
   
   
   
