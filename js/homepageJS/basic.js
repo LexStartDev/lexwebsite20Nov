@@ -1149,18 +1149,18 @@ jq(document).ready(function(){
                           score: finalLexscore 
                         };
   
-                  //   jq.ajax({
-                  //     url : 'https://api.lexstart.com/mailTriggerBasicScore',
-                  //     type : 'POST',
-                  //     data : request,
-                  //     success : function(data) {
-                  //         // alert('mail sent to client: '+data);
-                  //     },
-                  //     error : function(request,error)
-                  //     {
-                  //         // alert("Request: "+JSON.stringify(request));
-                  //     }
-                  //  });
+                    jq.ajax({
+                      url : 'https://api.lexstart.com/mailTriggerBasicScore',
+                      type : 'POST',
+                      data : request,
+                      success : function(data) {
+                          // alert('mail sent to client: '+data);
+                      },
+                      error : function(request,error)
+                      {
+                          // alert("Request: "+JSON.stringify(request));
+                      }
+                   });
               },
                 error : function(request,error)
                 {

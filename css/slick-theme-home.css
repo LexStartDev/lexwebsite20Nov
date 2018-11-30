@@ -37,7 +37,7 @@
 .four .cust-item .slick-next { margin: 0 0 0 20px; font-size: 0; position: absolute; right: 230px; top: 300px; height: auto !important; }
 .four .cust-item .slick-next:before { background: url(/images/Home_Page_Icons/Next.svg) no-repeat; content: '' !important; height: 36px; width: 36px; padding: 21px; display: block; }
 
-.four .cust-item .slick-prev { margin: 0%; font-size: 0; position: absolute; left: 999px; top: 300px; }
+.four .cust-item .slick-prev { margin: 0%; font-size: 0; position: absolute; left: 1005px; top: 300px; }
 .four .cust-item .slick-prev:before { background: url(/images/Home_Page_Icons/Pre.svg) no-repeat; content: '' !important; height: 36px; width: 36px; display: block; padding: 21px; }
 
 [dir='rtl'] .slick-next { right: auto; left: -25px; }

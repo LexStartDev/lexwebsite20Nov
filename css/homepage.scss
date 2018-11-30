@@ -53,6 +53,7 @@ div {
                 a {
                     padding-bottom: 5px;
                 }
+
                 .dropdown-menu {
                     // height: 60px;
                     padding: 0%;
@@ -80,6 +81,7 @@ div {
                     right: 35px;
                     z-index: -2;
                 }
+
             }                 
         }
         .form-inline {
@@ -291,7 +293,7 @@ div {
                 }
                 .drop .dropdown-menu {
                     left: -60px !important;
-                    top: 18px !important;
+                    // top: 18px;
                     padding: 0 0 20px;
                     .dropdown-item {
                         padding: 20px 0 0 20px;
@@ -661,10 +663,10 @@ div {
         padding:50px 0 60px 0;  
         .col-off {
             float: left;
-            width: 30.33%;
+            width: 28%;
             padding: 0 18px;
             .off {                                    
-            padding: 50px 20px 30px;
+            padding: 50px 30px 40px;
             margin:0 auto;
             max-width: 340px;
             box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.06);
@@ -709,26 +711,32 @@ div {
                 line-height: 1.33;
             }
             .p1 {
-                padding-bottom: 60px;
+                padding-bottom: 66px;
             }
             p {
                 margin: 0%;
-                padding: 0 0 40px;
+                padding: 0 0 20px;
                 font-size: 16px;
                 line-height: 1.5;
                 text-align: center;              
                 color: #848484;
             }
+            .esop-p {
+                margin-bottom: 25px;
+            }
             a {
                 font-size: 14px;
-                font-weight: bold;
+                font-weight: 700;
                 float: right;
                 color: #848484;
+            }
+            a:hover {
+                color: #2f76f0;
             }
         }        
     }
     .col1 {
-        margin: 0 0 0 60px; 
+        margin: 0 0 0 100px; 
     }
     }
 }   
@@ -742,9 +750,10 @@ div {
     h1 {    
     padding-bottom: 50px;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 900;
     text-align: center;
     margin: 0%;
+    color: #000;
     }
     .cust-item {                     
         .row-cust {     
@@ -788,7 +797,7 @@ div {
                     p {
                         margin: 0%;
                         font-size: 16px;
-                        line-height: 1.38;
+                        line-height: 1.45;
                         color: #6d6d6d;
                         padding-left: 17px;
                     }
@@ -812,6 +821,8 @@ div {
                 padding: 0 0 14px 30px;
                 font-size: 22px;
                 font-weight: bold;
+                color: #000;
+                line-height: 1.4;
             }
             p {
                 margin: 0%;
