@@ -266,7 +266,7 @@ function validateForm() {
 
      
     var email = document.getElementById("email").value;
-    var reg = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+    var reg = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
     if (reg.test(email)){
       // alert("valid");
     document.getElementsByClassName("step")[currentTab].className += " finish";
@@ -370,24 +370,24 @@ jq(document).ready(function(){
 
             // alert('Organization created: '+ JSON.stringify(response));
   // modal for orgnization
-              var reqst = {
-                email: document.getElementById('email').value,
-                name: document.getElementById("f_name").value
-              };
+          //     var reqst = {
+          //       email: document.getElementById('email').value,
+          //       name: document.getElementById("f_name").value
+          //     };
   
-          jq.ajax({
+          // jq.ajax({
   
-            url : 'https://api.lexstart.com/mailtriggerforbasiclogin',
-            type : 'POST',
-            data : reqst,
-            success : function(data) {
-                // alert('mail sent to client: '+ data);
-            },
-            error : function(request,error)
-            {
-                // alert("Request: "+JSON.stringify(request));
-            }
-          });
+          //   url : 'https://api.lexstart.com/mailtriggerforbasiclogin',
+          //   type : 'POST',
+          //   data : reqst,
+          //   success : function(data) {
+          //       // alert('mail sent to client: '+ data);
+          //   },
+          //   error : function(request,error)
+          //   {
+          //       // alert("Request: "+JSON.stringify(request));
+          //   }
+          // });
   
   
         jq('#Org_Modal').modal('show')
@@ -1048,24 +1048,24 @@ jq(document).ready(function(){
   
   
   
-                        var request = {
-                          to: document.getElementById('email').value,
-                          name: document.getElementById("f_name").value,
-                          score: finalLexscore 
-                        };
+                        // var request = {
+                        //   to: document.getElementById('email').value,
+                        //   name: document.getElementById("f_name").value,
+                        //   score: finalLexscore 
+                        // };
   
-                    jq.ajax({
-                      url : 'https://api.lexstart.com/mailTriggerBasicScore',
-                      type : 'POST',
-                      data : request,
-                      success : function(data) {
-                          // alert('mail sent to client: '+data);
-                      },
-                      error : function(request,error)
-                      {
-                          // alert("Request: "+JSON.stringify(request));
-                      }
-                   });
+                  //   jq.ajax({
+                  //     url : 'https://api.lexstart.com/mailTriggerBasicScore',
+                  //     type : 'POST',
+                  //     data : request,
+                  //     success : function(data) {
+                  //         // alert('mail sent to client: '+data);
+                  //     },
+                  //     error : function(request,error)
+                  //     {
+                  //         // alert("Request: "+JSON.stringify(request));
+                  //     }
+                  //  });
   
   
   
