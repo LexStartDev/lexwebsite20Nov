@@ -76,7 +76,7 @@ div { margin: 0%; }
 
 .three { background-color: #fafafa; }
 .three * { box-sizing: border-box; }
-.three h2 { margin: 0%; padding-top: 140px; font-size: 32px; font-weight: 900; text-align: center; }
+.three h2 { margin: 0%; padding-top: 140px; font-size: 32px; font-weight: 900; text-align: center; color: #000; }
 .three .off-item { padding: 50px 0 60px 0; }
 .three .off-item .col-off { float: left; width: 30.33%; padding: 0 18px; }
 .three .off-item .col-off .off { padding: 50px 20px 30px; margin: 0 auto; max-width: 340px; box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.06); background-color: #ffffff; }
