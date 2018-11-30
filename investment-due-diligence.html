@@ -10,6 +10,14 @@
       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <link rel="icon" href="/images/Lex_logo.png" type="image/gif">
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74491284-2"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-74491284-2');
+      </script>
   </head>
 
 <body>
@@ -19,19 +27,21 @@
 <form id="diligenceForm" name="diligenceForm">
 <!-- <form id="regForm" action="/action_page.php"> -->
   <div class="group">
-      <p class="title">Do a quick 2 minute investment readiness check</p>
+      <p class="title">Do a quick 2 minute Investment Readiness check</p>
   </div>
   <!-- One "tab" for each step in the form: -->
   
    <div class="tab org_details">
-    <label class="first_name">Name</label> <p class="name-input"><input type="text"  placeholder="Enter First Name" oninput="this.className = ''" name="first_name" id="f_name" class="input-box"></p>
+    <label class="first_name">Name</label> <p class="name-input"><input type="text"  placeholder="Enter Name" oninput="this.className = ''" name="first_name" id="f_name" class="input-box"></p>
     
-    <label class="email">E-mail</label> <p  class="email-input"><input type="email" placeholder="Enter E-mail Address" oninput="this.className = ''" name="email" id="email" class="input-box"></p>    
-    <p id="error">Enter valid Email-Id</p>
+    <label class="email">E-mail</label> <p  class="email-input"><input type="email" placeholder="Enter E-mail Id" oninput="this.className = ''" name="email" id="email" class="input-box"></p>    
+    <p id="error">Please enter a valid E-Mail id</p>
+    <p id="email_exists">This E-Mail is already registered with LexStart. Please <a class="signin_link" href="https://app.lexstart.com/#/login">sign in</a> with this E-Mail id.</p>
    </div> 
 
   <div class="tab">
-      <p class="questions">1. What kind of an entity have you formed?</p>                     
+        <p class="pageNo">1/6</p>
+      <p class="questions">1. What kind of an entity have you formed?<span class="star">&nbsp;*</span></p>   
       <div class="clerafix option-wrapper">
         <label class="radioWrapper">LLP
             <input type="radio"  name="question1" class="question1"   id="q1_1" value="LLP"  oninput="this.className = ''" >
@@ -60,7 +70,7 @@
     </div>
     
 
-    <p class="questions">2. Have you executed employment agreements with all your employees (including founders)?</p>
+    <p class="questions">2. Have you executed employment agreements with all your employees (including founders)?<span class="star">&nbsp;*</span></p>
     <div class="clerafix option-wrapper">
         <label class="radioWrapper" >Yes
             <input type="radio" name="question2" id="q2_yes" value="yes"  oninput="this.className = ''"  >
@@ -71,6 +81,7 @@
             <span class="checkmark"></span>
         </label>
         <div id="ifNotExecuted"  style="font-size:12px;margin-left:40px;">
+                <p class="error" id="ifnotq2">If not, Please select one of the below options</p>
             <label class="radioWrapper">Neither employees nor founder
                 <input type="radio" name="ifNo" id="q2_b1"  value="Neither Employees nor Founders"  oninput="this.className = ''" >
                 <span class="checkmark"></span>
@@ -83,6 +94,7 @@
                 <input type="radio" name="ifNo" id="q2_b3"  value="Only founders not employees" oninput="this.className = ''" >
                 <span class="checkmark"></span>
             </label>
+            
         </div>
         <label class="radioWrapper" >I don't know
             <input type="radio" name="question2" id="q2_idk"  value="I dont know" oninput="this.className = ''"  >
@@ -94,7 +106,8 @@
   </div>
 
   <div class="tab">
-      <p class="questions">3. Is your brand name and logo registered?</p>
+        <p class="pageNo">2/6</p>
+      <p class="questions">3. Is your brand name and logo registered?<span class="star">&nbsp;*</span></p>
       <div class="clerafix option-wrapper">
           <label class="radioWrapper">Yes
               <input type="radio"  id="q3_yes" name="question3"  value="yes" >
@@ -105,6 +118,7 @@
               <span class="checkmark"></span>
           </label>
           <div id="ifNot"  style="font-size:12px;margin-left:15px;">
+                <p class="error" id="ifnotq3">If not, Please select one of the below options</p>     
               <label class="radioWrapper">Neither brand name nor logo
                   <input type="radio" name="ifNot" id="q3_b1"  value="Neither brand name nor logo">
                   <span class="checkmark"></span>
@@ -116,13 +130,14 @@
               <label class="radioWrapper">Only logo not brand name
                   <input type="radio" name="ifNot" id="q3_b3"  value="Only logo not brand name">
                   <span class="checkmark"></span>
-              </label>                                
+              </label>    
+                                     
           </div>
       </div>
     <!-- <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p> -->
 
-    <p class="questions">4. Is the intellectual property including trademarks, websites, patents owned by you or your startup?
+    <p class="questions">4. Is the intellectual property including trademarks, websites, patents owned by you or your startup?<span class="star">&nbsp;*</span>
     <div class="clerafix option-wrapper">
         <label class="radioWrapper">All owned by startup
             <input type="radio" name="question4" id="q4_1"  value="all owned" >
@@ -147,8 +162,9 @@
   </div>
 
   <div class="tab">
-      <p class="questions">5. Do you have a Terms of Service and Privacy Policy on your website?</p>
-      <div class="clerafix option-wrapper">
+        <p class="pageNo">3/6</p>
+      <p class="questions">5. Do you have a Terms of Service and Privacy Policy on your website?<span class="star">&nbsp;*</span></p>
+      <div class="clerafix ">
           <label class="radioWrapper">Yes
               <input type="radio"  name="question5"  id="q5_1"   value="yes" >
               <span class="checkmark"></span>
@@ -163,8 +179,9 @@
           </label>
       </div>
       <div id="question5b" >
-          <p class="questions">   Do you want us to review Terms of Service and Privacy Policy on your website?</p>
+          <p class="questions">   Do you want us to review Terms of Service and Privacy Policy on your website?<span class="star">&nbsp;*</span></p>
           <div class="clerafix ">
+                <p class="error" id="ifyesq5">If yes, Please select one of the below options</p>  
               <label class="radioWrapper">Yes
                   <input type="radio" name="question5a" id="q5_b1"  value="yes">
                   <span class="checkmark"></span>
@@ -173,6 +190,7 @@
                   <input type="radio" name="question5a" id="q5_b2"  value="no">
                   <span class="checkmark"></span>
               </label>
+              
           </div>                            
       </div>
     <!-- <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
@@ -182,8 +200,10 @@
     <!-- <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
     <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p> -->
   </div>
+
   <div class="tab">
-      <p class="questions">6. Do you have contracts in place with all your vendors and customers?</p>
+        <p class="pageNo">4/6</p>
+      <p class="questions">6. Do you have contracts in place with all your vendors and customers?<span class="star">&nbsp;*</span></p>
       <div class="clerafix option-wrapper">
           <label class="radioWrapper">Yes
               <input type="radio" name="question6" id="q6_1"  value="yes" >
@@ -199,8 +219,9 @@
           </label>
       </div>
       <div id="question6b" >
-          <p class="questions">   Do you want us to review contracts with vendors or customers?</p>
+          <p class="questions">   Do you want us to review contracts with vendors or customers?<span class="star">&nbsp;*</span></p>
           <div class="clerafix ">
+                <p class="error" id="ifyesq6">If yes, Please select one of the below options</p>  
               <label class="radioWrapper">Yes
                   <input type="radio" name="question6a" id="q6_b1"  value="yes">
                   <span class="checkmark"></span>
@@ -209,13 +230,16 @@
                   <input type="radio" name="question6a" id="q6_b2"  value="no">
                   <span class="checkmark"></span>
               </label>
+              
           </div>
       </div>
     <!-- <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
     <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p> -->
   </div>
+
   <div class="tab">
-      <p class="questions">7. Do you have all your compliance filings, board meetings up to date?</p>
+        <p class="pageNo">5/6</p>
+      <p class="questions">7. Do you have all your compliance filings, board meetings up to date?<span class="star">&nbsp;*</span></p>
       <div class="clerafix option-wrapper">
           <label class="radioWrapper">Yes
               <input type="radio" name="question7" id="q7_1" value="yes" >
@@ -231,9 +255,11 @@
           </label>
       </div>
   </div>
+
   <div class="tab">
+        <p class="pageNo">6/6</p>
       <p class="questions">8. Have you ever taken money in a form other than equity or revenues from friends, family, advisors
-          etc.?
+          etc.?<span class="star">&nbsp;*</span>
       </p>
       <div class="clerafix option-wrapper">
           <label class="radioWrapper">Yes
@@ -246,8 +272,9 @@
           </label>
       </div>
       <div id="ifYesTaken" >
-          <p class="questions">In what form was the money taken ?</p>
+          <p class="questions">In what form was the money taken ?<span class="star">&nbsp;*</span></p>
           <div class="clerafix ">
+                <p class="error" id="ifyesq8">If yes, Please select one of the below options</p>  
               <label class="radioWrapper">Loan
                   <input type="radio" id="q8_b1" name="ifTaken"  value="loan">
                   <span class="checkmark"></span>
@@ -260,11 +287,13 @@
                   <input type="radio" id="q8_b3" name="ifTaken" value="convertible note">
                   <span class="checkmark"></span>
               </label>
+              
           </div>
       </div>
       <div id="question8c">
-          <p class="questions">Have you followed compliance &amp; made requisite filings ?</p>
-          <div class="clerafix ">
+          <p class="questions">Have you followed compliance &amp; made requisite filings ?<span class="star">&nbsp;*</span></p>
+          <div class="clerafix">
+                <p class="error" id="ifyesq8c">Please select one of the below options</p>  
               <label class="radioWrapper">Yes
                   <input type="radio" id="q8_c1" name="question8c" value="yes">
                   <span class="checkmark"></span>
@@ -277,6 +306,7 @@
                   <input type="radio" id="q8_c3" name="question8c"  value="maybe" >
                   <span class="checkmark"></span>
               </label>
+              
           </div>
       </div>
   </div>
@@ -394,7 +424,7 @@
       </div> --> 
 
       <!-- Modal mail-check-->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -404,15 +434,14 @@
               </button>
             </div>
             <div class="modal-body">
-              Entered Email-Id already registerd with us please use another Email-Id to check Investment Readiness Score.
+                This E-Mail is already registered with LexStart. Please sign in with this E-Mail id.
             </div>
             <div class="modal-footer">
               <button type="button" class="ok" data-dismiss="modal">Ok</button>
-              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
 <!-- Org_Modal start -->
 
@@ -426,16 +455,16 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                        You have successfully completed Investment Readiness Check. Please login to see the score. Your credentials to login to app is mailed to you.
+                    Congratulations! Login to see your Investment Readiness Score. Your credentials have been e-mailed to your registered e-mail id.
                 </div>
                 <div class="modal-footer">
-                  <a type="button" class="login" href="https://app.lexstart.com/#/login">Login</a>
-                  <a type="button" class="ok" href="https://lexstart.com">Go home</a>
+                  <a type="button" class="login" href="https://www.lexstart.com">Go Home</a>
+                  <a type="button" class="ok" href="https://app.lexstart.com/#/login">Sign in</a>
                 </div>
               </div>
             </div>
           </div>
-<script type="text/javascript" src="js/homepageJS/global.js"></script>
+<!-- <script type="text/javascript" src="js/homepageJS/global.js"></script> -->
 <script type="text/javascript" src="js/bootstrap.min.js"></Script>
 <script type="text/javascript" src="js/homepageJS/basic.js"></script>
 </body>

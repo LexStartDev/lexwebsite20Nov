@@ -29,21 +29,103 @@ function showTab(n) {
 }
 
 
+
+
+var optionclickq2 = document.getElementById('q2_b1');
+optionclickq2.onclick = ifnoterrq2;
+
+
+var optionclickq2 = document.getElementById('q2_b2');
+optionclickq2.onclick = ifnoterrq2;
+
+
+var optionclickq2 = document.getElementById('q2_b3');
+optionclickq2.onclick = ifnoterrq2;
+
+function ifnoterrq2() {
+  document.getElementById("ifnotq2").style.display = "none";
+}
+
+
+
+var optionclickq3 = document.getElementById('q3_b1');
+optionclickq3.onclick = ifnoterrq3;
+
+
+var optionclickq3 = document.getElementById('q3_b2');
+optionclickq3.onclick = ifnoterrq3;
+
+
+var optionclickq3 = document.getElementById('q3_b3');
+optionclickq3.onclick = ifnoterrq3;
+
+function ifnoterrq3() {
+  document.getElementById("ifnotq3").style.display = "none";
+}
+
+
+var optionclickq5 = document.getElementById('q5_b1');
+optionclickq5.onclick = ifyeserrq5;
+
+
+var optionclickq5 = document.getElementById('q5_b2');
+optionclickq5.onclick = ifyeserrq5;
+
+
+function ifyeserrq5() {
+  document.getElementById("ifyesq5").style.display = "none";
+}
+
+
+
+
+var optionclickq6 = document.getElementById('q6_b1');
+optionclickq6.onclick = ifnoterrq6;
+
+
+var optionclickq6 = document.getElementById('q6_b2');
+optionclickq6.onclick = ifnoterrq6;
+
+
+function ifnoterrq6() {
+  document.getElementById("ifyesq6").style.display = "none";
+}
+
+
+var optionclickq8c = document.getElementById('q8_c1');
+optionclickq8c.onclick = ifyeserrq8c;
+
+
+var optionclickq8c = document.getElementById('q8_c2');
+optionclickq8c.onclick = ifyeserrq8c;
+
+
+var optionclickq8c = document.getElementById('q8_c3');
+optionclickq8c.onclick = ifyeserrq8c;
+
+function ifyeserrq8c() {
+  document.getElementById("ifyesq8c").style.display = "none";
+}
+
+
 function nextPrev(n) {
 
 
   if (document.getElementById('q2_no').checked){
     if (!document.getElementById('q2_b1').checked  && !document.getElementById('q2_b2').checked && !document.getElementById('q2_b3').checked){
       // alert("If not, Please select one of the following option");
-      jq('#ifNotModal').modal('show')
+      // jq('#ifNotModal').modal('show')
+      document.getElementById("ifnotq2").style.display = "block";
       return false;
     }
+
   }
 
   if (document.getElementById('q3_no').checked){
     if (!document.getElementById('q3_b1').checked  && !document.getElementById('q3_b2').checked && !document.getElementById('q3_b3').checked){
       // alert("If not, Please select one of the following option");
-      jq('#ifNotModal').modal('show')
+      // jq('#ifNotModal').modal('show')
+      document.getElementById("ifnotq3").style.display = "block";
       return false;
     }
   }
@@ -51,7 +133,8 @@ function nextPrev(n) {
   if (document.getElementById('q5_1').checked){
     if (!document.getElementById('q5_b1').checked  && !document.getElementById('q5_b2').checked){
       // alert("If Yes, Please select one of the following option");
-      jq('#ifYesModal').modal('show')
+      // jq('#ifYesModal').modal('show')
+      document.getElementById("ifyesq5").style.display = "block";
       return false;
     }
   }
@@ -59,7 +142,8 @@ function nextPrev(n) {
   if (document.getElementById('q6_1').checked){
     if (!document.getElementById('q6_b1').checked  && !document.getElementById('q6_b2').checked){
       // alert("If Yes, Please select one of the following option");
-      jq('#ifYesModal').modal('show')
+      // jq('#ifYesModal').modal('show')
+      document.getElementById("ifyesq6").style.display = "block";
       return false;
     }
   }
@@ -85,6 +169,7 @@ function nextPrev(n) {
       data : req,
       success : function(data) {
 
+        document.getElementById("email_exists").style.display = "none";
     
   // Hide the current tab:
   x[currentTab].style.display = "none";
@@ -102,14 +187,14 @@ function nextPrev(n) {
    },
    error : function(request,error) {
        // alert("Request: "+JSON.stringify(request));
-       jq('#exampleModal').modal('show')
+      //  jq('#exampleModal').modal('show')
+      document.getElementById("email_exists").style.display = "block";
         return false;
    }
   });
 // }
 }
 }
-
 
 document.getElementById("submitBtn").style.display = "none";
 document.getElementById('ifNotExecuted').style.display="none";
@@ -233,6 +318,9 @@ var optionclickYes8 = document.getElementById('q8_b3');
 optionclickYes8.onclick = showYes8c;
 
 function showYes8c() {
+
+      document.getElementById("ifyesq8").style.display = "none";
+     
 document.getElementById('question8c').style.display="block"; 
 }
 
@@ -269,6 +357,7 @@ function validateForm() {
     var reg = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
     if (reg.test(email)){
       // alert("valid");
+      document.getElementById("error").style.display = "none";
     document.getElementsByClassName("step")[currentTab].className += " finish";
     return true; 
   } else {
@@ -305,14 +394,16 @@ jq(document).ready(function(){
     if (document.getElementById('q8_1').checked){
       if (!document.getElementById('q8_b1').checked  && !document.getElementById('q8_b2').checked && !document.getElementById('q8_b3').checked){
         // alert("If Yes, Please select one of the following option");
-        jq('#ifYesModal').modal('show')
+        // jq('#ifYesModal').modal('show')
+        document.getElementById("ifyesq8").style.display = "block";
         return false;
       }
-  
+
      if(document.getElementById('q8_b1').checked  || document.getElementById('q8_b2').checked || document.getElementById('q8_b3').checked) {
       if (!document.getElementById('q8_c1').checked  && !document.getElementById('q8_c2').checked && !document.getElementById('q8_c3').checked){
         // alert("Please select one of the following option");
-        jq('#ifYesModal').modal('show')
+        // jq('#ifYesModal').modal('show')
+        document.getElementById("ifyesq8c").style.display = "block";
         return false;
       }
     }
@@ -391,24 +482,28 @@ jq(document).ready(function(){
   
   
         jq('#Org_Modal').modal('show')
-  
-        
-  
-  
-  
-  
             var response = response;
             var orgid = response.result.organization_ID;
             var org_name = response.result.organization_NAME;
             var basicPackageObject = { "type": "Package", "package_id": "32904e30-da58-4f1b-b70d-9b37be3d5290", "price": 0, "start_date": new Date(), "status": 1 };
   
-          var dataToPass = {organization_subscription: basicPackageObject}
+          var dataToPass = {
+            organization_subscription: basicPackageObject
+          }
+          jq.ajax({
+            url: 'https://api.lexstart.com/accounts/' + orgid,
+            type: 'POST',
+            contentType: 'application/json',
+            success: function () {
+
             jq.ajax({
               url : 'https://api.lexstart.com/organizations/' + orgid + '/packages',
               type : 'POST',
               data :dataToPass,
              
-              success : function(response) {              
+              success : function(response) {  
+              
+
                   // alert('Package added: '+JSON.stringify(response));
                   // JSON object for weightage
   var categoryDetails = [
@@ -552,7 +647,7 @@ jq(document).ready(function(){
   else if (document.getElementById('q5_b2').checked) {
     val5b = document.getElementById('q5_b2').value;
   }
-  else {
+  else if (!document.getElementById('q5_b1').checked && !document.getElementById('q5_b2').checked) {
     val5b = "Not Applicable";
   }
   
@@ -572,7 +667,7 @@ jq(document).ready(function(){
   else if (document.getElementById('q6_b2').checked) {
     val6b = document.getElementById('q6_b2').value;
   }
-  else {
+  else if (!document.getElementById('q6_b1').checked && !document.getElementById('q6_b2').checked) {
     val6b = "Not Applicable";
   }
   
@@ -602,7 +697,7 @@ jq(document).ready(function(){
   else if (document.getElementById('q8_b3').checked) {
     val8b = document.getElementById('q8_b3').value;
   }
-  else {
+  else if (!document.getElementById('q8_b1').checked && !document.getElementById('q8_b2').checked && !document.getElementById('q8_b3').checked ) {
     val8b = "Not Applicable";
   }
   
@@ -615,7 +710,7 @@ jq(document).ready(function(){
   else if (document.getElementById('q8_c3').checked) {
     val8c = document.getElementById('q8_c3').value;
   }
-  else {
+  else if (!document.getElementById('q8_c1').checked && !document.getElementById('q8_c2').checked && !document.getElementById('q8_c3').checked ) {
     val8c = "Not Applicable";
   }
   
@@ -1048,11 +1143,11 @@ jq(document).ready(function(){
   
   
   
-                        // var request = {
-                        //   to: document.getElementById('email').value,
-                        //   name: document.getElementById("f_name").value,
-                        //   score: finalLexscore 
-                        // };
+                        var request = {
+                          to: document.getElementById('email').value,
+                          name: document.getElementById("f_name").value,
+                          score: finalLexscore 
+                        };
   
                   //   jq.ajax({
                   //     url : 'https://api.lexstart.com/mailTriggerBasicScore',
@@ -1066,12 +1161,7 @@ jq(document).ready(function(){
                   //         // alert("Request: "+JSON.stringify(request));
                   //     }
                   //  });
-  
-  
-  
-  
-  
-                },
+              },
                 error : function(request,error)
                 {
                     // alert("Request: "+JSON.stringify(request));
@@ -1084,45 +1174,10 @@ jq(document).ready(function(){
               // alert("Request: "+JSON.stringify(request));
           }
        });
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-                  
-              },
+        
+                  }
+                })
+ },
               error : function(error)
               {
                   // alert("Request: "+JSON.stringify(request));
