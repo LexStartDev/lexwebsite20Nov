@@ -458,7 +458,8 @@ jq(document).ready(function(){
         data :signupDetails,
        
         success : function(response) {
-
+          var response = response;
+          // alert(response);
             // alert('Organization created: '+ JSON.stringify(response));
   // modal for orgnization
           //     var reqst = {
@@ -481,8 +482,9 @@ jq(document).ready(function(){
           // });
   
   
-        jq('#Org_Modal').modal('show')
-            var response = response;
+        
+        
+            
             var orgid = response.result.organization_ID;
             var org_name = response.result.organization_NAME;
             var basicPackageObject = { "type": "Package", "package_id": "32904e30-da58-4f1b-b70d-9b37be3d5290", "price": 0, "start_date": new Date(), "status": 1 };
@@ -1155,6 +1157,8 @@ jq(document).ready(function(){
                       data : request,
                       success : function(data) {
                           // alert('mail sent to client: '+data);
+
+                          jq('#Org_Modal').modal('show')
                       },
                       error : function(request,error)
                       {
