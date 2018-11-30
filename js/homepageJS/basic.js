@@ -1117,7 +1117,7 @@ jq(document).ready(function(){
           data : {actions: actions},
           success : function(data) {
               // alert('actions generated succesfully: '+ JSON.stringify(data));
-  
+            setTimeout(function(){
               var data;
               var temp_categorized_score = [];
               for (i = 0; i < finaldata.length; i++) {
@@ -1171,6 +1171,8 @@ jq(document).ready(function(){
                     // alert("Request: "+JSON.stringify(request));
                 }
              });
+            }, 1000)
+
   
           },
           error : function(request,error)
