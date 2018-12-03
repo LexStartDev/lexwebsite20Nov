@@ -63,17 +63,18 @@
   .four .cust-item .slick-prev { left: 919px; } }
 @media screen and (max-width: 1024px) { .slick-arrow:before { width: 50px; height: 50px; }
   .second .slick-prev { left: 800px; }
-  .three .off-item .col1 { margin-left: 45px; }
   .four .cust-item .slick-prev { left: 830px; }
   .four .cust-item .slick-next { right: 100px; } }
+@media screen and (max-width: 991px) { .second .slick-prev { left: 765px; }
+  .four .cust-item .slick-prev { left: 800px; } }
 @media screen and (max-width: 768px) { .second .slick-next { display: block !important; right: 60px; bottom: 30px; background: url(/images/Home_Page_Icons/Next.svg) no-repeat; }
   .second .slick-prev { display: block !important; left: 600px; bottom: 30px; background: url(/images/Home_Page_Icons/Pre.svg) no-repeat; }
   .four .cust-item .slick-next { display: block !important; right: 90px; top: 310px; }
   .four .cust-item .slick-prev { display: block !important; left: 580px; top: 310px; } }
 @media screen and (max-width: 640px) { .second .slick-next { display: block !important; right: 100px; bottom: 30px; background: url(/images/Home_Page_Icons/Next.svg) no-repeat; }
   .second .slick-prev { display: block !important; left: 440px; bottom: 30px; background: url(/images/Home_Page_Icons/Pre.svg) no-repeat; }
-  .four .cust-item .slick-next { display: block !important; background: url(/images/Home_Page_Icons/Next.svg) no-repeat; right: 100px; top: 370px; }
-  .four .cust-item .slick-prev { display: block !important; left: 450px; top: 370px; background: url(/images/Home_Page_Icons/Pre.svg) no-repeat; } }
+  .four .cust-item .slick-next { display: block !important; background: url(/images/Home_Page_Icons/Next.svg) no-repeat; right: 100px; top: 400px; }
+  .four .cust-item .slick-prev { display: block !important; left: 450px; top: 400px; background: url(/images/Home_Page_Icons/Pre.svg) no-repeat; } }
 @media screen and (max-width: 414px) { .second .slick-next { right: 50px; }
   .second .slick-prev { left: 260px; }
   .four .cust-item .slick-next { top: 699px; right: 90px; }
@@ -83,7 +84,8 @@
   .four .cust-item .slick-next { display: block !important; background: url(/images/Home_Page_Icons/Next.svg) no-repeat; top: 699px; right: 90px; }
   .four .cust-item .slick-prev { display: block !important; left: 230px; top: 699px; background: url(/images/Home_Page_Icons/Pre.svg) no-repeat; } }
 @media screen and (max-width: 375px) { .second .slick-next { right: 50px; }
-  .second .slick-prev { left: 220px; }
+  .second .slick-prev { left: 220px; top: 1000px; }
+  .second .slick-next { top: 1000px; }
   .four .cust-item .slick-next { right: 50px; } }
 @media screen and (max-width: 360px) { .second .slick-next, .second .slick-prev { top: 1089px; left: 260px; }
   .second .slick-prev { left: 200px; }

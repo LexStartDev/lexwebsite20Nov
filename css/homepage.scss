@@ -1038,6 +1038,9 @@ div {
             text-align: center;
         }
     }
+    .three .off-item .col-off .off .p1 {
+        padding-bottom: 46px;
+    }
 }
 
 
@@ -1066,6 +1069,11 @@ div {
     .three .off-item .col-off .off a {
         padding: 0%;
     }
+    
+    .three .off-item .col1 {
+        margin-left: 80px;
+    }
+
     .footer .row-footer1 { 
         .col-footer1 {
             width: 100%;
@@ -1084,6 +1092,15 @@ div {
             margin: 0 auto;
             text-align: center;
         }
+    }
+    .three .off-item .col3 .off p {
+        padding-bottom: 40px;
+    }
+    .three .off-item .col-off .off .p1 {
+        padding-bottom: 66px;
+    }
+    .second .post-item .content {
+        padding-bottom: 100px;
     }
 }
 
@@ -1123,6 +1140,12 @@ div {
         }
         }
     }
+}
+.three .off-item .col-off .off .esop-p {
+    margin-bottom: 45px;
+}
+.three .off-item .col-off .off .p1 {
+    padding-bottom: 86px;
 }
 }
 
@@ -1217,6 +1240,18 @@ div {
     }
     .four .row-clients {
         margin-top: 40px;
+    }
+
+    .three .off-item .col-off .off .p1 {
+        padding-bottom: 86px;
+    }
+
+    .three .off-item .col-off .off .esop-p {
+        margin-bottom: 0;
+    }
+
+    .three .off-item .col3 .off p {
+        padding-bottom: 20px;
     }
 
 }
